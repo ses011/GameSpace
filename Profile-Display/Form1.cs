@@ -12,7 +12,7 @@ namespace Profile_Display
 {
     public partial class DisplayProfile : Form
     {
-        public DisplayProfile(Form form, User player) //take in the player object
+        public DisplayProfile() //take in the player object
         {
             //get the listview fixed because there is an extra column****
             InitializeComponent();

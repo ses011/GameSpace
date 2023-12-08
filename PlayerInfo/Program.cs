@@ -162,7 +162,7 @@ namespace PlayerInfo
             this.userList.Add("goooobr", new User("gooobr", ":3", false));
             this.userList.Add("anonygoose", new User("anonygoose", "your local fisherman dad", false));
             this.userList.Add(".grbe", new User(".grbe", "", false));
-
+            this.userList.Add("not_phoeniix", new User("not_phoeniix", "they call me the Grinch\nthey call me\nthey call me the\nthey\nGrinch", false));
         }
     }
 }

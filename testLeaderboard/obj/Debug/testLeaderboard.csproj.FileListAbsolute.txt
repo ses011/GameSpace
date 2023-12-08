@@ -1,0 +1,9 @@
+C:\Users\autum\OneDrive\Desktop\GamespaceGithub\testLeaderboard\bin\Debug\testLeaderboard.dll.config
+C:\Users\autum\OneDrive\Desktop\GamespaceGithub\testLeaderboard\bin\Debug\testLeaderboard.dll
+C:\Users\autum\OneDrive\Desktop\GamespaceGithub\testLeaderboard\bin\Debug\testLeaderboard.pdb
+C:\Users\autum\OneDrive\Desktop\GamespaceGithub\testLeaderboard\obj\Debug\testLeaderboard.csproj.AssemblyReference.cache
+C:\Users\autum\OneDrive\Desktop\GamespaceGithub\testLeaderboard\obj\Debug\testLeaderboard.Properties.Resources.resources
+C:\Users\autum\OneDrive\Desktop\GamespaceGithub\testLeaderboard\obj\Debug\testLeaderboard.csproj.GenerateResource.cache
+C:\Users\autum\OneDrive\Desktop\GamespaceGithub\testLeaderboard\obj\Debug\testLeaderboard.csproj.CoreCompileInputs.cache
+C:\Users\autum\OneDrive\Desktop\GamespaceGithub\testLeaderboard\obj\Debug\testLeaderboard.dll
+C:\Users\autum\OneDrive\Desktop\GamespaceGithub\testLeaderboard\obj\Debug\testLeaderboard.pdb

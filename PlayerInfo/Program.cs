@@ -108,7 +108,7 @@ namespace PlayerInfo
     {
 
         // create a Sorted List indexed on username (string) and storing User objects
-        public SortedList<string, User> userList = new SortedList<string, User>();
+        public static SortedList<string, User> userList = new SortedList<string, User>();
 
         public void Remove(string username)
         {
@@ -154,15 +154,15 @@ namespace PlayerInfo
         }
 
 
-        public void GenerateUsers()
+        public static void Main()
         {
-            this.userList.Add("ses011", new User("ses011", "nope. just nope", false));
-            this.userList.Add("kash_registerr", new User("kash_registerr", "", false));
-            this.userList.Add("catast0phi", new User("catast0phi", "oh boy!!! VIOLENCE for christmas!!!!!!", false));
-            this.userList.Add("goooobr", new User("gooobr", ":3", false));
-            this.userList.Add("anonygoose", new User("anonygoose", "your local fisherman dad", false));
-            this.userList.Add(".grbe", new User(".grbe", "", false));
-            this.userList.Add("not_phoeniix", new User("not_phoeniix", "they call me the Grinch\nthey call me\nthey call me the\nthey\nGrinch", false));
+            Players.userList.Add("ses011", new User("ses011", "nope. just nope", false));
+            Players.userList.Add("kash_registerr", new User("kash_registerr", "", false));
+            Players.userList.Add("catast0phi", new User("catast0phi", "oh boy!!! VIOLENCE for christmas!!!!!!", false));
+            Players.userList.Add("goooobr", new User("gooobr", ":3", false));
+            Players.userList.Add("anonygoose", new User("anonygoose", "your local fisherman dad", false));
+            Players.userList.Add(".grbe", new User(".grbe", "", false));
+            Players.userList.Add("not_phoeniix", new User("not_phoeniix", "they call me the Grinch\nthey call me\nthey call me the\nthey\nGrinch", false));
         }
     }
 }

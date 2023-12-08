@@ -1,0 +1,7 @@
+C:\Users\kasha\Source\Repos\GameSpace\PlayerInfo\obj\Debug\PlayerInfo.csproj.AssemblyReference.cache
+C:\Users\kasha\Source\Repos\GameSpace\PlayerInfo\obj\Debug\PlayerInfo.csproj.CoreCompileInputs.cache
+C:\Users\kasha\Source\Repos\GameSpace\PlayerInfo\bin\Debug\PlayerInfo.exe.config
+C:\Users\kasha\Source\Repos\GameSpace\PlayerInfo\bin\Debug\PlayerInfo.exe
+C:\Users\kasha\Source\Repos\GameSpace\PlayerInfo\bin\Debug\PlayerInfo.pdb
+C:\Users\kasha\Source\Repos\GameSpace\PlayerInfo\obj\Debug\PlayerInfo.exe
+C:\Users\kasha\Source\Repos\GameSpace\PlayerInfo\obj\Debug\PlayerInfo.pdb

@@ -1,0 +1,9 @@
+C:\Users\mjrei\SchoolStuff\201\gameSpace\GameSpace\GameChat\bin\Debug\GameChat.dll.config
+C:\Users\mjrei\SchoolStuff\201\gameSpace\GameSpace\GameChat\bin\Debug\GameChat.dll
+C:\Users\mjrei\SchoolStuff\201\gameSpace\GameSpace\GameChat\bin\Debug\GameChat.pdb
+C:\Users\mjrei\SchoolStuff\201\gameSpace\GameSpace\GameChat\obj\Debug\GameChat.csproj.AssemblyReference.cache
+C:\Users\mjrei\SchoolStuff\201\gameSpace\GameSpace\GameChat\obj\Debug\GameChat.Properties.Resources.resources
+C:\Users\mjrei\SchoolStuff\201\gameSpace\GameSpace\GameChat\obj\Debug\GameChat.csproj.GenerateResource.cache
+C:\Users\mjrei\SchoolStuff\201\gameSpace\GameSpace\GameChat\obj\Debug\GameChat.csproj.CoreCompileInputs.cache
+C:\Users\mjrei\SchoolStuff\201\gameSpace\GameSpace\GameChat\obj\Debug\GameChat.dll
+C:\Users\mjrei\SchoolStuff\201\gameSpace\GameSpace\GameChat\obj\Debug\GameChat.pdb

@@ -1,0 +1,10 @@
+C:\Users\kasha\OneDrive\Documents\Github\myIGME-201\IGME 201 projects\Profile-Display\bin\Debug\Profile-Display.exe.config
+C:\Users\kasha\OneDrive\Documents\Github\myIGME-201\IGME 201 projects\Profile-Display\bin\Debug\Profile-Display.exe
+C:\Users\kasha\OneDrive\Documents\Github\myIGME-201\IGME 201 projects\Profile-Display\bin\Debug\Profile-Display.pdb
+C:\Users\kasha\OneDrive\Documents\Github\myIGME-201\IGME 201 projects\Profile-Display\obj\Debug\Profile-Display.csproj.AssemblyReference.cache
+C:\Users\kasha\OneDrive\Documents\Github\myIGME-201\IGME 201 projects\Profile-Display\obj\Debug\Profile_Display.DisplayProfile.resources
+C:\Users\kasha\OneDrive\Documents\Github\myIGME-201\IGME 201 projects\Profile-Display\obj\Debug\Profile_Display.Properties.Resources.resources
+C:\Users\kasha\OneDrive\Documents\Github\myIGME-201\IGME 201 projects\Profile-Display\obj\Debug\Profile-Display.csproj.GenerateResource.cache
+C:\Users\kasha\OneDrive\Documents\Github\myIGME-201\IGME 201 projects\Profile-Display\obj\Debug\Profile-Display.csproj.CoreCompileInputs.cache
+C:\Users\kasha\OneDrive\Documents\Github\myIGME-201\IGME 201 projects\Profile-Display\obj\Debug\Profile-Display.exe
+C:\Users\kasha\OneDrive\Documents\Github\myIGME-201\IGME 201 projects\Profile-Display\obj\Debug\Profile-Display.pdb

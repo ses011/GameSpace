@@ -51,15 +51,6 @@ namespace PlayerInfo
         public string bioLabel;
         public bool onlineStatus;
 
-        // Constructor
-        public User(string username, string bioLabel, bool onlineStatus)
-        {
-            this.username = username;
-            this.bioLabel = bioLabel;
-            this.onlineStatus = onlineStatus;
-        }
-
-
         //sorted list that takes in the username as the key and the games as a value (could use a tuple for the value to store multiple values in)
         //of if there was an easier way of doing it not too sure 
         public SortedList<string, string> gameNames = new SortedList<string, string>();
@@ -69,6 +60,19 @@ namespace PlayerInfo
         public SortedList<string, int> rank = new SortedList<string, int>();
         //each user (key) has an associated photopath which is the value
         public SortedList<string, string> profilePhotos = new SortedList<string, string>();
+
+
+        // Constructor
+        public User(string username, string bioLabel, bool onlineStatus, SortedList<string,string> gameNames, SortedList<string, int> times, SortedList<string, int> rank, SortedList<string, string> profilePhotos)
+        {
+            this.username = username;
+            this.bioLabel = bioLabel;
+            this.onlineStatus = onlineStatus;
+            this.gameNames = gameNames;
+            this.times = times;
+            this.rank = rank;
+            this.profilePhotos = profilePhotos;
+        }
 
         //implement each list in UserDataBase file we will create and populate the userList defined in Players based on the username as the key
         //and the User object as the value 

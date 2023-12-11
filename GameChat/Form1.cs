@@ -13,9 +13,9 @@ using System.Windows.Forms;
 
 namespace GameChat
 {
-    public partial class Form1 : Form
+    public partial class GameChatForm : Form
     {
-        public Form1(Form form, User user)
+        public GameChatForm(Form form, User user)
         {
             InitializeComponent();
         }

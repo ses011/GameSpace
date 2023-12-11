@@ -49,7 +49,7 @@ namespace Profile_Display
         {
             User newUser = new User(formUser.username, formUser.bioLabel, formUser.onlineStatus, formUser.gameNames[formUser.username], formUser.times[formUser.username], formUser.rank[formUser.username], formUser.profilePhotos[formUser.username]);
             this.Enabled = false;
-            new GameChat(newUser, this); //pass in the user and the current form to the game chat**
+            new GameChatForm(newUser, this); //pass in the user and the current form to the game chat**
             //does not take 7 arguments even though its defined in the constructor
         }
 

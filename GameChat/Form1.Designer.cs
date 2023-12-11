@@ -1,6 +1,6 @@
 ﻿namespace GameChat
 {
-    partial class Form1
+    partial class GameChatForm
     {
         /// <summary>
         /// Required designer variable.
@@ -28,7 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(GameChatForm));
             this.label1 = new System.Windows.Forms.Label();
             this.vrChatPictureBox = new System.Windows.Forms.PictureBox();
             this.robloxPictureBox = new System.Windows.Forms.PictureBox();
@@ -57,7 +57,7 @@
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.Location = new System.Drawing.Point(215, 24);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(197, 37);
+            this.label1.Size = new System.Drawing.Size(243, 46);
             this.label1.TabIndex = 0;
             this.label1.Text = "Game Chats";
             // 
@@ -185,7 +185,7 @@
             this.vrChatButton.Text = "VR Chat";
             this.vrChatButton.UseVisualStyleBackColor = true;
             // 
-            // Form1
+            // GameChatForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -204,8 +204,8 @@
             this.Controls.Add(this.rainbowSixSeigePictureBox);
             this.Controls.Add(this.sonsOfTheForestPictureBox);
             this.Controls.Add(this.label1);
-            this.Name = "Form1";
-            this.Text = "Form1";
+            this.Name = "GameChatForm";
+            this.Text = "Game Chat Form";
             ((System.ComponentModel.ISupportInitialize)(this.vrChatPictureBox)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.robloxPictureBox)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.counterStrikePictureBox)).EndInit();

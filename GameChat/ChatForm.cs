@@ -10,14 +10,19 @@ using System.Windows.Forms;
 
 namespace GameChat
 {
-    public partial class Form1 : Form
+    public partial class ChatForm : Form
     {
-        public Form1()
+        public ChatForm()
         {
             InitializeComponent();
         }
 
-        private void pictureBox4_Click(object sender, EventArgs e)
+        private void ChatForm_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void textBox1_TextChanged(object sender, EventArgs e)
         {
 
         }

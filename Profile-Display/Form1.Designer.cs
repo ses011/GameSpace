@@ -37,6 +37,7 @@
             this.gameHeader = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.timeHeader = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.rankHeader = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.statusLabel = new System.Windows.Forms.Label();
             this.photoGroupBox.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.photoPictureBox)).BeginInit();
             this.SuspendLayout();
@@ -44,11 +45,9 @@
             // photoGroupBox
             // 
             this.photoGroupBox.Controls.Add(this.photoPictureBox);
-            this.photoGroupBox.Location = new System.Drawing.Point(13, 13);
-            this.photoGroupBox.Margin = new System.Windows.Forms.Padding(4);
+            this.photoGroupBox.Location = new System.Drawing.Point(10, 11);
             this.photoGroupBox.Name = "photoGroupBox";
-            this.photoGroupBox.Padding = new System.Windows.Forms.Padding(4);
-            this.photoGroupBox.Size = new System.Drawing.Size(388, 319);
+            this.photoGroupBox.Size = new System.Drawing.Size(291, 259);
             this.photoGroupBox.TabIndex = 53;
             this.photoGroupBox.TabStop = false;
             this.photoGroupBox.Enter += new System.EventHandler(this.photoGroupBox_Enter);
@@ -57,36 +56,38 @@
             // 
             this.photoPictureBox.BackColor = System.Drawing.Color.LightGray;
             this.photoPictureBox.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.photoPictureBox.Location = new System.Drawing.Point(4, 19);
-            this.photoPictureBox.Margin = new System.Windows.Forms.Padding(4);
+            this.photoPictureBox.Location = new System.Drawing.Point(3, 16);
             this.photoPictureBox.Name = "photoPictureBox";
-            this.photoPictureBox.Size = new System.Drawing.Size(380, 296);
+            this.photoPictureBox.Size = new System.Drawing.Size(285, 240);
             this.photoPictureBox.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.photoPictureBox.TabIndex = 0;
             this.photoPictureBox.TabStop = false;
             // 
             // usernameLabel
             // 
-            this.usernameLabel.Location = new System.Drawing.Point(424, 66);
+            this.usernameLabel.Location = new System.Drawing.Point(318, 54);
+            this.usernameLabel.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.usernameLabel.Name = "usernameLabel";
-            this.usernameLabel.Size = new System.Drawing.Size(236, 41);
+            this.usernameLabel.Size = new System.Drawing.Size(177, 33);
             this.usernameLabel.TabIndex = 54;
             this.usernameLabel.Text = "usernameLabel";
             this.usernameLabel.Click += new System.EventHandler(this.label1_Click);
             // 
             // bioLabel
             // 
-            this.bioLabel.Location = new System.Drawing.Point(424, 146);
+            this.bioLabel.Location = new System.Drawing.Point(318, 119);
+            this.bioLabel.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.bioLabel.Name = "bioLabel";
-            this.bioLabel.Size = new System.Drawing.Size(475, 126);
+            this.bioLabel.Size = new System.Drawing.Size(356, 102);
             this.bioLabel.TabIndex = 55;
             this.bioLabel.Text = "bioLabel";
             // 
             // dmButton
             // 
-            this.dmButton.Location = new System.Drawing.Point(17, 416);
+            this.dmButton.Location = new System.Drawing.Point(13, 338);
+            this.dmButton.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.dmButton.Name = "dmButton";
-            this.dmButton.Size = new System.Drawing.Size(380, 70);
+            this.dmButton.Size = new System.Drawing.Size(285, 57);
             this.dmButton.TabIndex = 56;
             this.dmButton.Text = "Message";
             this.dmButton.UseVisualStyleBackColor = true;
@@ -101,11 +102,11 @@
             this.statsListView.FullRowSelect = true;
             this.statsListView.GridLines = true;
             this.statsListView.HideSelection = false;
-            this.statsListView.Location = new System.Drawing.Point(427, 274);
-            this.statsListView.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.statsListView.Location = new System.Drawing.Point(320, 223);
+            this.statsListView.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.statsListView.MultiSelect = false;
             this.statsListView.Name = "statsListView";
-            this.statsListView.Size = new System.Drawing.Size(483, 322);
+            this.statsListView.Size = new System.Drawing.Size(363, 262);
             this.statsListView.TabIndex = 57;
             this.statsListView.UseCompatibleStateImageBehavior = false;
             this.statsListView.View = System.Windows.Forms.View.Details;
@@ -126,16 +127,27 @@
             this.rankHeader.Text = "Rank";
             this.rankHeader.Width = 110;
             // 
+            // statusLabel
+            // 
+            this.statusLabel.Location = new System.Drawing.Point(506, 54);
+            this.statusLabel.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.statusLabel.Name = "statusLabel";
+            this.statusLabel.Size = new System.Drawing.Size(177, 33);
+            this.statusLabel.TabIndex = 58;
+            this.statusLabel.Text = "Status:";
+            // 
             // DisplayProfile
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(947, 622);
+            this.ClientSize = new System.Drawing.Size(710, 505);
+            this.Controls.Add(this.statusLabel);
             this.Controls.Add(this.statsListView);
             this.Controls.Add(this.dmButton);
             this.Controls.Add(this.bioLabel);
             this.Controls.Add(this.usernameLabel);
             this.Controls.Add(this.photoGroupBox);
+            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.Name = "DisplayProfile";
             this.Text = "DisplayProfile";
             this.photoGroupBox.ResumeLayout(false);
@@ -155,6 +167,7 @@
         private System.Windows.Forms.ColumnHeader gameHeader;
         private System.Windows.Forms.ColumnHeader timeHeader;
         private System.Windows.Forms.ColumnHeader rankHeader;
+        private System.Windows.Forms.Label statusLabel;
     }
 }
 

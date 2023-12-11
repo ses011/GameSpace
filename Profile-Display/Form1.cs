@@ -38,6 +38,7 @@ namespace Profile_Display
             this.usernameLabel.Text = user.username.ToString();
             this.bioLabel.Text = user.bioLabel.ToString();
             this.photoPictureBox.ImageLocation = user.profilePhotos[user.username]; //gets the profile photo url for the specific user based on the username (key)
+            this.statusLabel.Text = user.onlineStatus.ToString(); //make sure the labels show up as well**
            
             //create method to populate the listview**
             
@@ -46,9 +47,10 @@ namespace Profile_Display
 
         private void DmButton__Click(object sender, EventArgs e)
         {
-            User newUser = new User(formUser.username, formUser.bioLabel, formUser.gameNames[formUser.username], formUser.times[formUser.username], formUser.rank[formUser.username], formUser.profilePhotos[formUser.username]);
+            User newUser = new User(formUser.username, formUser.bioLabel, formUser.onlineStatus, formUser.gameNames[formUser.username], formUser.times[formUser.username], formUser.rank[formUser.username], formUser.profilePhotos[formUser.username]);
             this.Enabled = false;
             new GameChat(newUser, this); //pass in the user and the current form to the game chat**
+            //does not take 7 arguments even though its defined in the constructor
         }
 
         public void PaintListView(string username) //take in the player and implement their data in the listview 

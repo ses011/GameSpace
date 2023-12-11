@@ -39,8 +39,10 @@ namespace Profile_Display
             this.bioLabel.Text = user.bioLabel.ToString();
             this.photoPictureBox.ImageLocation = user.profilePhotos[user.username]; //gets the profile photo url for the specific user based on the username (key)
             this.statusLabel.Text = user.onlineStatus.ToString(); //make sure the labels show up as well**
-           
+
             //create method to populate the listview**
+
+            this.Show();
             
 
         }

@@ -1,13 +1,7 @@
 {
   "ExpandedNodes": [
-    "",
-    "\\Leaderboard",
-    "\\PlayerInfo",
-    "\\PlayerInfo\\bin",
-    "\\PlayerInfo\\bin\\Debug",
-    "\\testLeaderboard\\bin",
-    "\\testLeaderboard\\bin\\Debug"
+    ""
   ],
-  "SelectedNode": "\\Leaderboard\\Form1.cs",
+  "SelectedNode": "\\PlayerInfo.sln",
   "PreviewInSolutionExplorer": false
 }

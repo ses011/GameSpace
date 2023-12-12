@@ -7,3 +7,8 @@ C:\Users\autum\OneDrive\Desktop\GamespaceGithub\Leaderboard\obj\Debug\Leaderboar
 C:\Users\autum\OneDrive\Desktop\GamespaceGithub\Leaderboard\obj\Debug\Leaderboard.csproj.CoreCompileInputs.cache
 C:\Users\autum\OneDrive\Desktop\GamespaceGithub\Leaderboard\obj\Debug\Leaderboard.dll
 C:\Users\autum\OneDrive\Desktop\GamespaceGithub\Leaderboard\obj\Debug\Leaderboard.pdb
+C:\Users\autum\OneDrive\Desktop\GamespaceGithub\Leaderboard\bin\Debug\PlayerInfo.dll
+C:\Users\autum\OneDrive\Desktop\GamespaceGithub\Leaderboard\bin\Debug\PlayerInfo.pdb
+C:\Users\autum\OneDrive\Desktop\GamespaceGithub\Leaderboard\bin\Debug\PlayerInfo.dll.config
+C:\Users\autum\OneDrive\Desktop\GamespaceGithub\Leaderboard\obj\Debug\Leaderboard.Form1.resources
+C:\Users\autum\OneDrive\Desktop\GamespaceGithub\Leaderboard\obj\Debug\Leaderboard.csproj.CopyComplete

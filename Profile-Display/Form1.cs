@@ -26,7 +26,7 @@ namespace Profile_Display
 
             //display all info. from the lists here (display profile picture here too)**
 
-            if(parentForm != null)
+            if (parentForm != null)
             {
                 this.Owner = parentForm;
                 this.CenterToParent(); //set the owner to the parent form and center it based on the form
@@ -38,7 +38,16 @@ namespace Profile_Display
             this.usernameLabel.Text = user.username.ToString();
             this.bioLabel.Text = user.bioLabel.ToString();
             this.photoPictureBox.ImageLocation = user.profilePhotos[user.username]; //gets the profile photo url for the specific user based on the username (key)
-            this.statusLabel.Text = user.onlineStatus.ToString(); //make sure the labels show up as well**
+            //this.statusLabel.Text = user.onlineStatus.ToString(); 
+            if (user.onlineStatus.ToString() == "false")
+            {
+                this.statusLabel.Text = "Offline"; //check to see what the users status is and change the textbox according to the boolean value
+            }
+            else if (user.onlineStatus.ToString() == "true")
+            {
+                this.statusLabel.Text = "Online";
+            }
+
 
             //create method to populate the listview**
 
@@ -49,10 +58,9 @@ namespace Profile_Display
 
         private void DmButton__Click(object sender, EventArgs e)
         {
-            User newUser = new User(formUser.username, formUser.bioLabel, formUser.onlineStatus, formUser.gameNames[formUser.username], formUser.times[formUser.username], formUser.rank[formUser.username], formUser.profilePhotos[formUser.username]);
+            User newUser = new User(formUser.username, formUser.bioLabel, formUser.onlineStatus);
             this.Enabled = false;
             new GameChatForm(newUser, this); //pass in the user and the current form to the game chat**
-            //does not take 7 arguments even though its defined in the constructor
         }
 
         public void PaintListView(string username) //take in the player and implement their data in the listview 
@@ -95,7 +103,6 @@ namespace Profile_Display
     }
 }
 
-
 //using System;
 //using System.Collections.Generic;
 //using System.Linq;
@@ -104,8 +111,7 @@ namespace Profile_Display
 //using System.Threading.Tasks;
 //using PlayerInfo;
 //using GameChat;
-//
-//
+//using System.Runtime.Remoting.Messaging;
 //
 ///**
 // * Authors: Kashaf Ahmed (majority) and Sarah Schnedier
@@ -115,39 +121,27 @@ namespace Profile_Display
 // */
 //namespace PlayerInfo
 //{
-//    //public enum EGames //we could also user enumerated type to store data from sorted lists instead (we can't add spaces to enumerated types so
-//    //                    //maybe sorted list would be better for the things that have spaces in between maybe?
-//    //{
-//    //  Sons_of_The_Forest,
-//    //  Rainbow_Six_Siege,
-//    //  Valorant,
-//    //  Counter_Strike,
-//    //  Roblox,
-//    //  VRChat
-//    //
-//    //
-//    //}
-//    //
-//    //public enum ETimes
-//    //{
-//    //    
-//    //}
-//    //
-//    //public enum ERank
-//    //{
-//    //    
-//    //}
-//    //public enum EProfilePhotos
-//    //{
-//    // 
-//    //}
-//    //
+//    //we could also user enumerated type to store data from sorted lists instead (we can't add spaces to enumerated types so
+//    //maybe sorted list would be better for the things that have spaces in between maybe?
+//    public enum EGames
+//    {
+//        Sons_of_The_Forest,
+//        Rainbow_Six_Siege,
+//        Valorant,
+//        Counter_Strike,
+//        Roblox,
+//        VRChat
+//
+//    }
+//
+//
 //    public class User
 //    {
 //
 //        public string username;
 //        public string bioLabel;
 //        public bool onlineStatus;
+//        public string pfp;
 //
 //        //sorted list that takes in the username as the key and the games as a value (could use a tuple for the value to store multiple values in)
 //        //of if there was an easier way of doing it not too sure 
@@ -156,20 +150,58 @@ namespace Profile_Display
 //        public SortedList<string, int> times = new SortedList<string, int>();
 //        //username is key and the rank is the value(could also use the tuple approach for the value so we could store multiple things in one value)
 //        public SortedList<string, int> rank = new SortedList<string, int>();
-//        //each user (key) has an associated photopath which is the value
-//        public SortedList<string, string> profilePhotos = new SortedList<string, string>();
+//        //a user's friends
+//        public SortedList<string, string> friends = new SortedList<string, string>();
 //
 //
 //        // Constructor
-//        public User(string username, string bioLabel, bool onlineStatus, SortedList<string, string> gameNames, SortedList<string, int> times, SortedList<string, int> rank, SortedList<string, string> profilePhotos)
+//        public User(string username, string bioLabel, bool onlineStatus)
 //        {
 //            this.username = username;
 //            this.bioLabel = bioLabel;
 //            this.onlineStatus = onlineStatus;
-//            this.gameNames = gameNames;
-//            this.times = times;
-//            this.rank = rank;
-//            this.profilePhotos = profilePhotos;
+//            this.gameNames = this.SetRandomGames();
+//            this.times = this.SetTimes();
+//            this.friends = this.SetFriends();
+//            this.rank = this.SetRank();
+//        }
+//
+//        private SortedList<string, string> SetRandomGames()
+//        {
+//            Random random = new Random();
+//            SortedList<string, string> games = new SortedList<string, string>();
+//
+//            foreach (string game in Enum.GetNames(typeof(EGames)))
+//            {
+//                // 50/50 randomization that a game gets added to the list of games
+//                if (random.Next(2) == 1)
+//                {
+//                    games.Add(this.username, game);
+//                }
+//            }
+//
+//            return games;
+//        }
+//
+//        private SortedList<string, int> SetTimes()
+//        {
+//            SortedList<string, int> time = new SortedList<string, int>();
+//
+//            return time;
+//        }
+//
+//        private SortedList<string, string> SetFriends()
+//        {
+//            SortedList<string, string> friends = new SortedList<string, string>();
+//
+//            return friends;
+//        }
+//
+//        private SortedList<string, int> SetRank()
+//        {
+//            SortedList<string, int> rank = new SortedList<string, int>();
+//
+//            return rank;
 //        }
 //
 //        //implement each list in UserDataBase file we will create and populate the userList defined in Players based on the username as the key
@@ -261,13 +293,13 @@ namespace Profile_Display
 //
 //        public static void Main()
 //        {
-//            Players.userList.Add("ses011", new User("ses011", "nope. just nope", false));
-//            Players.userList.Add("kash_registerr", new User("kash_registerr", "", false));
-//            Players.userList.Add("catast0phi", new User("catast0phi", "oh boy!!! VIOLENCE for christmas!!!!!!", false));
-//            Players.userList.Add("goooobr", new User("gooobr", ":3", false));
-//            Players.userList.Add("anonygoose", new User("anonygoose", "your local fisherman dad", false));
-//            Players.userList.Add(".grbe", new User(".grbe", "", false));
-//            Players.userList.Add("not_phoeniix", new User("not_phoeniix", "they call me the Grinch\nthey call me\nthey call me the\nthey\nGrinch", false));
+//            userList.Add("ses011", new User("ses011", "nope. just nope", false));
+//            userList.Add("kash_registerr", new User("kash_registerr", "", false));
+//            userList.Add("catast0phi", new User("catast0phi", "oh boy!!! VIOLENCE for christmas!!!!!!", false));
+//            userList.Add("goooobr", new User("gooobr", ":3", false));
+//            userList.Add("anonygoose", new User("anonygoose", "your local fisherman dad", false));
+//            userList.Add(".grbe", new User(".grbe", "", false));
+//            userList.Add("not_phoeniix", new User("not_phoeniix", "they call me the Grinch\nthey call me\nthey call me the\nthey\nGrinch", false));
 //        }
 //    }
 //}

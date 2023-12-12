@@ -7,3 +7,12 @@ C:\Users\mjrei\SchoolStuff\201\gameSpace\GameSpace\GameChat\obj\Debug\GameChat.c
 C:\Users\mjrei\SchoolStuff\201\gameSpace\GameSpace\GameChat\obj\Debug\GameChat.csproj.CoreCompileInputs.cache
 C:\Users\mjrei\SchoolStuff\201\gameSpace\GameSpace\GameChat\obj\Debug\GameChat.dll
 C:\Users\mjrei\SchoolStuff\201\gameSpace\GameSpace\GameChat\obj\Debug\GameChat.pdb
+C:\Users\mjrei\SchoolStuff\201\gameSpace\GameSpace\GameChat\obj\Debug\GameChat.ChatForm.resources
+C:\Users\mjrei\SchoolStuff\201\gameSpace\GameSpace\GameChat\obj\Debug\GameChat.GameChatForm.resources
+C:\Users\mjrei\SchoolStuff\201\gameSpace\GameSpace\GameChat\bin\Debug\Leaderboard.dll
+C:\Users\mjrei\SchoolStuff\201\gameSpace\GameSpace\GameChat\bin\Debug\PlayerInfo.dll
+C:\Users\mjrei\SchoolStuff\201\gameSpace\GameSpace\GameChat\bin\Debug\Leaderboard.pdb
+C:\Users\mjrei\SchoolStuff\201\gameSpace\GameSpace\GameChat\bin\Debug\Leaderboard.dll.config
+C:\Users\mjrei\SchoolStuff\201\gameSpace\GameSpace\GameChat\bin\Debug\PlayerInfo.pdb
+C:\Users\mjrei\SchoolStuff\201\gameSpace\GameSpace\GameChat\bin\Debug\PlayerInfo.dll.config
+C:\Users\mjrei\SchoolStuff\201\gameSpace\GameSpace\GameChat\obj\Debug\GameChat.csproj.CopyComplete

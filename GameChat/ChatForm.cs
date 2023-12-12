@@ -15,7 +15,7 @@ namespace GameChat
   
     public partial class ChatForm : Form
     {
-        class Message
+        public class Message
         {
             private User user;
             private string message;

@@ -60,11 +60,19 @@ namespace Profile_Display
         {
             User newUser = new User(formUser.username, formUser.bioLabel, formUser.onlineStatus);
             this.Enabled = false;
-            new GameChatForm(newUser, this); //pass in the user and the current form to the game chat**
+            new Message(newUser, this); //pass in the user and the current form to the game chat**
         }
 
         public void PaintListView(string username) //take in the player and implement their data in the listview 
         {
+            ListViewItem lvi = null;
+            ListViewItem.ListViewSubItem lvsi = null;
+            this.statsListView.Items.Clear();
+            this.statsListView.BeginUpdate();
+            foreach(KeyValuePair<string, string> keyValuePair in gameNames)
+            {
+
+            }
 
         }
 

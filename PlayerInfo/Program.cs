@@ -64,36 +64,35 @@ namespace PlayerInfo
         private SortedList<string, string> SetRandomGames()
         {
             Random random = new Random();
-            SortedList<string, string> games = new SortedList<string, string>();
+           
 
             foreach (string game in Enum.GetNames(typeof(EGames))) {
                 // 50/50 randomization that a game gets added to the list of games
                 if(random.Next(2) == 1)
                 {
-                    games.Add(this.username, game);
+                    gameNames.Add(this.username, game);
                 }
             }
 
-            return games;
+            return gameNames;
         }
 
         private SortedList<string, int> SetTimes()
         {
-            SortedList<string, int> time = new SortedList<string, int>();
+            
 
-            return time;
+            return times;
         }
 
         private SortedList<string, string> SetFriends()
         {
-            SortedList<string, string> friends = new SortedList<string, string>();
+           
 
             return friends;
         }
 
         private SortedList<string, int> SetRank()
         {
-            SortedList<string, int> rank = new SortedList<string, int>();
 
             return rank;
         }

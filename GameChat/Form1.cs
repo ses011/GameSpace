@@ -17,7 +17,7 @@ namespace GameChat
     
     public partial class GameChatForm : Form
     {
-        public GameChatForm(Form form, User user)
+        public GameChatForm()
         {
             InitializeComponent();
 

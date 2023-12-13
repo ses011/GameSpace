@@ -3,12 +3,13 @@ using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
 using System.Drawing;
+using System.IO;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using PlayerInfo;
-
+using Profile_Display;
 
 namespace GameChat
 {
@@ -32,9 +33,27 @@ namespace GameChat
 
         }
         private User user;
-        public ChatForm(User user)
+        private string filename;
+        public ChatForm(User curentUser, string recipient)
         {
             InitializeComponent();
+            this.user = curentUser;
+            string username = user.username;
+            
+            int order = username.CompareTo(recipient);
+            if(order < 0)
+            {
+                //username_recipient
+                this.filename = username + "_" + recipient + ".txt";
+            }
+            else if (order > 0)
+            {
+                //recipient_username
+                this.filename = recipient + "_" + username + ".txt";
+            }
+            messageRichTextBox.LoadFile(filename, RichTextBoxStreamType.RichText);
+
+
             this.sendButton.Click += new EventHandler(SendButton__Click);
         }
 
@@ -42,6 +61,11 @@ namespace GameChat
         {
             Message message = new Message(user, textBox.Text);
             messageRichTextBox.Text += message.ToString();
+
+            using (StreamWriter outputFile = new StreamWriter(filename))
+            {
+                outputFile.WriteLine(message.ToString());
+            }
         }
 
         private void ChatForm_Load(object sender, EventArgs e)

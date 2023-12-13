@@ -16,7 +16,7 @@ namespace GameChat
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new GameChatForm(null, null));
+            Application.Run(new GameChatForm());
         }
     }
 }

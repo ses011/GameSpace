@@ -54,7 +54,7 @@ namespace Profile_Display
         {
             User newUser = new User(formUser.username, formUser.bioLabel, formUser.onlineStatus);
             this.Enabled = false;
-            //new Message(newUser, this); //pass in the user and the current form to the game chat**
+            new ChatForm(newUser, newUser.username); 
         }
 
 

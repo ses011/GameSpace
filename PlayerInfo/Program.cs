@@ -42,7 +42,7 @@ namespace PlayerInfo
         //of if there was an easier way of doing it not too sure 
         public SortedList<string, string> gameNames = new SortedList<string, string>();
         //username is key and the time is the value (could also use the tuple approach for the value so we could store multiple things in one value)
-        public SortedList<string, int> times = new SortedList<string, int>();
+        public SortedList<string, double> times = new SortedList<string, double>();
         //username is key and the rank is the value(could also use the tuple approach for the value so we could store multiple things in one value)
         public SortedList<string, int> rank = new SortedList<string, int>();
         //a user's friends
@@ -77,17 +77,25 @@ namespace PlayerInfo
             return gameNames;
         }
 
-        private SortedList<string, int> SetTimes()
+        private SortedList<string, double> SetTimes()
         {
-            
+            SortedList<string, double> time = new SortedList<string, double>();
+            Random random = new Random();
+            foreach (string game in this.gameNames.Values)
+            {
+                double val = random.NextDouble();
+                if (val > 3 && val < 40)
+                {
+                    time.Add(game, val);
+                }
+            }
 
-            return times;
+            return time;
         }
 
         private SortedList<string, string> SetFriends()
         {
            
-
             return friends;
         }
 

@@ -16,7 +16,7 @@ namespace Profile_Display
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new DisplayProfile());
+            //Application.Run(new DisplayProfile());
         }
     }
 }

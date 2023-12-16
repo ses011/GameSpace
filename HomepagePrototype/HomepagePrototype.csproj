@@ -33,17 +33,8 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="CourseLib">
-      <HintPath>..\..\ses011\myIGME-201\WindowsPeopleApp_12_3\WindowsPeopleApp\EditPerson\bin\Debug\CourseLib.dll</HintPath>
-    </Reference>
-    <Reference Include="EditPerson">
-      <HintPath>..\..\ses011\myIGME-201\WindowsPeopleApp_12_3\WindowsPeopleApp\EditPerson\bin\Debug\EditPerson.dll</HintPath>
-    </Reference>
-    <Reference Include="PeopleAppGlobals">
-      <HintPath>..\..\ses011\myIGME-201\WindowsPeopleApp_12_3\WindowsPeopleApp\EditPerson\bin\Debug\PeopleAppGlobals.dll</HintPath>
-    </Reference>
-    <Reference Include="PeopleLib">
-      <HintPath>..\..\ses011\myIGME-201\WindowsPeopleApp_12_3\WindowsPeopleApp\EditPerson\bin\Debug\PeopleLib.dll</HintPath>
+    <Reference Include="PlayerInfo">
+      <HintPath>..\PlayerInfo\bin\Debug\PlayerInfo.dll</HintPath>
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />

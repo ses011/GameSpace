@@ -61,6 +61,8 @@
             // 
             // usernameLabel
             // 
+            this.usernameLabel.Font = new System.Drawing.Font("Yu Gothic UI", 7.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.usernameLabel.ForeColor = System.Drawing.Color.Navy;
             this.usernameLabel.Location = new System.Drawing.Point(318, 27);
             this.usernameLabel.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.usernameLabel.Name = "usernameLabel";
@@ -71,7 +73,8 @@
             // 
             // bioLabel
             // 
-            this.bioLabel.ForeColor = System.Drawing.Color.White;
+            this.bioLabel.Font = new System.Drawing.Font("Yu Gothic UI", 7.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.bioLabel.ForeColor = System.Drawing.Color.Navy;
             this.bioLabel.Location = new System.Drawing.Point(317, 144);
             this.bioLabel.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.bioLabel.Name = "bioLabel";
@@ -81,7 +84,8 @@
             // 
             // dmButton
             // 
-            this.dmButton.BackColor = System.Drawing.Color.Orange;
+            this.dmButton.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
+            this.dmButton.Font = new System.Drawing.Font("Yu Gothic UI", 7.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.dmButton.Location = new System.Drawing.Point(321, 264);
             this.dmButton.Margin = new System.Windows.Forms.Padding(2);
             this.dmButton.Name = "dmButton";
@@ -93,6 +97,8 @@
             // 
             // statusLabel
             // 
+            this.statusLabel.Font = new System.Drawing.Font("Yu Gothic UI", 7.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.statusLabel.ForeColor = System.Drawing.Color.Navy;
             this.statusLabel.Location = new System.Drawing.Point(506, 27);
             this.statusLabel.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.statusLabel.Name = "statusLabel";
@@ -104,7 +110,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.Color.Navy;
+            this.BackColor = System.Drawing.SystemColors.Control;
             this.ClientSize = new System.Drawing.Size(665, 353);
             this.Controls.Add(this.statusLabel);
             this.Controls.Add(this.dmButton);

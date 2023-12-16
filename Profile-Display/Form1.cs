@@ -15,7 +15,7 @@ namespace Profile_Display
     public partial class DisplayProfile : Form
     {
         public User formUser;
-        public DisplayProfile(Form parentForm, User user) //take in the player object and form from gamechat
+        public DisplayProfile(User user) //take in the player object and form from gamechat
         {
             //get the listview fixed because there is an extra column****
             InitializeComponent();
@@ -26,12 +26,6 @@ namespace Profile_Display
 
             //display all info. from the lists here (display profile picture here too)**
 
-            if (parentForm != null)
-            {
-                this.Owner = parentForm;
-                this.CenterToParent(); //set the owner to the parent form and center it based on the form
-                //thats passed in 
-            }
 
             this.formUser = user; //set the class scoped variable to the user passed in
 
@@ -52,7 +46,7 @@ namespace Profile_Display
             //create method to populate the listview**
 
             this.Show();
-            
+
 
         }
 
@@ -60,21 +54,9 @@ namespace Profile_Display
         {
             User newUser = new User(formUser.username, formUser.bioLabel, formUser.onlineStatus);
             this.Enabled = false;
-            new Message(newUser, this); //pass in the user and the current form to the game chat**
+            //new Message(newUser, this); //pass in the user and the current form to the game chat**
         }
 
-        public void PaintListView(string username) //take in the player and implement their data in the listview 
-        {
-            ListViewItem lvi = null;
-            ListViewItem.ListViewSubItem lvsi = null;
-            this.statsListView.Items.Clear();
-            this.statsListView.BeginUpdate();
-            foreach(KeyValuePair<string, string> keyValuePair in gameNames)
-            {
-
-            }
-
-        }
 
 
 
@@ -105,6 +87,11 @@ namespace Profile_Display
         }
 
         private void dmButton_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void DisplayProfile_Load(object sender, EventArgs e)
         {
 
         }

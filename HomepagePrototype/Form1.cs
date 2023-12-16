@@ -8,6 +8,8 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
+using PlayerInfo;
+
 namespace HomepagePrototype
 {
     public partial class Form1 : Form
@@ -15,6 +17,15 @@ namespace HomepagePrototype
         public Form1()
         {
             InitializeComponent();
+
+
+
+            this.matchButton.Click += new EventHandler(MatchButton__Click);
+        }
+
+        public void MatchButton__Click(object sender, EventArgs e)
+        {
+            
         }
     }
 }

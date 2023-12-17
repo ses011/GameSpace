@@ -118,7 +118,7 @@ namespace PlayerInfo
                 SortedList<int, User> gameRank = new SortedList<int, User>();
                 foreach (string name in Players.userList.Keys)
                 {
-                    if (name.times.Contains(game))
+                    if (Players.userList[name].times.Contains(game))
                     {
                         gameRank.Add(name.rank[game], Players.userList[name]);
                     }

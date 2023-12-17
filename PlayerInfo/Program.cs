@@ -42,7 +42,7 @@ namespace PlayerInfo
         public string pfp;
 
         
-        public SortedList<string, string> gameNames = new SortedList<string, string>();
+        public List<string> gameNames = new List<string>();
       
         public SortedList<string, double> times = new SortedList<string, double>();
       
@@ -52,17 +52,18 @@ namespace PlayerInfo
 
 
         // Constructor
-        public User(string username, string bioLabel, bool onlineStatus)
+        public User(string username, string bioLabel, bool onlineStatus, string pfp)
         {
             this.username = username;
             this.bioLabel = bioLabel;
             this.onlineStatus = onlineStatus;
+            this.pfp = pfp;
             this.gameNames = this.SetRandomGames();
             this.times = this.SetTimes();
             this.friends = this.SetFriends();
         }
 
-        private SortedList<string, string> SetRandomGames()
+        private List<string> SetRandomGames()
         {
             Random random = new Random();
            
@@ -109,10 +110,10 @@ namespace PlayerInfo
             return friends;
         }
 
-        public static SortedList<string, int> SetRank()
+        public static void SetRank()
         {
 
-            return rank;
+            
         }
 
        

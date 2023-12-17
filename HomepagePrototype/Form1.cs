@@ -34,7 +34,7 @@ namespace HomepagePrototype
 
         public void UsernameLabel__Click(object sender, EventArgs e)
         {
-            string val = "kash_registerr";
+            string val = "ses011";
             if (Players.userList.ContainsKey(val))
             {
                 User user = Players.userList[val];

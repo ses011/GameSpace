@@ -31,7 +31,7 @@ namespace Profile_Display
             this.formUser = user; //set the class scoped variable to the user passed in
 
             this.usernameLabel.Text = user.username.ToString();
-            if(user.bioLabel.ToString() == "")
+            if(user.bioLabel.ToString() == "") //if there is no bio then say there is no bio, otherwise display the bio
             {
                 this.bioLabel.Text = "No bio to display";
             }
@@ -39,7 +39,7 @@ namespace Profile_Display
             {
                 this.bioLabel.Text = "Bio: " + user.bioLabel.ToString();
             }
-            this.photoPictureBox.ImageLocation = user.pfp; //gets the profile photo url for the specific user based on the username (key)
+            this.photoPictureBox.ImageLocation = user.pfp; //gets the profile photo url for the specific user based on the user
             if (user.onlineStatus == false)
             {
                 this.statusLabel.Text = "Status: Offline"; //check to see what the users status is and change the textbox according to the boolean value

@@ -12,4 +12,4 @@ D:\Users\B3PIS\Downloads\final proj 201\GameSpace\Matchups\bin\Debug\PlayerInfo.
 D:\Users\B3PIS\Downloads\final proj 201\GameSpace\Matchups\bin\Debug\PlayerInfo.pdb
 D:\Users\B3PIS\Downloads\final proj 201\GameSpace\Matchups\bin\Debug\PlayerInfo.dll.config
 D:\Users\B3PIS\Downloads\final proj 201\GameSpace\Matchups\obj\Debug\Matchups.csproj.CopyComplete
-D:\Users\B3PIS\Downloads\final proj 201\GameSpace\Matchups\obj\Debug\Matchups.Form1.resources
+D:\Users\B3PIS\Downloads\final proj 201\GameSpace\Matchups\obj\Debug\Matchups.MatchupForm.resources

@@ -1,6 +1,6 @@
 ﻿namespace Matchups
 {
-    partial class Form1
+    partial class MatchupForm
     {
         /// <summary>
         /// Required designer variable.

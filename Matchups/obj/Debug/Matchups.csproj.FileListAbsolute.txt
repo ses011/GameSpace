@@ -13,3 +13,17 @@ D:\Users\B3PIS\Downloads\final proj 201\GameSpace\Matchups\bin\Debug\PlayerInfo.
 D:\Users\B3PIS\Downloads\final proj 201\GameSpace\Matchups\bin\Debug\PlayerInfo.dll.config
 D:\Users\B3PIS\Downloads\final proj 201\GameSpace\Matchups\obj\Debug\Matchups.csproj.CopyComplete
 D:\Users\B3PIS\Downloads\final proj 201\GameSpace\Matchups\obj\Debug\Matchups.Form1.resources
+C:\Users\sarah\Source\Repos\GameSpace\Matchups\bin\Debug\Matchups.dll.config
+C:\Users\sarah\Source\Repos\GameSpace\Matchups\bin\Debug\Matchups.dll
+C:\Users\sarah\Source\Repos\GameSpace\Matchups\bin\Debug\Matchups.pdb
+C:\Users\sarah\Source\Repos\GameSpace\Matchups\bin\Debug\PlayerInfo.dll
+C:\Users\sarah\Source\Repos\GameSpace\Matchups\bin\Debug\PlayerInfo.pdb
+C:\Users\sarah\Source\Repos\GameSpace\Matchups\bin\Debug\PlayerInfo.dll.config
+C:\Users\sarah\Source\Repos\GameSpace\Matchups\obj\Debug\Matchups.csproj.AssemblyReference.cache
+C:\Users\sarah\Source\Repos\GameSpace\Matchups\obj\Debug\Matchups.Form1.resources
+C:\Users\sarah\Source\Repos\GameSpace\Matchups\obj\Debug\Matchups.Properties.Resources.resources
+C:\Users\sarah\Source\Repos\GameSpace\Matchups\obj\Debug\Matchups.csproj.GenerateResource.cache
+C:\Users\sarah\Source\Repos\GameSpace\Matchups\obj\Debug\Matchups.csproj.CoreCompileInputs.cache
+C:\Users\sarah\Source\Repos\GameSpace\Matchups\obj\Debug\Matchups.csproj.CopyComplete
+C:\Users\sarah\Source\Repos\GameSpace\Matchups\obj\Debug\Matchups.dll
+C:\Users\sarah\Source\Repos\GameSpace\Matchups\obj\Debug\Matchups.pdb

@@ -41,6 +41,11 @@ namespace GameChat
             this.sendButton.Click += new EventHandler(SendButton__Click);
         }
 
+        public ChatForm(string game)
+        {
+            InitializeComponent();
+        }
+
         private void SendButton__Click(object sender, EventArgs e)
         {
             string message = ": " + textBox.Text;

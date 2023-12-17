@@ -35,7 +35,6 @@
             this.usernameLabel = new System.Windows.Forms.ToolStripLabel();
             this.matchLabel = new System.Windows.Forms.ToolStripLabel();
             this.toolStripLabel3 = new System.Windows.Forms.ToolStripLabel();
-            this.toolStripLabel2 = new System.Windows.Forms.ToolStripLabel();
             this.label1 = new System.Windows.Forms.Label();
             this.matchButton = new System.Windows.Forms.Button();
             this.flowLayoutPanel1 = new System.Windows.Forms.FlowLayoutPanel();
@@ -52,12 +51,11 @@
             this.toolStripButton2,
             this.usernameLabel,
             this.matchLabel,
-            this.toolStripLabel3,
-            this.toolStripLabel2});
+            this.toolStripLabel3});
             this.toolStrip1.Location = new System.Drawing.Point(0, 0);
             this.toolStrip1.Name = "toolStrip1";
             this.toolStrip1.Padding = new System.Windows.Forms.Padding(0, 0, 3, 0);
-            this.toolStrip1.Size = new System.Drawing.Size(913, 38);
+            this.toolStrip1.Size = new System.Drawing.Size(913, 37);
             this.toolStrip1.TabIndex = 0;
             this.toolStrip1.Text = "toolStrip1";
             // 
@@ -67,7 +65,7 @@
             this.toolStripButton1.Image = ((System.Drawing.Image)(resources.GetObject("toolStripButton1.Image")));
             this.toolStripButton1.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.toolStripButton1.Name = "toolStripButton1";
-            this.toolStripButton1.Size = new System.Drawing.Size(34, 33);
+            this.toolStripButton1.Size = new System.Drawing.Size(34, 32);
             this.toolStripButton1.Text = "toolStripButton1";
             // 
             // toolStripButton2
@@ -89,7 +87,7 @@
             this.usernameLabel.LinkBehavior = System.Windows.Forms.LinkBehavior.HoverUnderline;
             this.usernameLabel.LinkColor = System.Drawing.Color.Black;
             this.usernameLabel.Name = "usernameLabel";
-            this.usernameLabel.Size = new System.Drawing.Size(86, 33);
+            this.usernameLabel.Size = new System.Drawing.Size(86, 32);
             this.usernameLabel.Text = "ses011";
             // 
             // matchLabel
@@ -113,17 +111,6 @@
             this.toolStripLabel3.Name = "toolStripLabel3";
             this.toolStripLabel3.Size = new System.Drawing.Size(157, 32);
             this.toolStripLabel3.Text = "Leaderboards";
-            // 
-            // toolStripLabel2
-            // 
-            this.toolStripLabel2.Font = new System.Drawing.Font("Yu Gothic UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.toolStripLabel2.IsLink = true;
-            this.toolStripLabel2.LinkBehavior = System.Windows.Forms.LinkBehavior.HoverUnderline;
-            this.toolStripLabel2.LinkColor = System.Drawing.Color.Black;
-            this.toolStripLabel2.Margin = new System.Windows.Forms.Padding(65, 2, 0, 3);
-            this.toolStripLabel2.Name = "toolStripLabel2";
-            this.toolStripLabel2.Size = new System.Drawing.Size(63, 32);
-            this.toolStripLabel2.Text = "Chat";
             // 
             // label1
             // 
@@ -180,7 +167,6 @@
 
         private System.Windows.Forms.ToolStrip toolStrip1;
         private System.Windows.Forms.ToolStripButton toolStripButton1;
-        private System.Windows.Forms.ToolStripLabel toolStripLabel2;
         private System.Windows.Forms.ToolStripLabel toolStripLabel3;
         private System.Windows.Forms.ToolStripButton toolStripButton2;
         private System.Windows.Forms.ToolStripLabel usernameLabel;

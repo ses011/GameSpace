@@ -63,7 +63,7 @@ namespace Profile_Display
         private void DmButton__Click(object sender, EventArgs e)
         {
             this.Enabled = false;
-            new ChatForm(formUser); 
+            new ChatForm(formUser);
         }
 
 

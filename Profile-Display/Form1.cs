@@ -49,8 +49,6 @@ namespace Profile_Display
                 this.statusLabel.Text = "Status: Online";
             }
 
-            this.Show();
-
 
         }
 

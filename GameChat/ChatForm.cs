@@ -20,10 +20,10 @@ namespace GameChat
         {
             private User user;
             private string message;
-            public Message(User user, string message)
+            public Message(User user)
             {
                 this.user = user;
-                this.message = message;
+               // this.message = message;
             }
 
             public override string ToString()

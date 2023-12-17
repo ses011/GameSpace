@@ -10,6 +10,7 @@ using System.Windows.Forms;
 
 using PlayerInfo;
 using Profile_Display;
+using Matchups;
 
 namespace HomepagePrototype
 {
@@ -34,7 +35,7 @@ namespace HomepagePrototype
 
         public void UsernameLabel__Click(object sender, EventArgs e)
         {
-            string val = "ses011";
+            string val = "kash_registerr";
             if (Players.userList.ContainsKey(val))
             {
                 User user = Players.userList[val];

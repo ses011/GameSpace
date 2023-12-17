@@ -10,7 +10,6 @@ using System.Windows.Forms;
 using PlayerInfo;
 using GameChat;
 
-
 //Contributions to project: Created profile display, contributed to creating database, created yUML, scheduled/organized team meetings and team deadlines 
 namespace Profile_Display
 {

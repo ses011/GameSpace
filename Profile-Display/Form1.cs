@@ -32,7 +32,14 @@ namespace Profile_Display
             this.formUser = user; //set the class scoped variable to the user passed in
 
             this.usernameLabel.Text = user.username.ToString();
-            this.bioLabel.Text = "Bio: " + user.bioLabel.ToString();
+            if(user.bioLabel.ToString() == "")
+            {
+                this.bioLabel.Text = "No bio to display";
+            }
+            else
+            {
+                this.bioLabel.Text = "Bio: " + user.bioLabel.ToString();
+            }
             this.photoPictureBox.ImageLocation = user.pfp; //gets the profile photo url for the specific user based on the username (key)
             if (user.onlineStatus == false)
             {
@@ -56,7 +63,7 @@ namespace Profile_Display
         private void DmButton__Click(object sender, EventArgs e)
         {
             this.Enabled = false;
-            new ChatForm(formUser, formUser.username); 
+            new ChatForm(formUser); 
         }
 
 

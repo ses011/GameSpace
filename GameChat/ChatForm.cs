@@ -32,13 +32,12 @@ namespace GameChat
             }
 
         }
-        private User user;
+        private User recipient;
         private string filename;
-        public ChatForm(User curentUser, string recipient)
+        public ChatForm(User recipient)
         {
             InitializeComponent();
-            this.user = curentUser;
-            string username = user.username;
+            string username = recipient.username;
             
             int order = username.CompareTo(recipient);
             if(order < 0)

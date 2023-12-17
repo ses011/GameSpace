@@ -14,9 +14,9 @@ using Matchups;
 
 namespace HomepagePrototype
 {
-    public partial class Form1 : Form
+    public partial class Homepage : Form
     {
-        public Form1()
+        public Homepage()
         {
             InitializeComponent();
 
@@ -30,7 +30,7 @@ namespace HomepagePrototype
 
         public void MatchButton__Click(object sender, EventArgs e)
         {
-            
+            MatchupForm  
         }
 
         public void UsernameLabel__Click(object sender, EventArgs e)

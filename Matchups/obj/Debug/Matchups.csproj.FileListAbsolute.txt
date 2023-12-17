@@ -1,18 +1,13 @@
-D:\Users\B3PIS\Downloads\final proj 201\GameSpace\Matchups\bin\Debug\Matchups.exe.config
-D:\Users\B3PIS\Downloads\final proj 201\GameSpace\Matchups\bin\Debug\Matchups.exe
 D:\Users\B3PIS\Downloads\final proj 201\GameSpace\Matchups\bin\Debug\Matchups.pdb
 D:\Users\B3PIS\Downloads\final proj 201\GameSpace\Matchups\obj\Debug\Matchups.csproj.AssemblyReference.cache
-D:\Users\B3PIS\Downloads\final proj 201\GameSpace\Matchups\obj\Debug\Matchups.csproj.SuggestedBindingRedirects.cache
 D:\Users\B3PIS\Downloads\final proj 201\GameSpace\Matchups\obj\Debug\Matchups.Properties.Resources.resources
 D:\Users\B3PIS\Downloads\final proj 201\GameSpace\Matchups\obj\Debug\Matchups.csproj.GenerateResource.cache
 D:\Users\B3PIS\Downloads\final proj 201\GameSpace\Matchups\obj\Debug\Matchups.csproj.CoreCompileInputs.cache
-D:\Users\B3PIS\Downloads\final proj 201\GameSpace\Matchups\obj\Debug\Matchups.exe
 D:\Users\B3PIS\Downloads\final proj 201\GameSpace\Matchups\obj\Debug\Matchups.pdb
 D:\Users\B3PIS\Downloads\final proj 201\GameSpace\Matchups\bin\Debug\PlayerInfo.dll
 D:\Users\B3PIS\Downloads\final proj 201\GameSpace\Matchups\bin\Debug\PlayerInfo.pdb
 D:\Users\B3PIS\Downloads\final proj 201\GameSpace\Matchups\bin\Debug\PlayerInfo.dll.config
 D:\Users\B3PIS\Downloads\final proj 201\GameSpace\Matchups\obj\Debug\Matchups.csproj.CopyComplete
-D:\Users\B3PIS\Downloads\final proj 201\GameSpace\Matchups\obj\Debug\Matchups.Form1.resources
 C:\Users\sarah\Source\Repos\GameSpace\Matchups\bin\Debug\Matchups.dll.config
 C:\Users\sarah\Source\Repos\GameSpace\Matchups\bin\Debug\Matchups.dll
 C:\Users\sarah\Source\Repos\GameSpace\Matchups\bin\Debug\Matchups.pdb
@@ -27,3 +22,7 @@ C:\Users\sarah\Source\Repos\GameSpace\Matchups\obj\Debug\Matchups.csproj.CoreCom
 C:\Users\sarah\Source\Repos\GameSpace\Matchups\obj\Debug\Matchups.csproj.CopyComplete
 C:\Users\sarah\Source\Repos\GameSpace\Matchups\obj\Debug\Matchups.dll
 C:\Users\sarah\Source\Repos\GameSpace\Matchups\obj\Debug\Matchups.pdb
+D:\Users\B3PIS\Downloads\final proj 201\GameSpace\Matchups\bin\Debug\Matchups.dll.config
+D:\Users\B3PIS\Downloads\final proj 201\GameSpace\Matchups\bin\Debug\Matchups.dll
+D:\Users\B3PIS\Downloads\final proj 201\GameSpace\Matchups\obj\Debug\Matchups.MatchupForm.resources
+D:\Users\B3PIS\Downloads\final proj 201\GameSpace\Matchups\obj\Debug\Matchups.dll

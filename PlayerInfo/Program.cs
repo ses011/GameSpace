@@ -111,29 +111,7 @@ namespace PlayerInfo
             return friends;
         }
 
-        public static void SetRank()
-        {
-            foreach (EGames game in EGames)
-            {
-                SortedList<int, User> gameRank = new SortedList<int, User>();
-                foreach (string name in Players.userList.Keys)
-                {
-                    if (Players.userList[name].times.Contains(game))
-                    {
-                        gameRank.Add(name.rank[game], Players.userList[name]);
-                    }
-                }
-                
-
-
-            }
-
-            //for every game in egames go through every single user in the user list and see if the game is a key
-            //in their timer and if it is save the key and the time and have an easy reference to it
-
-
-
-        }
+        
 
        
     }
@@ -191,6 +169,30 @@ namespace PlayerInfo
                     // duplicate key handling (should we write something for this catch statement or is it ok to leave it empty)**
                 }
             }
+        }
+
+        public static void SetRank()
+        {
+            foreach (EGames game in EGames)
+            {
+                SortedList<int, User> gameRank = new SortedList<int, User>();
+                foreach (string name in Players.userList.Keys)
+                {
+                    if (Players.userList[name].times.Contains(game))
+                    {
+                        gameRank.Add(name.rank[game], Players.userList[name]);
+                    }
+                }
+
+
+
+            }
+
+            //for every game in egames go through every single user in the user list and see if the game is a key
+            //in their timer and if it is save the key and the time and have an easy reference to it
+
+
+
         }
     }
 }

@@ -23,6 +23,7 @@ namespace HomepagePrototype
             Players.userList.Add(".grbe", new User(".grbe", "", false, ""));
             Players.userList.Add("not_phoeniix", new User("not_phoeniix", "they call me the Grinch\nthey call me\nthey call me the\nthey\nGrinch", false, ""));
 
+
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
             Application.Run(new Form1());

@@ -62,3 +62,5 @@ C:\Users\mjrei\SchoolStuff\201\gameSpace\GameSpace\HomepagePrototype\obj\Debug\H
 C:\Users\mjrei\SchoolStuff\201\gameSpace\GameSpace\HomepagePrototype\obj\Debug\HomepagePrototype.csproj.CopyComplete
 C:\Users\mjrei\SchoolStuff\201\gameSpace\GameSpace\HomepagePrototype\obj\Debug\HomepagePrototype.exe
 C:\Users\mjrei\SchoolStuff\201\gameSpace\GameSpace\HomepagePrototype\obj\Debug\HomepagePrototype.pdb
+C:\Users\sarah\Source\Repos\GameSpace\HomepagePrototype\bin\Debug\Matchups.pdb
+C:\Users\sarah\Source\Repos\GameSpace\HomepagePrototype\bin\Debug\Matchups.dll.config

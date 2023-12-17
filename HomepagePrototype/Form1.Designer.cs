@@ -1,6 +1,6 @@
 ﻿namespace HomepagePrototype
 {
-    partial class Form1
+    partial class Homepage
     {
         /// <summary>
         /// Required designer variable.
@@ -28,7 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Homepage));
             this.toolStrip1 = new System.Windows.Forms.ToolStrip();
             this.toolStripButton1 = new System.Windows.Forms.ToolStripButton();
             this.toolStripButton2 = new System.Windows.Forms.ToolStripButton();
@@ -55,7 +55,7 @@
             this.toolStrip1.Location = new System.Drawing.Point(0, 0);
             this.toolStrip1.Name = "toolStrip1";
             this.toolStrip1.Padding = new System.Windows.Forms.Padding(0, 0, 3, 0);
-            this.toolStrip1.Size = new System.Drawing.Size(913, 37);
+            this.toolStrip1.Size = new System.Drawing.Size(913, 38);
             this.toolStrip1.TabIndex = 0;
             this.toolStrip1.Text = "toolStrip1";
             // 
@@ -65,7 +65,7 @@
             this.toolStripButton1.Image = ((System.Drawing.Image)(resources.GetObject("toolStripButton1.Image")));
             this.toolStripButton1.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.toolStripButton1.Name = "toolStripButton1";
-            this.toolStripButton1.Size = new System.Drawing.Size(34, 32);
+            this.toolStripButton1.Size = new System.Drawing.Size(34, 33);
             this.toolStripButton1.Text = "toolStripButton1";
             // 
             // toolStripButton2
@@ -76,7 +76,7 @@
             this.toolStripButton2.Image = ((System.Drawing.Image)(resources.GetObject("toolStripButton2.Image")));
             this.toolStripButton2.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.toolStripButton2.Name = "toolStripButton2";
-            this.toolStripButton2.Size = new System.Drawing.Size(34, 32);
+            this.toolStripButton2.Size = new System.Drawing.Size(34, 33);
             this.toolStripButton2.Text = "toolStripButton2";
             // 
             // usernameLabel
@@ -87,7 +87,7 @@
             this.usernameLabel.LinkBehavior = System.Windows.Forms.LinkBehavior.HoverUnderline;
             this.usernameLabel.LinkColor = System.Drawing.Color.Black;
             this.usernameLabel.Name = "usernameLabel";
-            this.usernameLabel.Size = new System.Drawing.Size(86, 32);
+            this.usernameLabel.Size = new System.Drawing.Size(86, 33);
             this.usernameLabel.Text = "ses011";
             // 
             // matchLabel
@@ -98,7 +98,7 @@
             this.matchLabel.LinkColor = System.Drawing.Color.Black;
             this.matchLabel.Margin = new System.Windows.Forms.Padding(80, 2, 0, 3);
             this.matchLabel.Name = "matchLabel";
-            this.matchLabel.Size = new System.Drawing.Size(88, 32);
+            this.matchLabel.Size = new System.Drawing.Size(88, 33);
             this.matchLabel.Text = "Match!";
             // 
             // toolStripLabel3
@@ -109,7 +109,7 @@
             this.toolStripLabel3.LinkColor = System.Drawing.Color.Black;
             this.toolStripLabel3.Margin = new System.Windows.Forms.Padding(65, 2, 0, 3);
             this.toolStripLabel3.Name = "toolStripLabel3";
-            this.toolStripLabel3.Size = new System.Drawing.Size(157, 32);
+            this.toolStripLabel3.Size = new System.Drawing.Size(157, 33);
             this.toolStripLabel3.Text = "Leaderboards";
             // 
             // label1
@@ -144,7 +144,7 @@
             this.flowLayoutPanel1.Size = new System.Drawing.Size(247, 557);
             this.flowLayoutPanel1.TabIndex = 2;
             // 
-            // Form1
+            // Homepage
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -154,7 +154,7 @@
             this.Controls.Add(this.matchButton);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.toolStrip1);
-            this.Name = "Form1";
+            this.Name = "Homepage";
             this.Text = "GameSpace";
             this.toolStrip1.ResumeLayout(false);
             this.toolStrip1.PerformLayout();

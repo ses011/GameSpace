@@ -112,8 +112,18 @@ namespace PlayerInfo
 
         public static void SetRank()
         {
+            SortedList<string, User> gameRank = new SortedList<string, User>();
+            foreach (string name in Players.userList.Keys)
+            {
+                
+            }
 
-            
+
+            //for every game in egames go through every single user in the user list and see if the game is a key
+            //in their timer and if it is save the key and the time and have an easy reference to it
+
+
+
         }
 
        

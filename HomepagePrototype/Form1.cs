@@ -34,8 +34,10 @@ namespace HomepagePrototype
 
         public void UsernameLabel__Click(object sender, EventArgs e)
         {
-            if (Players.userList.TryGetValue("ses011", out User user))
+            string val = "ses011";
+            if (Players.userList.ContainsKey(val))
             {
+                User user = Players.userList[val];
                 DisplayProfile profile = new DisplayProfile(user);
                 profile.ShowDialog();
             }

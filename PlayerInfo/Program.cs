@@ -60,7 +60,6 @@ namespace PlayerInfo
             this.gameNames = this.SetRandomGames();
             this.times = this.SetTimes();
             this.friends = this.SetFriends();
-            this.rank = this.SetRank();
         }
 
         private SortedList<string, string> SetRandomGames()
@@ -110,7 +109,7 @@ namespace PlayerInfo
             return friends;
         }
 
-        private SortedList<string, int> SetRank()
+        public static SortedList<string, int> SetRank()
         {
 
             return rank;

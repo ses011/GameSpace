@@ -39,7 +39,7 @@ namespace GameChat
             InitializeComponent();
             string username = recipient.username;
             
-            int order = username.CompareTo(recipient);
+            /*int order = username.CompareTo(recipient);
             if(order < 0)
             {
                 //username_recipient
@@ -49,7 +49,8 @@ namespace GameChat
             {
                 //recipient_username
                 this.filename = recipient + "_" + username + ".txt";
-            }
+            }*/
+            this.filename = recipient + ".txt";
             messageRichTextBox.LoadFile(filename, RichTextBoxStreamType.RichText);
 
 

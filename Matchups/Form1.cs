@@ -11,13 +11,14 @@ using System.Windows.Forms;
 
 namespace Matchups
 {
-    public partial class Form1 : Form
+    public partial class MatchupForm : Form
     {
-        public Form1()
+        public MatchupForm()
         {
             InitializeComponent();
 
 
+            label1.Text = PlayerInfo.Players.userList.Count.ToString();
         }
     }
 }

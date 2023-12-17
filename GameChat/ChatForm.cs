@@ -16,22 +16,6 @@ namespace GameChat
   
     public partial class ChatForm : Form
     {
-        public class Message
-        {
-            private User user;
-            private string message;
-            public Message(User user)
-            {
-                this.user = user;
-               // this.message = message;
-            }
-
-            public override string ToString()
-            {
-                return user.username + ": " + message + "\n";
-            }
-
-        }
         private User recipient;
         private string filename;
         public ChatForm(User recipient)
@@ -51,7 +35,7 @@ namespace GameChat
                 this.filename = recipient + "_" + username + ".txt";
             }*/
             this.filename = recipient + ".txt";
-            messageRichTextBox.LoadFile(filename, RichTextBoxStreamType.RichText);
+            //messageRichTextBox.LoadFile(filename, RichTextBoxStreamType.RichText);
 
 
             this.sendButton.Click += new EventHandler(SendButton__Click);
@@ -59,13 +43,13 @@ namespace GameChat
 
         private void SendButton__Click(object sender, EventArgs e)
         {
-            Message message = new Message(recipient, textBox.Text);
-            messageRichTextBox.Text += message.ToString();
+            string message = ": " + textBox.Text;
+            messageRichTextBox.Text += message;
 
-            using (StreamWriter outputFile = new StreamWriter(filename))
+            /*using (StreamWriter outputFile = new StreamWriter(filename))
             {
                 outputFile.WriteLine(message.ToString());
-            }
+            }*/
         }
 
         private void ChatForm_Load(object sender, EventArgs e)

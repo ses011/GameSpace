@@ -1,0 +1,15 @@
+D:\Users\B3PIS\Downloads\final proj 201\GameSpace\Matchups\bin\Debug\Matchups.exe.config
+D:\Users\B3PIS\Downloads\final proj 201\GameSpace\Matchups\bin\Debug\Matchups.exe
+D:\Users\B3PIS\Downloads\final proj 201\GameSpace\Matchups\bin\Debug\Matchups.pdb
+D:\Users\B3PIS\Downloads\final proj 201\GameSpace\Matchups\obj\Debug\Matchups.csproj.AssemblyReference.cache
+D:\Users\B3PIS\Downloads\final proj 201\GameSpace\Matchups\obj\Debug\Matchups.csproj.SuggestedBindingRedirects.cache
+D:\Users\B3PIS\Downloads\final proj 201\GameSpace\Matchups\obj\Debug\Matchups.Properties.Resources.resources
+D:\Users\B3PIS\Downloads\final proj 201\GameSpace\Matchups\obj\Debug\Matchups.csproj.GenerateResource.cache
+D:\Users\B3PIS\Downloads\final proj 201\GameSpace\Matchups\obj\Debug\Matchups.csproj.CoreCompileInputs.cache
+D:\Users\B3PIS\Downloads\final proj 201\GameSpace\Matchups\obj\Debug\Matchups.exe
+D:\Users\B3PIS\Downloads\final proj 201\GameSpace\Matchups\obj\Debug\Matchups.pdb
+D:\Users\B3PIS\Downloads\final proj 201\GameSpace\Matchups\bin\Debug\PlayerInfo.dll
+D:\Users\B3PIS\Downloads\final proj 201\GameSpace\Matchups\bin\Debug\PlayerInfo.pdb
+D:\Users\B3PIS\Downloads\final proj 201\GameSpace\Matchups\bin\Debug\PlayerInfo.dll.config
+D:\Users\B3PIS\Downloads\final proj 201\GameSpace\Matchups\obj\Debug\Matchups.csproj.CopyComplete
+D:\Users\B3PIS\Downloads\final proj 201\GameSpace\Matchups\obj\Debug\Matchups.Form1.resources

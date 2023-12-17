@@ -24,7 +24,7 @@ namespace Matchups
                 compat[i] = 0;
             }
 
-            label1.Text = compat[0].ToString();
+            label1.Text = "aaaa";
 
         }
 

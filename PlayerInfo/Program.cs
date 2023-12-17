@@ -48,7 +48,7 @@ namespace PlayerInfo
       
         public SortedList<string, int> rank = new SortedList<string, int>();
        
-        public SortedList<string, string> friends = new SortedList<string, string>();
+        public SortedList<string, User> friends = new SortedList<string, User>();
 
 
         // Constructor
@@ -95,9 +95,18 @@ namespace PlayerInfo
             return time;
         }
 
-        private SortedList<string, string> SetFriends()
+        private SortedList<string, User> SetFriends()
         {
-           
+            Random random = new Random();
+
+            foreach (string name in Players.userList.Keys)
+            {
+                // 50/50 randomization that a game gets added to the list of games
+                if (random.Next(2) == 1 && !name.Equals(this.username))
+                {
+                    friends.Add(name, Players.userList[name]);
+                }
+            }
             return friends;
         }
 

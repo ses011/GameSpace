@@ -175,10 +175,10 @@ namespace PlayerInfo
         {
             foreach (EGames game in EGames)
             {
-                SortedList<int, User> gameRank = new SortedList<int, User>();
+                SortedList<double, User> gameRank = new SortedList<double, User>();
                 foreach (string name in Players.userList.Keys)
                 {
-                    if (Players.userList[name].times.Contains(game))
+                    if (userList[name].times.Contains(game))
                     {
                         gameRank.Add(name.rank[game], Players.userList[name]);
                     }

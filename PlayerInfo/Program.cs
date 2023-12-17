@@ -72,7 +72,7 @@ namespace PlayerInfo
                 // 50/50 randomization that a game gets added to the list of games
                 if(random.Next(2) == 1)
                 {
-                    gameNames.Add(this.username, game);
+                    gameNames.Add(game);
                 }
             }
 
@@ -83,7 +83,7 @@ namespace PlayerInfo
         {
             SortedList<string, double> time = new SortedList<string, double>();
             Random random = new Random();
-            foreach (string game in this.gameNames.Values)
+            foreach (string game in this.gameNames)
             {
                 double val = random.NextDouble();
                 if (val > 3 && val < 40)

@@ -50,14 +50,13 @@ namespace Profile_Display
 
         // Method: DmButton__Click
         // Author: Kashaf Ahmed
-        // Purpose: If the user presses the message button, pass the newUser variable (our current user) into the
+        // Purpose: If the user presses the message button, pass the formUser variable (our current user) into the
         // ChatForm to open up their chat. Also disable the form.
         // Restrictions: None
         private void DmButton__Click(object sender, EventArgs e)
         {
-            User newUser = new User(formUser.username, formUser.bioLabel, formUser.onlineStatus);
             this.Enabled = false;
-            new ChatForm(newUser, newUser.username); 
+            new ChatForm(formUser, formUser.username); 
         }
 
 

@@ -33,26 +33,23 @@ namespace GameChat
 
         }
         private User user;
-        private User recipient;
         private string filename;
-        public ChatForm(User curentUser, User recipient)
+        public ChatForm(User curentUser, string recipient)
         {
             InitializeComponent();
             this.user = curentUser;
-            this.recipient = recipient;
             string username = user.username;
-            string recipientName = recipient.username;
             
-            int order = username.CompareTo(recipientName);
+            int order = username.CompareTo(recipient);
             if(order < 0)
             {
                 //username_recipient
-                this.filename = username + "_" + recipientName + ".txt";
+                this.filename = username + "_" + recipient + ".txt";
             }
             else if (order > 0)
             {
                 //recipient_username
-                this.filename = recipientName + "_" + username + ".txt";
+                this.filename = recipient + "_" + username + ".txt";
             }
             messageRichTextBox.LoadFile(filename, RichTextBoxStreamType.RichText);
 
@@ -68,7 +65,6 @@ namespace GameChat
             using (StreamWriter outputFile = new StreamWriter(filename))
             {
                 outputFile.WriteLine(message.ToString());
-                messageRichTextBox.Text += message;
             }
         }
 

@@ -33,7 +33,7 @@ namespace Profile_Display
 
             this.usernameLabel.Text = user.username.ToString();
             this.bioLabel.Text = user.bioLabel.ToString();
-            this.photoPictureBox.ImageLocation = user.profilePhotos[user.username]; //gets the profile photo url for the specific user based on the username (key)
+            this.photoPictureBox.ImageLocation = user.pfp; //gets the profile photo url for the specific user based on the username (key)
             if (user.onlineStatus.ToString() == "false")
             {
                 this.statusLabel.Text = "Offline"; //check to see what the users status is and change the textbox according to the boolean value

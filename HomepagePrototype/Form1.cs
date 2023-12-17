@@ -30,7 +30,9 @@ namespace HomepagePrototype
 
         public void MatchButton__Click(object sender, EventArgs e)
         {
-            MatchupForm  
+            MatchupForm match = new MatchupForm();
+            match.ShowDialog();
+            this.Enabled = false;
         }
 
         public void UsernameLabel__Click(object sender, EventArgs e)

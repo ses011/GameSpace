@@ -33,7 +33,8 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="Matchups">
+    <Reference Include="Matchups, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
       <HintPath>..\Matchups\bin\Debug\Matchups.dll</HintPath>
     </Reference>
     <Reference Include="PlayerInfo, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">

@@ -22,6 +22,7 @@ namespace GameChat
         {
             InitializeComponent();
             string username = recipient.username;
+            this.userLabel.Text = username;
             
             /*int order = username.CompareTo(recipient);
             if(order < 0)
@@ -39,13 +40,28 @@ namespace GameChat
 
 
             this.sendButton.Click += new EventHandler(SendButton__Click);
+            this.backButton.Click += new EventHandler(BackButtonUser__Click);
         }
 
         public ChatForm(string game)
         {
             InitializeComponent();
+            this.userLabel.Text = game;
+
+            this.sendButton.Click += new EventHandler(SendButton__Click);
+            this.backButton.Click += new EventHandler(BackButtonGame__Click);
         }
 
+        private void BackButtonGame__Click(object sender, EventArgs e)
+        {
+            this.Enabled = false;
+            new GameChatForm();
+        }
+        private void BackButtonUser__Click(object sender, EventArgs e)
+        {
+            this.Enabled = false;
+            //new DisplayProfile(recipient);
+        }
         private void SendButton__Click(object sender, EventArgs e)
         {
             string message = ": " + textBox.Text;

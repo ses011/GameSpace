@@ -32,13 +32,12 @@ namespace GameChat
             }
 
         }
-        private User user;
+        private User recipient;
         private string filename;
-        public ChatForm(User curentUser, string recipient)
+        public ChatForm(User recipient)
         {
             InitializeComponent();
-            this.user = curentUser;
-            string username = user.username;
+            string username = recipient.username;
             
             int order = username.CompareTo(recipient);
             if(order < 0)
@@ -59,7 +58,7 @@ namespace GameChat
 
         private void SendButton__Click(object sender, EventArgs e)
         {
-            Message message = new Message(user, textBox.Text);
+            Message message = new Message(recipient, textBox.Text);
             messageRichTextBox.Text += message.ToString();
 
             using (StreamWriter outputFile = new StreamWriter(filename))

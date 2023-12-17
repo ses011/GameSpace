@@ -23,7 +23,7 @@ namespace Matchups
             {
                 compat[i] = 0;
             }
-
+            label1.Text = "eee";
 
 
         }

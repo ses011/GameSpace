@@ -20,7 +20,10 @@ namespace HomepagePrototype
         {
             InitializeComponent();
 
+            foreach (User user in Players.userList.Values)
+            {
 
+            }
 
 
             this.matchButton.Click += new EventHandler(MatchButton__Click);

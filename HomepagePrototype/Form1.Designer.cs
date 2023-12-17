@@ -38,7 +38,9 @@
             this.label1 = new System.Windows.Forms.Label();
             this.matchButton = new System.Windows.Forms.Button();
             this.flowLayoutPanel1 = new System.Windows.Forms.FlowLayoutPanel();
+            this.ListUsers = new System.Windows.Forms.ListBox();
             this.toolStrip1.SuspendLayout();
+            this.flowLayoutPanel1.SuspendLayout();
             this.SuspendLayout();
             // 
             // toolStrip1
@@ -55,7 +57,7 @@
             this.toolStrip1.Location = new System.Drawing.Point(0, 0);
             this.toolStrip1.Name = "toolStrip1";
             this.toolStrip1.Padding = new System.Windows.Forms.Padding(0, 0, 3, 0);
-            this.toolStrip1.Size = new System.Drawing.Size(913, 38);
+            this.toolStrip1.Size = new System.Drawing.Size(913, 37);
             this.toolStrip1.TabIndex = 0;
             this.toolStrip1.Text = "toolStrip1";
             // 
@@ -65,7 +67,7 @@
             this.toolStripButton1.Image = ((System.Drawing.Image)(resources.GetObject("toolStripButton1.Image")));
             this.toolStripButton1.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.toolStripButton1.Name = "toolStripButton1";
-            this.toolStripButton1.Size = new System.Drawing.Size(34, 33);
+            this.toolStripButton1.Size = new System.Drawing.Size(34, 32);
             this.toolStripButton1.Text = "toolStripButton1";
             // 
             // toolStripButton2
@@ -138,11 +140,23 @@
             this.flowLayoutPanel1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.flowLayoutPanel1.AutoSize = true;
             this.flowLayoutPanel1.BackColor = System.Drawing.SystemColors.AppWorkspace;
+            this.flowLayoutPanel1.Controls.Add(this.ListUsers);
             this.flowLayoutPanel1.FlowDirection = System.Windows.Forms.FlowDirection.TopDown;
             this.flowLayoutPanel1.Location = new System.Drawing.Point(666, 40);
             this.flowLayoutPanel1.Name = "flowLayoutPanel1";
             this.flowLayoutPanel1.Size = new System.Drawing.Size(247, 557);
             this.flowLayoutPanel1.TabIndex = 2;
+            // 
+            // ListUsers
+            // 
+            this.ListUsers.BackColor = System.Drawing.SystemColors.AppWorkspace;
+            this.ListUsers.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.ListUsers.FormattingEnabled = true;
+            this.ListUsers.ItemHeight = 20;
+            this.ListUsers.Location = new System.Drawing.Point(3, 3);
+            this.ListUsers.Name = "ListUsers";
+            this.ListUsers.Size = new System.Drawing.Size(241, 302);
+            this.ListUsers.TabIndex = 0;
             // 
             // Homepage
             // 
@@ -158,6 +172,7 @@
             this.Text = "GameSpace";
             this.toolStrip1.ResumeLayout(false);
             this.toolStrip1.PerformLayout();
+            this.flowLayoutPanel1.ResumeLayout(false);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -174,6 +189,7 @@
         private System.Windows.Forms.Button matchButton;
         private System.Windows.Forms.FlowLayoutPanel flowLayoutPanel1;
         private System.Windows.Forms.ToolStripLabel matchLabel;
+        private System.Windows.Forms.ListBox ListUsers;
     }
 }
 

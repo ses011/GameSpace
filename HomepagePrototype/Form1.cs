@@ -22,6 +22,7 @@ namespace HomepagePrototype
 
 
 
+
             this.matchButton.Click += new EventHandler(MatchButton__Click);
             this.matchLabel.Click += new EventHandler(MatchButton__Click);
 
@@ -32,7 +33,6 @@ namespace HomepagePrototype
         {
             MatchupForm match = new MatchupForm();
             match.ShowDialog();
-            this.Enabled = false;
         }
 
         public void UsernameLabel__Click(object sender, EventArgs e)
@@ -42,7 +42,7 @@ namespace HomepagePrototype
             {
                 User user = Players.userList[val];
                 DisplayProfile profile = new DisplayProfile(user);
-                this.Enabled = false;
+                profile.ShowDialog();
             }
         }
     }

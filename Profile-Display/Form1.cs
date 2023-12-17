@@ -32,15 +32,15 @@ namespace Profile_Display
             this.formUser = user; //set the class scoped variable to the user passed in
 
             this.usernameLabel.Text = user.username.ToString();
-            this.bioLabel.Text = user.bioLabel.ToString();
+            this.bioLabel.Text = "Bio: " + user.bioLabel.ToString();
             this.photoPictureBox.ImageLocation = user.pfp; //gets the profile photo url for the specific user based on the username (key)
-            if (user.onlineStatus.ToString() == "false")
+            if (user.onlineStatus == false)
             {
-                this.statusLabel.Text = "Offline"; //check to see what the users status is and change the textbox according to the boolean value
+                this.statusLabel.Text = "Status: Offline"; //check to see what the users status is and change the textbox according to the boolean value
             }
-            else if (user.onlineStatus.ToString() == "true")
+            else if (user.onlineStatus == true)
             {
-                this.statusLabel.Text = "Online";
+                this.statusLabel.Text = "Status: Online";
             }
 
             this.Show();

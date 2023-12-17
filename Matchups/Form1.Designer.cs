@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(MatchupForm));
             this.label1 = new System.Windows.Forms.Label();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.label2 = new System.Windows.Forms.Label();
@@ -37,16 +38,18 @@
             this.game1 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.button1 = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
-            this.groupBox3 = new System.Windows.Forms.GroupBox();
-            this.button5 = new System.Windows.Forms.Button();
-            this.button4 = new System.Windows.Forms.Button();
-            this.button3 = new System.Windows.Forms.Button();
+            this.nextButton = new System.Windows.Forms.Button();
+            this.previousButton = new System.Windows.Forms.Button();
+            this.toolStrip1 = new System.Windows.Forms.ToolStrip();
+            this.toolStripButton1 = new System.Windows.Forms.ToolStripButton();
+            this.toolStripButton2 = new System.Windows.Forms.ToolStripButton();
+            this.usernameLabel = new System.Windows.Forms.ToolStripLabel();
+            this.homeLabel = new System.Windows.Forms.ToolStripLabel();
+            this.toolStripLabel3 = new System.Windows.Forms.ToolStripLabel();
             this.groupBox1.SuspendLayout();
             this.groupBox2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
-            this.groupBox3.SuspendLayout();
+            this.toolStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
             // label1
@@ -61,14 +64,14 @@
             // 
             // groupBox1
             // 
-            this.groupBox1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
+            this.groupBox1.BackColor = System.Drawing.Color.DarkGray;
             this.groupBox1.Controls.Add(this.label2);
             this.groupBox1.Controls.Add(this.groupBox2);
             this.groupBox1.Controls.Add(this.pictureBox1);
             this.groupBox1.Controls.Add(this.label1);
-            this.groupBox1.Location = new System.Drawing.Point(237, 102);
+            this.groupBox1.Location = new System.Drawing.Point(240, 83);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(359, 308);
+            this.groupBox1.Size = new System.Drawing.Size(338, 308);
             this.groupBox1.TabIndex = 1;
             this.groupBox1.TabStop = false;
             // 
@@ -146,71 +149,110 @@
             this.pictureBox1.TabIndex = 0;
             this.pictureBox1.TabStop = false;
             // 
-            // button1
+            // nextButton
             // 
-            this.button1.Location = new System.Drawing.Point(611, 246);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(75, 23);
-            this.button1.TabIndex = 2;
-            this.button1.Text = "Next";
-            this.button1.UseVisualStyleBackColor = true;
+            this.nextButton.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
+            this.nextButton.Location = new System.Drawing.Point(594, 215);
+            this.nextButton.Name = "nextButton";
+            this.nextButton.Size = new System.Drawing.Size(150, 46);
+            this.nextButton.TabIndex = 2;
+            this.nextButton.Text = "Next";
+            this.nextButton.UseVisualStyleBackColor = false;
+            this.nextButton.Click += new System.EventHandler(this.nextButton_Click);
             // 
-            // button2
+            // previousButton
             // 
-            this.button2.Location = new System.Drawing.Point(145, 246);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(75, 23);
-            this.button2.TabIndex = 3;
-            this.button2.Text = "Previous";
-            this.button2.UseVisualStyleBackColor = true;
+            this.previousButton.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
+            this.previousButton.Location = new System.Drawing.Point(72, 215);
+            this.previousButton.Name = "previousButton";
+            this.previousButton.Size = new System.Drawing.Size(150, 46);
+            this.previousButton.TabIndex = 5;
+            this.previousButton.Text = "Previous";
+            this.previousButton.UseVisualStyleBackColor = false;
+            this.previousButton.Click += new System.EventHandler(this.previousButton_Click);
             // 
-            // groupBox3
+            // toolStrip1
             // 
-            this.groupBox3.Controls.Add(this.button5);
-            this.groupBox3.Controls.Add(this.button4);
-            this.groupBox3.Controls.Add(this.button3);
-            this.groupBox3.Location = new System.Drawing.Point(12, 12);
-            this.groupBox3.Name = "groupBox3";
-            this.groupBox3.Size = new System.Drawing.Size(250, 32);
-            this.groupBox3.TabIndex = 4;
-            this.groupBox3.TabStop = false;
+            this.toolStrip1.BackColor = System.Drawing.SystemColors.AppWorkspace;
+            this.toolStrip1.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.toolStrip1.ImageScalingSize = new System.Drawing.Size(24, 24);
+            this.toolStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.toolStripButton1,
+            this.toolStripButton2,
+            this.usernameLabel,
+            this.homeLabel,
+            this.toolStripLabel3});
+            this.toolStrip1.Location = new System.Drawing.Point(0, 0);
+            this.toolStrip1.Name = "toolStrip1";
+            this.toolStrip1.Padding = new System.Windows.Forms.Padding(0, 0, 2, 0);
+            this.toolStrip1.Size = new System.Drawing.Size(800, 31);
+            this.toolStrip1.TabIndex = 6;
+            this.toolStrip1.Text = "toolStrip1";
             // 
-            // button5
+            // toolStripButton1
             // 
-            this.button5.Location = new System.Drawing.Point(168, 7);
-            this.button5.Name = "button5";
-            this.button5.Size = new System.Drawing.Size(75, 23);
-            this.button5.TabIndex = 7;
-            this.button5.Text = "Matchups";
-            this.button5.UseVisualStyleBackColor = true;
+            this.toolStripButton1.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
+            this.toolStripButton1.Image = ((System.Drawing.Image)(resources.GetObject("toolStripButton1.Image")));
+            this.toolStripButton1.ImageTransparentColor = System.Drawing.Color.Magenta;
+            this.toolStripButton1.Name = "toolStripButton1";
+            this.toolStripButton1.Size = new System.Drawing.Size(28, 28);
+            this.toolStripButton1.Text = "toolStripButton1";
             // 
-            // button4
+            // toolStripButton2
             // 
-            this.button4.Location = new System.Drawing.Point(87, 7);
-            this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(75, 23);
-            this.button4.TabIndex = 6;
-            this.button4.Text = "Leaderboards";
-            this.button4.UseVisualStyleBackColor = true;
+            this.toolStripButton2.Alignment = System.Windows.Forms.ToolStripItemAlignment.Right;
+            this.toolStripButton2.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
+            this.toolStripButton2.Font = new System.Drawing.Font("Yu Gothic UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.toolStripButton2.Image = ((System.Drawing.Image)(resources.GetObject("toolStripButton2.Image")));
+            this.toolStripButton2.ImageTransparentColor = System.Drawing.Color.Magenta;
+            this.toolStripButton2.Name = "toolStripButton2";
+            this.toolStripButton2.Size = new System.Drawing.Size(28, 28);
+            this.toolStripButton2.Text = "toolStripButton2";
             // 
-            // button3
+            // usernameLabel
             // 
-            this.button3.Location = new System.Drawing.Point(6, 7);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(75, 23);
-            this.button3.TabIndex = 5;
-            this.button3.Text = "Home";
-            this.button3.UseVisualStyleBackColor = true;
+            this.usernameLabel.Alignment = System.Windows.Forms.ToolStripItemAlignment.Right;
+            this.usernameLabel.Font = new System.Drawing.Font("Yu Gothic UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.usernameLabel.IsLink = true;
+            this.usernameLabel.LinkBehavior = System.Windows.Forms.LinkBehavior.HoverUnderline;
+            this.usernameLabel.LinkColor = System.Drawing.Color.Black;
+            this.usernameLabel.Name = "usernameLabel";
+            this.usernameLabel.Size = new System.Drawing.Size(59, 28);
+            this.usernameLabel.Text = "ses011";
+            // 
+            // homeLabel
+            // 
+            this.homeLabel.Font = new System.Drawing.Font("Yu Gothic UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.homeLabel.IsLink = true;
+            this.homeLabel.LinkBehavior = System.Windows.Forms.LinkBehavior.HoverUnderline;
+            this.homeLabel.LinkColor = System.Drawing.Color.Black;
+            this.homeLabel.Margin = new System.Windows.Forms.Padding(80, 2, 0, 3);
+            this.homeLabel.Name = "homeLabel";
+            this.homeLabel.Size = new System.Drawing.Size(52, 26);
+            this.homeLabel.Text = "Home";
+            this.homeLabel.Click += new System.EventHandler(this.homeLabel_Click);
+            // 
+            // toolStripLabel3
+            // 
+            this.toolStripLabel3.Font = new System.Drawing.Font("Yu Gothic UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.toolStripLabel3.IsLink = true;
+            this.toolStripLabel3.LinkBehavior = System.Windows.Forms.LinkBehavior.HoverUnderline;
+            this.toolStripLabel3.LinkColor = System.Drawing.Color.Black;
+            this.toolStripLabel3.Margin = new System.Windows.Forms.Padding(65, 2, 0, 3);
+            this.toolStripLabel3.Name = "toolStripLabel3";
+            this.toolStripLabel3.Size = new System.Drawing.Size(105, 26);
+            this.toolStripLabel3.Text = "Leaderboards";
+            this.toolStripLabel3.Click += new System.EventHandler(this.toolStripLabel3_Click);
             // 
             // MatchupForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.Color.Navy;
+            this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Controls.Add(this.groupBox3);
-            this.Controls.Add(this.button2);
-            this.Controls.Add(this.button1);
+            this.Controls.Add(this.toolStrip1);
+            this.Controls.Add(this.previousButton);
+            this.Controls.Add(this.nextButton);
             this.Controls.Add(this.groupBox1);
             this.Name = "MatchupForm";
             this.Text = "MatchupForm";
@@ -219,8 +261,10 @@
             this.groupBox2.ResumeLayout(false);
             this.groupBox2.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
-            this.groupBox3.ResumeLayout(false);
+            this.toolStrip1.ResumeLayout(false);
+            this.toolStrip1.PerformLayout();
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
@@ -235,12 +279,14 @@
         private System.Windows.Forms.Label game2;
         private System.Windows.Forms.Label game1;
         private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.Button button2;
-        private System.Windows.Forms.GroupBox groupBox3;
-        private System.Windows.Forms.Button button5;
-        private System.Windows.Forms.Button button4;
-        private System.Windows.Forms.Button button3;
+        private System.Windows.Forms.Button nextButton;
+        private System.Windows.Forms.Button previousButton;
+        private System.Windows.Forms.ToolStrip toolStrip1;
+        private System.Windows.Forms.ToolStripButton toolStripButton1;
+        private System.Windows.Forms.ToolStripButton toolStripButton2;
+        private System.Windows.Forms.ToolStripLabel usernameLabel;
+        private System.Windows.Forms.ToolStripLabel homeLabel;
+        private System.Windows.Forms.ToolStripLabel toolStripLabel3;
     }
 }
 

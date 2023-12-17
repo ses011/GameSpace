@@ -9,6 +9,7 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 
 using PlayerInfo;
+using Profile_Display;
 
 namespace HomepagePrototype
 {
@@ -21,11 +22,23 @@ namespace HomepagePrototype
 
 
             this.matchButton.Click += new EventHandler(MatchButton__Click);
+            this.matchLabel.Click += new EventHandler(MatchButton__Click);
+
+            this.usernameLabel.Click += new EventHandler(UsernameLabel__Click);
         }
 
         public void MatchButton__Click(object sender, EventArgs e)
         {
             
+        }
+
+        public void UsernameLabel__Click(object sender, EventArgs e)
+        {
+            if (Players.userList.TryGetValue("ses011", out User user))
+            {
+                DisplayProfile profile = new DisplayProfile(user);
+                profile.ShowDialog();
+            }
         }
     }
 }

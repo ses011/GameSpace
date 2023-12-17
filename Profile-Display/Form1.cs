@@ -12,19 +12,19 @@ using GameChat;
 
 namespace Profile_Display
 {
+
+    // Class: DisplayProfile
+    // Author: Kashaf Ahmed
+    // Purpose: Get a user object from another form and display the information for the user passed in.
+    // Restrictions: None
     public partial class DisplayProfile : Form
     {
-        public User formUser;
-        public DisplayProfile(User user) //take in the player object and form from gamechat
+        public User formUser; //class scoped variable for the user object passed in 
+        public DisplayProfile(User user) //take in the user object 
         {
-            //get the listview fixed because there is an extra column****
             InitializeComponent();
 
-            this.dmButton.Click += new EventHandler(DmButton__Click); //go to their chat from the message class (inherit from this class only)
-                                                                      //and access the users time,rank,games,username,bio,
-                                                                      //and profile picture from the list (data base) 
-
-            //display all info. from the lists here (display profile picture here too)**
+            this.dmButton.Click += new EventHandler(DmButton__Click); 
 
 
             this.formUser = user; //set the class scoped variable to the user passed in
@@ -32,7 +32,6 @@ namespace Profile_Display
             this.usernameLabel.Text = user.username.ToString();
             this.bioLabel.Text = user.bioLabel.ToString();
             this.photoPictureBox.ImageLocation = user.profilePhotos[user.username]; //gets the profile photo url for the specific user based on the username (key)
-            //this.statusLabel.Text = user.onlineStatus.ToString(); 
             if (user.onlineStatus.ToString() == "false")
             {
                 this.statusLabel.Text = "Offline"; //check to see what the users status is and change the textbox according to the boolean value
@@ -42,14 +41,16 @@ namespace Profile_Display
                 this.statusLabel.Text = "Online";
             }
 
-
-            //create method to populate the listview**
-
             this.Show();
 
 
         }
 
+        // Method: DmButton__Click
+        // Author: Kashaf Ahmed
+        // Purpose: If the user presses the message button, pass the newUser variable (our current user) into the
+        // ChatForm to open up their chat. Also disable the form.
+        // Restrictions: None
         private void DmButton__Click(object sender, EventArgs e)
         {
             User newUser = new User(formUser.username, formUser.bioLabel, formUser.onlineStatus);

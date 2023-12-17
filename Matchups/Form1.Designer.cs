@@ -30,22 +30,22 @@
         {
             this.label1 = new System.Windows.Forms.Label();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.groupBox2 = new System.Windows.Forms.GroupBox();
             this.label2 = new System.Windows.Forms.Label();
-            this.label3 = new System.Windows.Forms.Label();
-            this.game1 = new System.Windows.Forms.Label();
-            this.game2 = new System.Windows.Forms.Label();
+            this.groupBox2 = new System.Windows.Forms.GroupBox();
             this.game3 = new System.Windows.Forms.Label();
+            this.game2 = new System.Windows.Forms.Label();
+            this.game1 = new System.Windows.Forms.Label();
+            this.label3 = new System.Windows.Forms.Label();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.button1 = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
             this.groupBox3 = new System.Windows.Forms.GroupBox();
-            this.button3 = new System.Windows.Forms.Button();
-            this.button4 = new System.Windows.Forms.Button();
             this.button5 = new System.Windows.Forms.Button();
+            this.button4 = new System.Windows.Forms.Button();
+            this.button3 = new System.Windows.Forms.Button();
             this.groupBox1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.groupBox2.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.groupBox3.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -72,13 +72,15 @@
             this.groupBox1.TabIndex = 1;
             this.groupBox1.TabStop = false;
             // 
-            // pictureBox1
+            // label2
             // 
-            this.pictureBox1.Location = new System.Drawing.Point(80, 105);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(178, 178);
-            this.pictureBox1.TabIndex = 0;
-            this.pictureBox1.TabStop = false;
+            this.label2.AutoSize = true;
+            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F);
+            this.label2.Location = new System.Drawing.Point(77, 65);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(35, 13);
+            this.label2.TabIndex = 2;
+            this.label2.Text = "label2";
             // 
             // groupBox2
             // 
@@ -92,37 +94,16 @@
             this.groupBox2.TabIndex = 1;
             this.groupBox2.TabStop = false;
             // 
-            // label2
+            // game3
             // 
-            this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F);
-            this.label2.Location = new System.Drawing.Point(77, 65);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(35, 13);
-            this.label2.TabIndex = 2;
-            this.label2.Text = "label2";
-            // 
-            // label3
-            // 
-            this.label3.AccessibleRole = System.Windows.Forms.AccessibleRole.Client;
-            this.label3.AutoSize = true;
-            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F);
-            this.label3.Location = new System.Drawing.Point(6, 16);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(69, 13);
-            this.label3.TabIndex = 3;
-            this.label3.Text = "Likes to play:";
-            // 
-            // game1
-            // 
-            this.game1.AccessibleRole = System.Windows.Forms.AccessibleRole.Client;
-            this.game1.AutoSize = true;
-            this.game1.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F);
-            this.game1.Location = new System.Drawing.Point(30, 39);
-            this.game1.Name = "game1";
-            this.game1.Size = new System.Drawing.Size(69, 13);
-            this.game1.TabIndex = 4;
-            this.game1.Text = "Likes to play:";
+            this.game3.AccessibleRole = System.Windows.Forms.AccessibleRole.Client;
+            this.game3.AutoSize = true;
+            this.game3.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F);
+            this.game3.Location = new System.Drawing.Point(30, 70);
+            this.game3.Name = "game3";
+            this.game3.Size = new System.Drawing.Size(69, 13);
+            this.game3.TabIndex = 6;
+            this.game3.Text = "Likes to play:";
             // 
             // game2
             // 
@@ -135,16 +116,35 @@
             this.game2.TabIndex = 5;
             this.game2.Text = "Likes to play:";
             // 
-            // game3
+            // game1
             // 
-            this.game3.AccessibleRole = System.Windows.Forms.AccessibleRole.Client;
-            this.game3.AutoSize = true;
-            this.game3.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F);
-            this.game3.Location = new System.Drawing.Point(30, 70);
-            this.game3.Name = "game3";
-            this.game3.Size = new System.Drawing.Size(69, 13);
-            this.game3.TabIndex = 6;
-            this.game3.Text = "Likes to play:";
+            this.game1.AccessibleRole = System.Windows.Forms.AccessibleRole.Client;
+            this.game1.AutoSize = true;
+            this.game1.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F);
+            this.game1.Location = new System.Drawing.Point(30, 39);
+            this.game1.Name = "game1";
+            this.game1.Size = new System.Drawing.Size(69, 13);
+            this.game1.TabIndex = 4;
+            this.game1.Text = "Likes to play:";
+            // 
+            // label3
+            // 
+            this.label3.AccessibleRole = System.Windows.Forms.AccessibleRole.Client;
+            this.label3.AutoSize = true;
+            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F);
+            this.label3.Location = new System.Drawing.Point(6, 16);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(69, 13);
+            this.label3.TabIndex = 3;
+            this.label3.Text = "Likes to play:";
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Location = new System.Drawing.Point(80, 105);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(178, 178);
+            this.pictureBox1.TabIndex = 0;
+            this.pictureBox1.TabStop = false;
             // 
             // button1
             // 
@@ -175,14 +175,14 @@
             this.groupBox3.TabIndex = 4;
             this.groupBox3.TabStop = false;
             // 
-            // button3
+            // button5
             // 
-            this.button3.Location = new System.Drawing.Point(6, 7);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(75, 23);
-            this.button3.TabIndex = 5;
-            this.button3.Text = "Home";
-            this.button3.UseVisualStyleBackColor = true;
+            this.button5.Location = new System.Drawing.Point(168, 7);
+            this.button5.Name = "button5";
+            this.button5.Size = new System.Drawing.Size(75, 23);
+            this.button5.TabIndex = 7;
+            this.button5.Text = "Matchups";
+            this.button5.UseVisualStyleBackColor = true;
             // 
             // button4
             // 
@@ -193,16 +193,16 @@
             this.button4.Text = "Leaderboards";
             this.button4.UseVisualStyleBackColor = true;
             // 
-            // button5
+            // button3
             // 
-            this.button5.Location = new System.Drawing.Point(168, 7);
-            this.button5.Name = "button5";
-            this.button5.Size = new System.Drawing.Size(75, 23);
-            this.button5.TabIndex = 7;
-            this.button5.Text = "Matchups";
-            this.button5.UseVisualStyleBackColor = true;
+            this.button3.Location = new System.Drawing.Point(6, 7);
+            this.button3.Name = "button3";
+            this.button3.Size = new System.Drawing.Size(75, 23);
+            this.button3.TabIndex = 5;
+            this.button3.Text = "Home";
+            this.button3.UseVisualStyleBackColor = true;
             // 
-            // Form1
+            // MatchupForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -212,13 +212,13 @@
             this.Controls.Add(this.button2);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.groupBox1);
-            this.Name = "Form1";
+            this.Name = "MatchupForm";
             this.Text = "Form1";
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.groupBox2.ResumeLayout(false);
             this.groupBox2.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.groupBox3.ResumeLayout(false);
             this.ResumeLayout(false);
 

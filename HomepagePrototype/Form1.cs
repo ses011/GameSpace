@@ -39,7 +39,7 @@ namespace HomepagePrototype
             {
                 User user = Players.userList[val];
                 DisplayProfile profile = new DisplayProfile(user);
-                profile.ShowDialog();
+                this.Enabled = false;
             }
         }
     }

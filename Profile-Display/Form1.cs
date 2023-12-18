@@ -30,7 +30,7 @@ namespace Profile_Display
 
             this.formUser = user; //set the class scoped variable to the user passed in
 
-            this.usernameLabel.Text = user.username.ToString();
+            this.usernameLabel.Text = "Username: " + user.username.ToString();
             if(user.bioLabel.ToString() == "") //if there is no bio then say there is no bio, otherwise display the bio
             {
                 this.bioLabel.Text = "No bio to display";

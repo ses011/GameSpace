@@ -43,6 +43,8 @@
             this.counterStrikeButton = new System.Windows.Forms.Button();
             this.robloxButton = new System.Windows.Forms.Button();
             this.vrChatButton = new System.Windows.Forms.Button();
+            this.label2 = new System.Windows.Forms.Label();
+            this.button1 = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.vrChatPictureBox)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.robloxPictureBox)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.counterStrikePictureBox)).BeginInit();
@@ -54,10 +56,10 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Font = new System.Drawing.Font("Yu Gothic UI", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.Location = new System.Drawing.Point(215, 24);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(243, 46);
+            this.label1.Size = new System.Drawing.Size(191, 45);
             this.label1.TabIndex = 0;
             this.label1.Text = "Game Chats";
             // 
@@ -133,63 +135,97 @@
             // 
             // valorantButton
             // 
+            this.valorantButton.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
+            this.valorantButton.Font = new System.Drawing.Font("Yu Gothic UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.valorantButton.Location = new System.Drawing.Point(495, 220);
             this.valorantButton.Name = "valorantButton";
             this.valorantButton.Size = new System.Drawing.Size(75, 23);
             this.valorantButton.TabIndex = 8;
             this.valorantButton.Text = "Valorant";
-            this.valorantButton.UseVisualStyleBackColor = true;
+            this.valorantButton.UseVisualStyleBackColor = false;
             // 
             // rainbowSixSeigeButton
             // 
+            this.rainbowSixSeigeButton.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
+            this.rainbowSixSeigeButton.Font = new System.Drawing.Font("Yu Gothic UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.rainbowSixSeigeButton.Location = new System.Drawing.Point(250, 220);
             this.rainbowSixSeigeButton.Name = "rainbowSixSeigeButton";
             this.rainbowSixSeigeButton.Size = new System.Drawing.Size(106, 23);
             this.rainbowSixSeigeButton.TabIndex = 9;
             this.rainbowSixSeigeButton.Text = "Rainbow Six Seige";
-            this.rainbowSixSeigeButton.UseVisualStyleBackColor = true;
+            this.rainbowSixSeigeButton.UseVisualStyleBackColor = false;
             // 
             // sonsOfTheForestButton
             // 
+            this.sonsOfTheForestButton.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
+            this.sonsOfTheForestButton.Font = new System.Drawing.Font("Yu Gothic UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.sonsOfTheForestButton.ForeColor = System.Drawing.SystemColors.ControlText;
             this.sonsOfTheForestButton.Location = new System.Drawing.Point(20, 220);
             this.sonsOfTheForestButton.Name = "sonsOfTheForestButton";
             this.sonsOfTheForestButton.Size = new System.Drawing.Size(104, 23);
             this.sonsOfTheForestButton.TabIndex = 10;
             this.sonsOfTheForestButton.Text = "Sons of the Forest";
-            this.sonsOfTheForestButton.UseVisualStyleBackColor = true;
+            this.sonsOfTheForestButton.UseVisualStyleBackColor = false;
             // 
             // counterStrikeButton
             // 
+            this.counterStrikeButton.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
+            this.counterStrikeButton.Font = new System.Drawing.Font("Yu Gothic UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.counterStrikeButton.Location = new System.Drawing.Point(25, 400);
             this.counterStrikeButton.Name = "counterStrikeButton";
             this.counterStrikeButton.Size = new System.Drawing.Size(95, 23);
             this.counterStrikeButton.TabIndex = 11;
             this.counterStrikeButton.Text = "Counter Strike 2";
-            this.counterStrikeButton.UseVisualStyleBackColor = true;
+            this.counterStrikeButton.UseVisualStyleBackColor = false;
             // 
             // robloxButton
             // 
+            this.robloxButton.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
+            this.robloxButton.Font = new System.Drawing.Font("Yu Gothic UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.robloxButton.Location = new System.Drawing.Point(265, 400);
             this.robloxButton.Name = "robloxButton";
             this.robloxButton.Size = new System.Drawing.Size(75, 23);
             this.robloxButton.TabIndex = 12;
             this.robloxButton.Text = "Roblox";
-            this.robloxButton.UseVisualStyleBackColor = true;
+            this.robloxButton.UseVisualStyleBackColor = false;
             // 
             // vrChatButton
             // 
+            this.vrChatButton.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
+            this.vrChatButton.Font = new System.Drawing.Font("Yu Gothic UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.vrChatButton.Location = new System.Drawing.Point(495, 400);
             this.vrChatButton.Name = "vrChatButton";
             this.vrChatButton.Size = new System.Drawing.Size(75, 23);
             this.vrChatButton.TabIndex = 13;
             this.vrChatButton.Text = "VR Chat";
-            this.vrChatButton.UseVisualStyleBackColor = true;
+            this.vrChatButton.UseVisualStyleBackColor = false;
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Font = new System.Drawing.Font("Yu Gothic UI", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.Location = new System.Drawing.Point(643, 24);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(145, 45);
+            this.label2.TabIndex = 14;
+            this.label2.Text = "Meetups";
+            // 
+            // button1
+            // 
+            this.button1.Location = new System.Drawing.Point(678, 100);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(75, 23);
+            this.button1.TabIndex = 15;
+            this.button1.Text = "button1";
+            this.button1.UseVisualStyleBackColor = true;
             // 
             // GameChatForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.button1);
+            this.Controls.Add(this.label2);
             this.Controls.Add(this.vrChatButton);
             this.Controls.Add(this.robloxButton);
             this.Controls.Add(this.counterStrikeButton);
@@ -233,6 +269,8 @@
         private System.Windows.Forms.Button counterStrikeButton;
         private System.Windows.Forms.Button robloxButton;
         private System.Windows.Forms.Button vrChatButton;
+        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.Button button1;
     }
 }
 

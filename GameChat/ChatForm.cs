@@ -16,31 +16,15 @@ namespace GameChat
   
     public partial class ChatForm : Form
     {
-        public class Message
-        {
-            private User user;
-            private string message;
-            public Message(User user, string message)
-            {
-                this.user = user;
-                this.message = message;
-            }
-
-            public override string ToString()
-            {
-                return user.username + ": " + message + "\n";
-            }
-
-        }
-        private User user;
+        private User recipient;
         private string filename;
-        public ChatForm(User curentUser, string recipient)
+        public ChatForm(User recipient)
         {
             InitializeComponent();
-            this.user = curentUser;
-            string username = user.username;
+            string username = recipient.username;
+            this.userLabel.Text = username;
             
-            int order = username.CompareTo(recipient);
+            /*int order = username.CompareTo(recipient);
             if(order < 0)
             {
                 //username_recipient
@@ -50,22 +34,43 @@ namespace GameChat
             {
                 //recipient_username
                 this.filename = recipient + "_" + username + ".txt";
-            }
-            messageRichTextBox.LoadFile(filename, RichTextBoxStreamType.RichText);
+            }*/
+            this.filename = recipient + ".txt";
+            //messageRichTextBox.LoadFile(filename, RichTextBoxStreamType.RichText);
 
 
             this.sendButton.Click += new EventHandler(SendButton__Click);
+            this.backButton.Click += new EventHandler(BackButtonUser__Click);
         }
 
+        public ChatForm(string game)
+        {
+            InitializeComponent();
+            this.userLabel.Text = game;
+
+            this.sendButton.Click += new EventHandler(SendButton__Click);
+            this.backButton.Click += new EventHandler(BackButtonGame__Click);
+        }
+
+        private void BackButtonGame__Click(object sender, EventArgs e)
+        {
+            this.Enabled = false;
+            new GameChatForm();
+        }
+        private void BackButtonUser__Click(object sender, EventArgs e)
+        {
+            this.Enabled = false;
+            //new DisplayProfile(recipient);
+        }
         private void SendButton__Click(object sender, EventArgs e)
         {
-            Message message = new Message(user, textBox.Text);
-            messageRichTextBox.Text += message.ToString();
+            string message = ": " + textBox.Text;
+            messageRichTextBox.Text += message;
 
-            using (StreamWriter outputFile = new StreamWriter(filename))
+            /*using (StreamWriter outputFile = new StreamWriter(filename))
             {
                 outputFile.WriteLine(message.ToString());
-            }
+            }*/
         }
 
         private void ChatForm_Load(object sender, EventArgs e)

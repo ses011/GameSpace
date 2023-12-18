@@ -7,17 +7,14 @@ using System.Threading.Tasks;
 using PlayerInfo;
 using GameChat;
 using System.Runtime.Remoting.Messaging;
+using System.Globalization;
 
-/**
- * Authors: Kashaf Ahmed (majority) and Sarah Schnedier
- * 
- * 
- * 
+/*
+ * Authors: Kashaf Ahmed and Sarah Schnedier
  */
 namespace PlayerInfo
 {
-    //we could also user enumerated type to store data from sorted lists instead (we can't add spaces to enumerated types so
-    //maybe sorted list would be better for the things that have spaces in between maybe?
+    //Enumerated type to hold the game names
     public enum EGames 
     {
       Sons_of_The_Forest,
@@ -28,8 +25,15 @@ namespace PlayerInfo
       VRChat
     
     }
-    
-   
+
+
+    // Class: User
+    // Author: Kashaf Ahmed and Sarah Schnedier
+    // Purpose: Creates the user object with a username, bio, online status, profile picture, as well as 
+    // the lists for the games, times, rank, and friends for the current user. The sorted lists are populated
+    // from different methods that Sarah had written. The time and rank are accessed by the game name (key) and everything else
+    // is accessed from the username (key).
+    // Restrictions: None
     public class User
     {
 
@@ -38,30 +42,29 @@ namespace PlayerInfo
         public bool onlineStatus;
         public string pfp;
 
-        //sorted list that takes in the username as the key and the games as a value (could use a tuple for the value to store multiple values in)
-        //of if there was an easier way of doing it not too sure 
-        public SortedList<string, string> gameNames = new SortedList<string, string>();
-        //username is key and the time is the value (could also use the tuple approach for the value so we could store multiple things in one value)
-        public SortedList<string, int> times = new SortedList<string, int>();
-        //username is key and the rank is the value(could also use the tuple approach for the value so we could store multiple things in one value)
+        
+        public List<string> gameNames = new List<string>();
+      
+        public SortedList<string, double> times = new SortedList<string, double>();
+      
         public SortedList<string, int> rank = new SortedList<string, int>();
-        //a user's friends
-        public SortedList<string, string> friends = new SortedList<string, string>();
+       
+        public SortedList<string, User> friends = new SortedList<string, User>();
 
 
         // Constructor
-        public User(string username, string bioLabel, bool onlineStatus)
+        public User(string username, string bioLabel, bool onlineStatus, string pfp)
         {
             this.username = username;
             this.bioLabel = bioLabel;
             this.onlineStatus = onlineStatus;
+            this.pfp = pfp;
             this.gameNames = this.SetRandomGames();
             this.times = this.SetTimes();
             this.friends = this.SetFriends();
-            this.rank = this.SetRank();
         }
 
-        private SortedList<string, string> SetRandomGames()
+        private List<string> SetRandomGames()
         {
             Random random = new Random();
            
@@ -70,71 +73,56 @@ namespace PlayerInfo
                 // 50/50 randomization that a game gets added to the list of games
                 if(random.Next(2) == 1)
                 {
-                    gameNames.Add(this.username, game);
+                    gameNames.Add(game);
                 }
             }
 
             return gameNames;
         }
 
-        private SortedList<string, int> SetTimes()
+        private SortedList<string, double> SetTimes()
         {
-            
+            SortedList<string, double> time = new SortedList<string, double>();
+            Random random = new Random();
+            foreach (string game in this.gameNames)
+            {
+                double val = random.NextDouble();
+                if (val > 3 && val < 40)
+                {
+                    time.Add(game, val);
+                }
+            }
 
-            return times;
+            return time;
         }
 
-        private SortedList<string, string> SetFriends()
+        private SortedList<string, User> SetFriends()
         {
-           
+            Random random = new Random();
 
+            foreach (string name in Players.userList.Keys)
+            {
+                // 50/50 randomization that a game gets added to the list of games
+                if (random.Next(2) == 1 && !name.Equals(this.username))
+                {
+                    friends.Add(name, Players.userList[name]);
+                }
+            }
             return friends;
         }
 
-        private SortedList<string, int> SetRank()
-        {
+        
 
-            return rank;
-        }
-
-        //implement each list in UserDataBase file we will create and populate the userList defined in Players based on the username as the key
-        //and the User object as the value 
-
-
-        //was not too sure if we wanted a comparison here either but kept it just in case 
-        //public static bool operator <(Student s1, Student s2)
-        //{
-        //    return (s1.gpa < s2.gpa);
-        //}
-        //
-        //public static bool operator <=(Student s1, Student s2)
-        //{
-        //    return (s1.gpa <= s2.gpa);
-        //}
-        //
-        //public static bool operator >(Student s1, Student s2)
-        //{
-        //    return (s1.gpa > s2.gpa);
-        //}
-        //
-        //public static bool operator >=(Student s1, Student s2)
-        //{
-        //    return (s1.gpa >= s2.gpa);
-        //}
-        //
-        //public static bool operator ==(Student s1, Student s2)
-        //{
-        //    return (s1.gpa == s2.gpa);
-        //}
-        //
-        //public static bool operator !=(Student s1, Student s2)
-        //{
-        //    return (s1.gpa != s2.gpa);
-        //}
+       
     }
 
-    // [+People|sortedList:SortedList<string, Person>|this:email|+Remove(email: string)]
-    public class Players //did players here instead of users so it would not be confusing 
+
+    // Class: Players
+    // Author: Kashaf Ahmed 
+    // Purpose: Create the list of users and have the username be the key to remove a user object from the list if necessary.
+    // the indexer property allows us to access the sorted list and get a user object based on the username.
+    // Restrictions: None
+    public class Players 
     {
 
         // create a Sorted List indexed on username (string) and storing User objects
@@ -178,21 +166,33 @@ namespace PlayerInfo
                 catch
                 {
                     // an exception will be raised if an entry with a duplicate key is added
-                    // duplicate key handling
+                    // duplicate key handling (should we write something for this catch statement or is it ok to leave it empty)**
                 }
             }
         }
 
-
-        public static void Main()
+        public static void SetRank()
         {
-            userList.Add("ses011", new User("ses011", "nope. just nope", false));
-            userList.Add("kash_registerr", new User("kash_registerr", "", false));
-            userList.Add("catast0phi", new User("catast0phi", "oh boy!!! VIOLENCE for christmas!!!!!!", false));
-            userList.Add("goooobr", new User("gooobr", ":3", false));
-            userList.Add("anonygoose", new User("anonygoose", "your local fisherman dad", false));
-            userList.Add(".grbe", new User(".grbe", "", false));
-            userList.Add("not_phoeniix", new User("not_phoeniix", "they call me the Grinch\nthey call me\nthey call me the\nthey\nGrinch", false));
+            foreach (EGames game in EGames)
+            {
+                SortedList<double, User> gameRank = new SortedList<double, User>();
+                foreach (string name in Players.userList.Keys)
+                {
+                    if (userList[name].times.Contains(game))
+                    {
+                        gameRank.Add(name.rank[game], Players.userList[name]);
+                    }
+                }
+
+
+
+            }
+
+            //for every game in egames go through every single user in the user list and see if the game is a key
+            //in their timer and if it is save the key and the time and have an easy reference to it
+
+
+
         }
     }
 }

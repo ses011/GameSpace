@@ -33,17 +33,20 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="CourseLib">
-      <HintPath>..\..\ses011\myIGME-201\WindowsPeopleApp_12_3\WindowsPeopleApp\EditPerson\bin\Debug\CourseLib.dll</HintPath>
+    <Reference Include="Leaderboard">
+      <HintPath>..\Leaderboard\bin\Debug\Leaderboard.dll</HintPath>
     </Reference>
-    <Reference Include="EditPerson">
-      <HintPath>..\..\ses011\myIGME-201\WindowsPeopleApp_12_3\WindowsPeopleApp\EditPerson\bin\Debug\EditPerson.dll</HintPath>
+    <Reference Include="Matchups, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\Matchups\bin\Debug\Matchups.dll</HintPath>
     </Reference>
-    <Reference Include="PeopleAppGlobals">
-      <HintPath>..\..\ses011\myIGME-201\WindowsPeopleApp_12_3\WindowsPeopleApp\EditPerson\bin\Debug\PeopleAppGlobals.dll</HintPath>
+    <Reference Include="PlayerInfo, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\PlayerInfo\bin\Debug\PlayerInfo.dll</HintPath>
     </Reference>
-    <Reference Include="PeopleLib">
-      <HintPath>..\..\ses011\myIGME-201\WindowsPeopleApp_12_3\WindowsPeopleApp\EditPerson\bin\Debug\PeopleLib.dll</HintPath>
+    <Reference Include="Profile-Display, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\Profile-Display\bin\Debug\Profile-Display.dll</HintPath>
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />

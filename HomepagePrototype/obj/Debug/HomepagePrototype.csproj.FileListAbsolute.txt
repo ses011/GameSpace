@@ -30,7 +30,6 @@ C:\Users\kasha\Source\Repos\GameSpace\HomepagePrototype\bin\Debug\Profile-Displa
 C:\Users\kasha\Source\Repos\GameSpace\HomepagePrototype\bin\Debug\GameChat.pdb
 C:\Users\kasha\Source\Repos\GameSpace\HomepagePrototype\bin\Debug\GameChat.dll.config
 C:\Users\kasha\Source\Repos\GameSpace\HomepagePrototype\obj\Debug\HomepagePrototype.csproj.AssemblyReference.cache
-C:\Users\kasha\Source\Repos\GameSpace\HomepagePrototype\obj\Debug\HomepagePrototype.Form1.resources
 C:\Users\kasha\Source\Repos\GameSpace\HomepagePrototype\obj\Debug\HomepagePrototype.Properties.Resources.resources
 C:\Users\kasha\Source\Repos\GameSpace\HomepagePrototype\obj\Debug\HomepagePrototype.csproj.GenerateResource.cache
 C:\Users\kasha\Source\Repos\GameSpace\HomepagePrototype\obj\Debug\HomepagePrototype.csproj.CoreCompileInputs.cache
@@ -120,3 +119,11 @@ C:\201\finalProj\GameSpace\HomepagePrototype\obj\Debug\HomepagePrototype.csproj.
 C:\201\finalProj\GameSpace\HomepagePrototype\obj\Debug\HomepagePrototype.csproj.CopyComplete
 C:\201\finalProj\GameSpace\HomepagePrototype\obj\Debug\HomepagePrototype.exe
 C:\201\finalProj\GameSpace\HomepagePrototype\obj\Debug\HomepagePrototype.pdb
+C:\Users\kasha\Source\Repos\GameSpace\HomepagePrototype\bin\Debug\Leaderboard.dll
+C:\Users\kasha\Source\Repos\GameSpace\HomepagePrototype\bin\Debug\Matchups.dll
+C:\Users\kasha\Source\Repos\GameSpace\HomepagePrototype\bin\Debug\Leaderboard.pdb
+C:\Users\kasha\Source\Repos\GameSpace\HomepagePrototype\bin\Debug\Leaderboard.dll.config
+C:\Users\kasha\Source\Repos\GameSpace\HomepagePrototype\bin\Debug\Leaderboard.exe.config
+C:\Users\kasha\Source\Repos\GameSpace\HomepagePrototype\bin\Debug\Matchups.pdb
+C:\Users\kasha\Source\Repos\GameSpace\HomepagePrototype\bin\Debug\Matchups.dll.config
+C:\Users\kasha\Source\Repos\GameSpace\HomepagePrototype\obj\Debug\HomepagePrototype.Homepage.resources

@@ -61,19 +61,19 @@
             // 
             // usernameLabel
             // 
-            this.usernameLabel.Font = new System.Drawing.Font("Yu Gothic UI", 7.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.usernameLabel.Font = new System.Drawing.Font("Yu Gothic UI", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.usernameLabel.ForeColor = System.Drawing.Color.Navy;
             this.usernameLabel.Location = new System.Drawing.Point(318, 27);
             this.usernameLabel.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.usernameLabel.Name = "usernameLabel";
-            this.usernameLabel.Size = new System.Drawing.Size(137, 33);
+            this.usernameLabel.Size = new System.Drawing.Size(170, 33);
             this.usernameLabel.TabIndex = 54;
             this.usernameLabel.Text = "usernameLabel";
             this.usernameLabel.Click += new System.EventHandler(this.label1_Click);
             // 
             // bioLabel
             // 
-            this.bioLabel.Font = new System.Drawing.Font("Yu Gothic UI", 7.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.bioLabel.Font = new System.Drawing.Font("Yu Gothic UI", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.bioLabel.ForeColor = System.Drawing.Color.Navy;
             this.bioLabel.Location = new System.Drawing.Point(317, 144);
             this.bioLabel.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
@@ -97,12 +97,12 @@
             // 
             // statusLabel
             // 
-            this.statusLabel.Font = new System.Drawing.Font("Yu Gothic UI", 7.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.statusLabel.Font = new System.Drawing.Font("Yu Gothic UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.statusLabel.ForeColor = System.Drawing.Color.Navy;
             this.statusLabel.Location = new System.Drawing.Point(506, 27);
             this.statusLabel.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.statusLabel.Name = "statusLabel";
-            this.statusLabel.Size = new System.Drawing.Size(95, 33);
+            this.statusLabel.Size = new System.Drawing.Size(148, 33);
             this.statusLabel.TabIndex = 58;
             this.statusLabel.Text = "Status:";
             // 

@@ -26,3 +26,17 @@ D:\Users\B3PIS\Downloads\final proj 201\GameSpace\Matchups\bin\Debug\Matchups.dl
 D:\Users\B3PIS\Downloads\final proj 201\GameSpace\Matchups\bin\Debug\Matchups.dll
 D:\Users\B3PIS\Downloads\final proj 201\GameSpace\Matchups\obj\Debug\Matchups.MatchupForm.resources
 D:\Users\B3PIS\Downloads\final proj 201\GameSpace\Matchups\obj\Debug\Matchups.dll
+C:\201\finalProj\GameSpace\Matchups\bin\Debug\Matchups.dll.config
+C:\201\finalProj\GameSpace\Matchups\bin\Debug\Matchups.dll
+C:\201\finalProj\GameSpace\Matchups\bin\Debug\Matchups.pdb
+C:\201\finalProj\GameSpace\Matchups\bin\Debug\PlayerInfo.dll
+C:\201\finalProj\GameSpace\Matchups\bin\Debug\PlayerInfo.pdb
+C:\201\finalProj\GameSpace\Matchups\bin\Debug\PlayerInfo.dll.config
+C:\201\finalProj\GameSpace\Matchups\obj\Debug\Matchups.csproj.AssemblyReference.cache
+C:\201\finalProj\GameSpace\Matchups\obj\Debug\Matchups.MatchupForm.resources
+C:\201\finalProj\GameSpace\Matchups\obj\Debug\Matchups.Properties.Resources.resources
+C:\201\finalProj\GameSpace\Matchups\obj\Debug\Matchups.csproj.GenerateResource.cache
+C:\201\finalProj\GameSpace\Matchups\obj\Debug\Matchups.csproj.CoreCompileInputs.cache
+C:\201\finalProj\GameSpace\Matchups\obj\Debug\Matchups.csproj.CopyComplete
+C:\201\finalProj\GameSpace\Matchups\obj\Debug\Matchups.dll
+C:\201\finalProj\GameSpace\Matchups\obj\Debug\Matchups.pdb

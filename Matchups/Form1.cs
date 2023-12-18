@@ -31,9 +31,9 @@ namespace Matchups
             List<string> gamesList = thisUser.gameNames;
 
 
-            game1.Text = gamesList[0];
-            game2.Text = gamesList[1];
-            game3.Text = gamesList[2];
+            game1.Text = "Game 1";
+            game2.Text = "Game 2";
+            game3.Text = "Game 3";
 
             nameLabel.Text = thisUser.username;
 

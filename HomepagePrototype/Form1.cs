@@ -12,6 +12,7 @@ using PlayerInfo;
 using Profile_Display;
 using Matchups;
 using Leaderboard;
+using static System.Windows.Forms.VisualStyles.VisualStyleElement;
 
 namespace HomepagePrototype
 {
@@ -28,11 +29,8 @@ namespace HomepagePrototype
                     this.ListUsers.Items.Add(user.username);
                 }
             }
-            
-            foreach (ListViewItem item in this.ListUsers.Items)
-            {
-                //item.
-            }
+
+            this.ListUsers.Click += new EventHandler(ListUsers__Click);
 
             this.matchButton.Click += new EventHandler(MatchButton__Click);
             this.matchLabel.Click += new EventHandler(MatchButton__Click);
@@ -61,6 +59,17 @@ namespace HomepagePrototype
         public void LeaderboardLabel__Click(Object sender, EventArgs e)
         {
             
+        }
+
+        public void ListUsers__Click(object sender, EventArgs e)
+        {
+            ListViewItem val = this.ListUsers.GetItemAt(MousePosition.X, MousePosition.Y);
+            if (val != null && Players.userList.ContainsKey(val.Text))
+            {
+                User user = Players.userList[val.Text];
+                DisplayProfile profile = new DisplayProfile(user);
+                profile.ShowDialog();
+            }
         }
     }
 }

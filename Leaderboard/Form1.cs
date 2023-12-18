@@ -151,5 +151,9 @@ namespace Leaderboard
             this.label1.Text = "Leaderboard for VRChat";
         }
 
+        private void label1_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

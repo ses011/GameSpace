@@ -43,6 +43,7 @@
             // 
             // leaderboard
             // 
+            this.leaderboard.BackColor = System.Drawing.Color.White;
             this.leaderboard.GridLines = true;
             this.leaderboard.HideSelection = false;
             this.leaderboard.Location = new System.Drawing.Point(56, 192);
@@ -56,13 +57,15 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Font = new System.Drawing.Font("Yu Gothic UI", 16F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
             this.label1.Location = new System.Drawing.Point(118, 83);
             this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(551, 37);
+            this.label1.Size = new System.Drawing.Size(527, 45);
             this.label1.TabIndex = 3;
             this.label1.Text = "Leaderboard for Sons of the Forest";
+            this.label1.Click += new System.EventHandler(this.label1_Click);
             // 
             // gameGroupBox
             // 
@@ -72,7 +75,8 @@
             this.gameGroupBox.Controls.Add(this.gameRadioButton3);
             this.gameGroupBox.Controls.Add(this.gameRadioButton2);
             this.gameGroupBox.Controls.Add(this.gameRadioButton1);
-            this.gameGroupBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.gameGroupBox.Font = new System.Drawing.Font("Yu Gothic", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.gameGroupBox.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
             this.gameGroupBox.Location = new System.Drawing.Point(812, 272);
             this.gameGroupBox.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.gameGroupBox.Name = "gameGroupBox";
@@ -85,10 +89,11 @@
             // gameRadioButton6
             // 
             this.gameRadioButton6.AutoSize = true;
+            this.gameRadioButton6.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(192)))));
             this.gameRadioButton6.Location = new System.Drawing.Point(27, 215);
             this.gameRadioButton6.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.gameRadioButton6.Name = "gameRadioButton6";
-            this.gameRadioButton6.Size = new System.Drawing.Size(98, 24);
+            this.gameRadioButton6.Size = new System.Drawing.Size(101, 27);
             this.gameRadioButton6.TabIndex = 5;
             this.gameRadioButton6.TabStop = true;
             this.gameRadioButton6.Text = "VRChat";
@@ -97,10 +102,11 @@
             // gameRadioButton5
             // 
             this.gameRadioButton5.AutoSize = true;
+            this.gameRadioButton5.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(192)))));
             this.gameRadioButton5.Location = new System.Drawing.Point(27, 180);
             this.gameRadioButton5.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.gameRadioButton5.Name = "gameRadioButton5";
-            this.gameRadioButton5.Size = new System.Drawing.Size(91, 24);
+            this.gameRadioButton5.Size = new System.Drawing.Size(96, 27);
             this.gameRadioButton5.TabIndex = 4;
             this.gameRadioButton5.TabStop = true;
             this.gameRadioButton5.Text = "Roblox";
@@ -109,10 +115,11 @@
             // gameRadioButton4
             // 
             this.gameRadioButton4.AutoSize = true;
+            this.gameRadioButton4.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(192)))));
             this.gameRadioButton4.Location = new System.Drawing.Point(27, 145);
             this.gameRadioButton4.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.gameRadioButton4.Name = "gameRadioButton4";
-            this.gameRadioButton4.Size = new System.Drawing.Size(156, 24);
+            this.gameRadioButton4.Size = new System.Drawing.Size(166, 27);
             this.gameRadioButton4.TabIndex = 3;
             this.gameRadioButton4.TabStop = true;
             this.gameRadioButton4.Text = "Counter-Strike";
@@ -121,10 +128,11 @@
             // gameRadioButton3
             // 
             this.gameRadioButton3.AutoSize = true;
+            this.gameRadioButton3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(192)))));
             this.gameRadioButton3.Location = new System.Drawing.Point(27, 109);
             this.gameRadioButton3.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.gameRadioButton3.Name = "gameRadioButton3";
-            this.gameRadioButton3.Size = new System.Drawing.Size(104, 24);
+            this.gameRadioButton3.Size = new System.Drawing.Size(107, 27);
             this.gameRadioButton3.TabIndex = 2;
             this.gameRadioButton3.TabStop = true;
             this.gameRadioButton3.Text = "Valorant";
@@ -133,10 +141,11 @@
             // gameRadioButton2
             // 
             this.gameRadioButton2.AutoSize = true;
+            this.gameRadioButton2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(192)))));
             this.gameRadioButton2.Location = new System.Drawing.Point(27, 74);
             this.gameRadioButton2.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.gameRadioButton2.Name = "gameRadioButton2";
-            this.gameRadioButton2.Size = new System.Drawing.Size(190, 24);
+            this.gameRadioButton2.Size = new System.Drawing.Size(197, 27);
             this.gameRadioButton2.TabIndex = 1;
             this.gameRadioButton2.TabStop = true;
             this.gameRadioButton2.Text = "Rainbow Six Seige";
@@ -145,10 +154,11 @@
             // gameRadioButton1
             // 
             this.gameRadioButton1.AutoSize = true;
+            this.gameRadioButton1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(192)))));
             this.gameRadioButton1.Location = new System.Drawing.Point(27, 38);
             this.gameRadioButton1.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.gameRadioButton1.Name = "gameRadioButton1";
-            this.gameRadioButton1.Size = new System.Drawing.Size(190, 24);
+            this.gameRadioButton1.Size = new System.Drawing.Size(197, 27);
             this.gameRadioButton1.TabIndex = 0;
             this.gameRadioButton1.TabStop = true;
             this.gameRadioButton1.Text = "Sons of the Forest";
@@ -157,11 +167,12 @@
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.Font = new System.Drawing.Font("Yu Gothic UI", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(192)))));
             this.label2.Location = new System.Drawing.Point(264, 140);
             this.label2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(235, 29);
+            this.label2.Size = new System.Drawing.Size(234, 32);
             this.label2.TabIndex = 4;
             this.label2.Text = "Sorting by Play Time";
             // 

@@ -29,7 +29,7 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(MatchupForm));
-            this.label1 = new System.Windows.Forms.Label();
+            this.nameLabel = new System.Windows.Forms.Label();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.compatLabel = new System.Windows.Forms.Label();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
@@ -52,15 +52,15 @@
             this.toolStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
-            // label1
+            // nameLabel
             // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Arial", 13.25F);
-            this.label1.Location = new System.Drawing.Point(76, 42);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(39, 21);
-            this.label1.TabIndex = 0;
-            this.label1.Text = "test";
+            this.nameLabel.AutoSize = true;
+            this.nameLabel.Font = new System.Drawing.Font("Arial", 13.25F);
+            this.nameLabel.Location = new System.Drawing.Point(76, 42);
+            this.nameLabel.Name = "nameLabel";
+            this.nameLabel.Size = new System.Drawing.Size(39, 21);
+            this.nameLabel.TabIndex = 0;
+            this.nameLabel.Text = "test";
             // 
             // groupBox1
             // 
@@ -68,7 +68,7 @@
             this.groupBox1.Controls.Add(this.compatLabel);
             this.groupBox1.Controls.Add(this.groupBox2);
             this.groupBox1.Controls.Add(this.pictureBox1);
-            this.groupBox1.Controls.Add(this.label1);
+            this.groupBox1.Controls.Add(this.nameLabel);
             this.groupBox1.Location = new System.Drawing.Point(240, 83);
             this.groupBox1.Name = "groupBox1";
             this.groupBox1.Size = new System.Drawing.Size(338, 308);
@@ -102,7 +102,7 @@
             this.game3.AccessibleRole = System.Windows.Forms.AccessibleRole.Client;
             this.game3.AutoSize = true;
             this.game3.Font = new System.Drawing.Font("Arial", 8.25F);
-            this.game3.Location = new System.Drawing.Point(30, 70);
+            this.game3.Location = new System.Drawing.Point(7, 77);
             this.game3.Name = "game3";
             this.game3.Size = new System.Drawing.Size(70, 14);
             this.game3.TabIndex = 6;
@@ -113,7 +113,7 @@
             this.game2.AccessibleRole = System.Windows.Forms.AccessibleRole.Client;
             this.game2.AutoSize = true;
             this.game2.Font = new System.Drawing.Font("Arial", 8.25F);
-            this.game2.Location = new System.Drawing.Point(30, 55);
+            this.game2.Location = new System.Drawing.Point(7, 62);
             this.game2.Name = "game2";
             this.game2.Size = new System.Drawing.Size(70, 14);
             this.game2.TabIndex = 5;
@@ -124,7 +124,7 @@
             this.game1.AccessibleRole = System.Windows.Forms.AccessibleRole.Client;
             this.game1.AutoSize = true;
             this.game1.Font = new System.Drawing.Font("Arial", 8.25F);
-            this.game1.Location = new System.Drawing.Point(30, 39);
+            this.game1.Location = new System.Drawing.Point(7, 46);
             this.game1.Name = "game1";
             this.game1.Size = new System.Drawing.Size(70, 14);
             this.game1.TabIndex = 4;
@@ -146,6 +146,7 @@
             this.pictureBox1.Location = new System.Drawing.Point(80, 105);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(178, 178);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
             this.pictureBox1.TabIndex = 0;
             this.pictureBox1.TabStop = false;
             // 
@@ -272,7 +273,7 @@
 
         #endregion
 
-        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Label nameLabel;
         private System.Windows.Forms.GroupBox groupBox1;
         private System.Windows.Forms.GroupBox groupBox2;
         private System.Windows.Forms.PictureBox pictureBox1;

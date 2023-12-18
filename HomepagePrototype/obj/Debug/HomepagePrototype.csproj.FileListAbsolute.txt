@@ -88,3 +88,7 @@ D:\Users\B3PIS\Downloads\final proj 201\GameSpace\HomepagePrototype\obj\Debug\Ho
 D:\Users\B3PIS\Downloads\final proj 201\GameSpace\HomepagePrototype\obj\Debug\HomepagePrototype.csproj.CopyComplete
 D:\Users\B3PIS\Downloads\final proj 201\GameSpace\HomepagePrototype\obj\Debug\HomepagePrototype.exe
 D:\Users\B3PIS\Downloads\final proj 201\GameSpace\HomepagePrototype\obj\Debug\HomepagePrototype.pdb
+C:\Users\sarah\source\repos\GameSpace\HomepagePrototype\bin\Debug\Leaderboard.dll
+C:\Users\sarah\source\repos\GameSpace\HomepagePrototype\bin\Debug\Leaderboard.pdb
+C:\Users\sarah\source\repos\GameSpace\HomepagePrototype\bin\Debug\Leaderboard.dll.config
+C:\Users\sarah\source\repos\GameSpace\HomepagePrototype\bin\Debug\Leaderboard.exe.config

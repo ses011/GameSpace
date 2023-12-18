@@ -11,7 +11,7 @@ using PlayerInfo;
 
 namespace Leaderboard
 {
-    public partial class Form1 : Form
+    public partial class Board : Form
     {
         private bool isShuffled = false;
         private bool isShuffled2 = false;
@@ -20,7 +20,7 @@ namespace Leaderboard
         private bool isShuffled5 = false;
         private bool isShuffled6 = false;
 
-        public Form1()
+        public Board()
         {
             InitializeComponent();
 

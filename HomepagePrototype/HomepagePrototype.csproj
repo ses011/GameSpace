@@ -33,6 +33,9 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="Leaderboard">
+      <HintPath>..\Leaderboard\bin\Debug\Leaderboard.dll</HintPath>
+    </Reference>
     <Reference Include="Matchups, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
       <HintPath>..\Matchups\bin\Debug\Matchups.dll</HintPath>

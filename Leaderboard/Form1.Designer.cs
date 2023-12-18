@@ -1,6 +1,6 @@
 ﻿namespace Leaderboard
 {
-    partial class Form1
+    partial class Board
     {
         /// <summary>
         /// Required designer variable.
@@ -165,7 +165,7 @@
             this.label2.TabIndex = 4;
             this.label2.Text = "Sorting by Play Time";
             // 
-            // Form1
+            // Board
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -175,7 +175,7 @@
             this.Controls.Add(this.label1);
             this.Controls.Add(this.leaderboard);
             this.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.Name = "Form1";
+            this.Name = "Board";
             this.Text = "Form1";
             this.gameGroupBox.ResumeLayout(false);
             this.gameGroupBox.PerformLayout();

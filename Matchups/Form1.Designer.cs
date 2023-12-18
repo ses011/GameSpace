@@ -31,7 +31,7 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(MatchupForm));
             this.label1 = new System.Windows.Forms.Label();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.label2 = new System.Windows.Forms.Label();
+            this.compatLabel = new System.Windows.Forms.Label();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
             this.game3 = new System.Windows.Forms.Label();
             this.game2 = new System.Windows.Forms.Label();
@@ -55,17 +55,17 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.25F);
+            this.label1.Font = new System.Drawing.Font("Arial", 13.25F);
             this.label1.Location = new System.Drawing.Point(76, 42);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(39, 22);
+            this.label1.Size = new System.Drawing.Size(39, 21);
             this.label1.TabIndex = 0;
             this.label1.Text = "test";
             // 
             // groupBox1
             // 
             this.groupBox1.BackColor = System.Drawing.Color.DarkGray;
-            this.groupBox1.Controls.Add(this.label2);
+            this.groupBox1.Controls.Add(this.compatLabel);
             this.groupBox1.Controls.Add(this.groupBox2);
             this.groupBox1.Controls.Add(this.pictureBox1);
             this.groupBox1.Controls.Add(this.label1);
@@ -75,15 +75,15 @@
             this.groupBox1.TabIndex = 1;
             this.groupBox1.TabStop = false;
             // 
-            // label2
+            // compatLabel
             // 
-            this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F);
-            this.label2.Location = new System.Drawing.Point(77, 65);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(35, 13);
-            this.label2.TabIndex = 2;
-            this.label2.Text = "label2";
+            this.compatLabel.AutoSize = true;
+            this.compatLabel.Font = new System.Drawing.Font("Arial", 8.25F);
+            this.compatLabel.Location = new System.Drawing.Point(77, 65);
+            this.compatLabel.Name = "compatLabel";
+            this.compatLabel.Size = new System.Drawing.Size(35, 14);
+            this.compatLabel.TabIndex = 2;
+            this.compatLabel.Text = "label2";
             // 
             // groupBox2
             // 
@@ -101,10 +101,10 @@
             // 
             this.game3.AccessibleRole = System.Windows.Forms.AccessibleRole.Client;
             this.game3.AutoSize = true;
-            this.game3.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F);
+            this.game3.Font = new System.Drawing.Font("Arial", 8.25F);
             this.game3.Location = new System.Drawing.Point(30, 70);
             this.game3.Name = "game3";
-            this.game3.Size = new System.Drawing.Size(69, 13);
+            this.game3.Size = new System.Drawing.Size(70, 14);
             this.game3.TabIndex = 6;
             this.game3.Text = "Likes to play:";
             // 
@@ -112,10 +112,10 @@
             // 
             this.game2.AccessibleRole = System.Windows.Forms.AccessibleRole.Client;
             this.game2.AutoSize = true;
-            this.game2.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F);
+            this.game2.Font = new System.Drawing.Font("Arial", 8.25F);
             this.game2.Location = new System.Drawing.Point(30, 55);
             this.game2.Name = "game2";
-            this.game2.Size = new System.Drawing.Size(69, 13);
+            this.game2.Size = new System.Drawing.Size(70, 14);
             this.game2.TabIndex = 5;
             this.game2.Text = "Likes to play:";
             // 
@@ -123,10 +123,10 @@
             // 
             this.game1.AccessibleRole = System.Windows.Forms.AccessibleRole.Client;
             this.game1.AutoSize = true;
-            this.game1.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F);
+            this.game1.Font = new System.Drawing.Font("Arial", 8.25F);
             this.game1.Location = new System.Drawing.Point(30, 39);
             this.game1.Name = "game1";
-            this.game1.Size = new System.Drawing.Size(69, 13);
+            this.game1.Size = new System.Drawing.Size(70, 14);
             this.game1.TabIndex = 4;
             this.game1.Text = "Likes to play:";
             // 
@@ -134,10 +134,10 @@
             // 
             this.label3.AccessibleRole = System.Windows.Forms.AccessibleRole.Client;
             this.label3.AutoSize = true;
-            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F);
+            this.label3.Font = new System.Drawing.Font("Arial", 8.25F);
             this.label3.Location = new System.Drawing.Point(6, 16);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(69, 13);
+            this.label3.Size = new System.Drawing.Size(70, 14);
             this.label3.TabIndex = 3;
             this.label3.Text = "Likes to play:";
             // 
@@ -152,6 +152,7 @@
             // nextButton
             // 
             this.nextButton.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
+            this.nextButton.Font = new System.Drawing.Font("Arial", 8.25F);
             this.nextButton.Location = new System.Drawing.Point(594, 215);
             this.nextButton.Name = "nextButton";
             this.nextButton.Size = new System.Drawing.Size(150, 46);
@@ -256,6 +257,7 @@
             this.Controls.Add(this.groupBox1);
             this.Name = "MatchupForm";
             this.Text = "MatchupForm";
+            this.Load += new System.EventHandler(this.MatchupForm_Load);
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
             this.groupBox2.ResumeLayout(false);
@@ -274,7 +276,7 @@
         private System.Windows.Forms.GroupBox groupBox1;
         private System.Windows.Forms.GroupBox groupBox2;
         private System.Windows.Forms.PictureBox pictureBox1;
-        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.Label compatLabel;
         private System.Windows.Forms.Label game3;
         private System.Windows.Forms.Label game2;
         private System.Windows.Forms.Label game1;

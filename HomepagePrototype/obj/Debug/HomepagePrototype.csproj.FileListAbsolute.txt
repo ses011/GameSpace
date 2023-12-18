@@ -127,3 +127,6 @@ C:\Users\kasha\Source\Repos\GameSpace\HomepagePrototype\bin\Debug\Leaderboard.ex
 C:\Users\kasha\Source\Repos\GameSpace\HomepagePrototype\bin\Debug\Matchups.pdb
 C:\Users\kasha\Source\Repos\GameSpace\HomepagePrototype\bin\Debug\Matchups.dll.config
 C:\Users\kasha\Source\Repos\GameSpace\HomepagePrototype\obj\Debug\HomepagePrototype.Homepage.resources
+D:\Users\B3PIS\Downloads\final proj 201\GameSpace\HomepagePrototype\bin\Debug\Leaderboard.dll
+D:\Users\B3PIS\Downloads\final proj 201\GameSpace\HomepagePrototype\bin\Debug\Leaderboard.pdb
+D:\Users\B3PIS\Downloads\final proj 201\GameSpace\HomepagePrototype\bin\Debug\Leaderboard.dll.config

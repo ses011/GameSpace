@@ -73,7 +73,7 @@
             // 
             // bioLabel
             // 
-            this.bioLabel.Font = new System.Drawing.Font("Yu Gothic UI", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.bioLabel.Font = new System.Drawing.Font("Yu Gothic UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.bioLabel.ForeColor = System.Drawing.Color.Navy;
             this.bioLabel.Location = new System.Drawing.Point(317, 144);
             this.bioLabel.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);

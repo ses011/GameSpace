@@ -54,7 +54,6 @@ C:\Users\mjrei\SchoolStuff\201\gameSpace\GameSpace\HomepagePrototype\bin\Debug\P
 C:\Users\mjrei\SchoolStuff\201\gameSpace\GameSpace\HomepagePrototype\bin\Debug\GameChat.pdb
 C:\Users\mjrei\SchoolStuff\201\gameSpace\GameSpace\HomepagePrototype\bin\Debug\GameChat.dll.config
 C:\Users\mjrei\SchoolStuff\201\gameSpace\GameSpace\HomepagePrototype\obj\Debug\HomepagePrototype.csproj.AssemblyReference.cache
-C:\Users\mjrei\SchoolStuff\201\gameSpace\GameSpace\HomepagePrototype\obj\Debug\HomepagePrototype.Form1.resources
 C:\Users\mjrei\SchoolStuff\201\gameSpace\GameSpace\HomepagePrototype\obj\Debug\HomepagePrototype.Properties.Resources.resources
 C:\Users\mjrei\SchoolStuff\201\gameSpace\GameSpace\HomepagePrototype\obj\Debug\HomepagePrototype.csproj.GenerateResource.cache
 C:\Users\mjrei\SchoolStuff\201\gameSpace\GameSpace\HomepagePrototype\obj\Debug\HomepagePrototype.csproj.CoreCompileInputs.cache
@@ -64,3 +63,4 @@ C:\Users\mjrei\SchoolStuff\201\gameSpace\GameSpace\HomepagePrototype\obj\Debug\H
 C:\Users\sarah\Source\Repos\GameSpace\HomepagePrototype\bin\Debug\Matchups.pdb
 C:\Users\sarah\Source\Repos\GameSpace\HomepagePrototype\bin\Debug\Matchups.dll.config
 C:\Users\sarah\Source\Repos\GameSpace\HomepagePrototype\obj\Debug\HomepagePrototype.Homepage.resources
+C:\Users\mjrei\SchoolStuff\201\gameSpace\GameSpace\HomepagePrototype\obj\Debug\HomepagePrototype.Homepage.resources

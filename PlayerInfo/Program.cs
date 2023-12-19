@@ -171,27 +171,19 @@ namespace PlayerInfo
             }
         }
 
-        public static void SetRank()
-        {
-            foreach (EGames game in EGames)
-            {
-                SortedList<double, User> gameRank = new SortedList<double, User>();
-                foreach (string name in Players.userList.Keys)
-                {
-                    if (userList[name].times.Contains(game))
-                    {
-                        gameRank.Add(name.rank[game], Players.userList[name]);
-                    }
-                }
-
-
-
-            }
-
-          
-
-
-
-        }
+        //public static void SetRank()
+        //{
+        //    foreach (EGames game in EGames)
+        //    {
+        //        SortedList<double, User> gameRank = new SortedList<double, User>();
+        //        foreach (string name in Players.userList.Keys)
+        //        {
+        //            if (userList[name].times.Contains(game))
+        //            {
+        //                gameRank.Add(name.rank[game], Players.userList[name]);
+        //            }
+        //        }
+        //    }
+        //}
     }
 }

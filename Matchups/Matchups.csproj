@@ -39,6 +39,9 @@
     <Reference Include="PlayerInfo">
       <HintPath>..\PlayerInfo\bin\Debug\PlayerInfo.dll</HintPath>
     </Reference>
+    <Reference Include="Profile-Display">
+      <HintPath>..\Profile-Display\bin\Debug\Profile-Display.dll</HintPath>
+    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
     <Reference Include="System.Xml.Linq" />

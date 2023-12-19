@@ -50,7 +50,6 @@ namespace Matchups
         private void UpdateProfile()
         {
             User thisUser = Players.userList[names[currentUser]];
-            List<string> gamesList = thisUser.gameNames;
 
             compatScore = 0;
 
@@ -59,21 +58,21 @@ namespace Matchups
             game3.Text = "";
 
 
-            for (int i = 0; i < gamesList.Count; i++)
+            for (int i = 0; i < thisUser.gameNames.Count; i++)
             { 
 
                 switch (i)
                 {
                     case (0):
-                        game1.Text = gamesList[0];
+                        game1.Text = thisUser.gameNames[0];
                         compatScore += 40;
                         break;
                     case (1):
-                        game2.Text = gamesList[1];
+                        game2.Text = thisUser.gameNames[1];
                         compatScore += 30;
                         break;
                     case (2):
-                        game3.Text = gamesList[2];
+                        game3.Text = thisUser.gameNames[2];
                         compatScore += 30;
                         break;
 

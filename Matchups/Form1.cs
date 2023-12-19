@@ -67,8 +67,10 @@ namespace Matchups
             game2.Text = "";
             game3.Text = "";
 
+            int i;
+
             // go through current user game list
-            for (int i = 0; i < thisUser.gameNames.Count; i++)
+            for (i = 0; i < thisUser.gameNames.Count; i++)
             { 
 
                 switch (i)

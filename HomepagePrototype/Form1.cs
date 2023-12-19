@@ -31,7 +31,7 @@ namespace HomepagePrototype
                 }
             }
 
-            this.ListUsers.Click += new EventHandler(ListUsers__Click);
+            this.ListUsers.SelectedIndexChanged += new EventHandler(ListUsers__SelectedIndexChanged);
 
             this.matchButton.Click += new EventHandler(MatchButton__Click);
             this.matchLabel.Click += new EventHandler(MatchButton__Click);
@@ -70,15 +70,15 @@ namespace HomepagePrototype
             chats.ShowDialog();
         }
 
-        public void ListUsers__Click(object sender, EventArgs e)
+        public void ListUsers__SelectedIndexChanged(object sender, EventArgs e)
         {
-            ListViewItem val = this.ListUsers.GetItemAt(MousePosition.X, MousePosition.Y);
-            if (val != null && Players.userList.ContainsKey(val.Text))
+            string user = (ListUsers.SelectedItems).ToString();
+            if (Players.userList.ContainsKey(user))
             {
-                User user = Players.userList[val.Text];
-                DisplayProfile profile = new DisplayProfile(user);
+                DisplayProfile profile = new DisplayProfile(Players.userList[user]);
                 profile.ShowDialog();
             }
+            
         }
     }
 }

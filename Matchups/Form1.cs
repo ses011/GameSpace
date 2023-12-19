@@ -19,6 +19,9 @@ namespace Matchups
         int currentUser = 0;
         IList<string> names;
 
+        User myProfile;
+        int compatScore = 0;
+
         public MatchupForm()
         {
             InitializeComponent();
@@ -28,6 +31,8 @@ namespace Matchups
             {
                 compat[i] = 0;
             }
+
+            myProfile = Players.userList["ses011"];
 
             names = Players.userList.Keys;
 
@@ -47,27 +52,39 @@ namespace Matchups
             User thisUser = Players.userList[names[currentUser]];
             List<string> gamesList = thisUser.gameNames;
 
-            for (int i = 0; i < thisUser.gameNames.Count; i++)
-            {
+            compatScore = 0;
+
+            game1.Text = "";
+            game2.Text = "";
+            game3.Text = "";
+
+
+            for (int i = 0; i < gamesList.Count; i++)
+            { 
+
                 switch (i)
                 {
                     case (0):
                         game1.Text = gamesList[0];
+                        compatScore += 40;
                         break;
                     case (1):
                         game2.Text = gamesList[1];
+                        compatScore += 30;
                         break;
                     case (2):
                         game3.Text = gamesList[2];
+                        compatScore += 30;
                         break;
+
                 }
             }
 
             nameLabel.Text = thisUser.username;
 
-            compatLabel.Text = "%%";
-
             pictureBox1.ImageLocation = thisUser.pfp;
+
+            compatLabel.Text = compatScore.ToString() + "%";
         }
 
         private void homeLabel_Click(object sender, EventArgs e)

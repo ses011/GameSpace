@@ -60,7 +60,8 @@ namespace HomepagePrototype
 
         public void LeaderboardLabel__Click(Object sender, EventArgs e)
         {
-            
+            Board board = new Board();
+            board.ShowDialog();
         }
 
         public void ChatsLabel_Click(Object sender, EventArgs e)

@@ -35,11 +35,11 @@
             this.usernameLabel = new System.Windows.Forms.ToolStripLabel();
             this.matchLabel = new System.Windows.Forms.ToolStripLabel();
             this.leaderboardLabel = new System.Windows.Forms.ToolStripLabel();
+            this.chatsLabel = new System.Windows.Forms.ToolStripLabel();
             this.label1 = new System.Windows.Forms.Label();
             this.matchButton = new System.Windows.Forms.Button();
             this.flowLayoutPanel1 = new System.Windows.Forms.FlowLayoutPanel();
             this.ListUsers = new System.Windows.Forms.ListView();
-            this.chatsLabel = new System.Windows.Forms.ToolStripLabel();
             this.toolStrip1.SuspendLayout();
             this.flowLayoutPanel1.SuspendLayout();
             this.SuspendLayout();
@@ -80,7 +80,7 @@
             this.toolStripButton2.Image = ((System.Drawing.Image)(resources.GetObject("toolStripButton2.Image")));
             this.toolStripButton2.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.toolStripButton2.Name = "toolStripButton2";
-            this.toolStripButton2.Size = new System.Drawing.Size(34, 33);
+            this.toolStripButton2.Size = new System.Drawing.Size(34, 32);
             this.toolStripButton2.Text = "toolStripButton2";
             // 
             // usernameLabel
@@ -91,7 +91,7 @@
             this.usernameLabel.LinkBehavior = System.Windows.Forms.LinkBehavior.HoverUnderline;
             this.usernameLabel.LinkColor = System.Drawing.Color.Black;
             this.usernameLabel.Name = "usernameLabel";
-            this.usernameLabel.Size = new System.Drawing.Size(86, 33);
+            this.usernameLabel.Size = new System.Drawing.Size(86, 32);
             this.usernameLabel.Text = "ses011";
             // 
             // matchLabel
@@ -102,7 +102,7 @@
             this.matchLabel.LinkColor = System.Drawing.Color.Black;
             this.matchLabel.Margin = new System.Windows.Forms.Padding(80, 2, 0, 3);
             this.matchLabel.Name = "matchLabel";
-            this.matchLabel.Size = new System.Drawing.Size(88, 33);
+            this.matchLabel.Size = new System.Drawing.Size(88, 32);
             this.matchLabel.Text = "Match!";
             // 
             // leaderboardLabel
@@ -115,6 +115,17 @@
             this.leaderboardLabel.Name = "leaderboardLabel";
             this.leaderboardLabel.Size = new System.Drawing.Size(157, 33);
             this.leaderboardLabel.Text = "Leaderboards";
+            // 
+            // chatsLabel
+            // 
+            this.chatsLabel.Font = new System.Drawing.Font("Yu Gothic UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.chatsLabel.IsLink = true;
+            this.chatsLabel.LinkBehavior = System.Windows.Forms.LinkBehavior.HoverUnderline;
+            this.chatsLabel.LinkColor = System.Drawing.Color.Black;
+            this.chatsLabel.Margin = new System.Windows.Forms.Padding(65, 2, 0, 3);
+            this.chatsLabel.Name = "chatsLabel";
+            this.chatsLabel.Size = new System.Drawing.Size(73, 33);
+            this.chatsLabel.Text = "Chats";
             // 
             // label1
             // 
@@ -160,14 +171,6 @@
             this.ListUsers.TabIndex = 0;
             this.ListUsers.UseCompatibleStateImageBehavior = false;
             this.ListUsers.View = System.Windows.Forms.View.List;
-            // 
-            // chatsLabel
-            // 
-            this.chatsLabel.AccessibleRole = System.Windows.Forms.AccessibleRole.WhiteSpace;
-            this.chatsLabel.Margin = new System.Windows.Forms.Padding(65, 2, 0, 3);
-            this.chatsLabel.Name = "chatsLabel";
-            this.chatsLabel.Size = new System.Drawing.Size(73, 33);
-            this.chatsLabel.Text = "Chats";
             // 
             // Homepage
             // 

@@ -12,52 +12,62 @@ using System.Collections;
 using System.CodeDom.Compiler;
 using System.Runtime.InteropServices.ComTypes;
 
+// Niko Huber
+// IGME 201
+// Final Project
+
 namespace Matchups
 {
+    // GameSpace Matchups
     public partial class MatchupForm : Form
     {
+        // init variables
         int currentUser = 0;
         IList<string> names;
 
+        // the user profile
         User myProfile;
         int compatScore = 0;
 
+        // init
         public MatchupForm()
         {
             InitializeComponent();
 
-            int[] compat = new int[Players.userList.Count];
-            for (int i = 0; i < compat.Length; i++)
-            {
-                compat[i] = 0;
-            }
-
+            // set the current user 
             myProfile = Players.userList["ses011"];
 
+            // set the list of names from main database
             names = Players.userList.Keys;
 
+            // display the first profile
             UpdateProfile();
 
+            // removed formclosing event
             //this.FormClosing += new FormClosingEventHandler(Form__Closing);
 
         }
 
         /*private void Form__Closing(object sender, FormClosingEventArgs e)
         {
-            MatchupForm form = new MatchupForm();
+            MatchupForm form = new tempForm();
         }*/
 
+        // Update displayed profile
         private void UpdateProfile()
         {
+            // get current user
             User thisUser = Players.userList[names[currentUser]];
 
+            // reset compat score
             compatScore = 0;
 
+            // set all text to 0
             game1.Text = "";
             game2.Text = "";
             game3.Text = "";
 
-
+            // go through current user game list
             for (int i = 0; i < thisUser.gameNames.Count; i++)
             { 
 
@@ -65,15 +75,24 @@ namespace Matchups
                 {
                     case (0):
                         game1.Text = thisUser.gameNames[0];
-                        compatScore += 40;
+                        if (myProfile.gameNames[0] == thisUser.gameNames[0])
+                        {
+                            compatScore += 40;
+                        }
                         break;
                     case (1):
                         game2.Text = thisUser.gameNames[1];
-                        compatScore += 30;
+                        if (myProfile.gameNames[1] == thisUser.gameNames[1])
+                        {
+                            compatScore += 30;
+                        }
                         break;
                     case (2):
                         game3.Text = thisUser.gameNames[2];
-                        compatScore += 30;
+                        if (myProfile.gameNames[2] == thisUser.gameNames[2])
+                        {
+                            compatScore += 30;
+                        }
                         break;
 
                 }

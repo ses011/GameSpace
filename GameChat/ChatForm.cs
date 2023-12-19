@@ -54,13 +54,11 @@ namespace GameChat
 
         private void BackButtonGame__Click(object sender, EventArgs e)
         {
-            this.Enabled = false;
-            new GameChatForm();
+            this.Close();
         }
         private void BackButtonUser__Click(object sender, EventArgs e)
         {
-            this.Enabled = false;
-            //new DisplayProfile(recipient);
+            this.Close();
         }
         private void SendButton__Click(object sender, EventArgs e)
         {

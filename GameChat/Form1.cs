@@ -31,33 +31,33 @@ namespace GameChat
 
         private void VrChatButton__Click(object sender, EventArgs e)
         {
-            this.Enabled = false;
-            new ChatForm("VR Chat");
+            ChatForm chatForm = new ChatForm("VR Chat");
+            chatForm.ShowDialog();
         }
         private void RobloxButton__Click(object sender, EventArgs e)
         {
-            this.Enabled = false;
-            new ChatForm("Roblox");
+            ChatForm chatForm = new ChatForm("Roblox");
+            chatForm.ShowDialog();
         }
         private void CounterStrikeButton__Click(object sender, EventArgs e)
         {
-            this.Enabled = false;
-            new ChatForm("Counter Strike 2");
+            ChatForm chatForm = new ChatForm("Counter Strike 2");
+            chatForm.ShowDialog();
         }
         private void ValorantButton__Click(object sender, EventArgs e)
         {
-            this.Enabled = false;
-            new ChatForm("Valorant");
+            ChatForm chatForm = new ChatForm("Valorant");
+            chatForm.ShowDialog();
         }
         private void RainbowSixSeigeButton__Click(object sender, EventArgs e)
         {
-            this.Enabled = false;
-            new ChatForm("Rainbow Six Seige");
+            ChatForm chatForm = new ChatForm("Rainbow Six Seige");
+            chatForm.ShowDialog();
         }
         private void SonsOfTheForestButton__Click(object sender, EventArgs e)
         {
-            this.Enabled = false;
-            new ChatForm("Sons of the Forest");
+            ChatForm chatForm = new ChatForm("Sons of the Forest");
+            chatForm.ShowDialog();
         }
 
         private void pictureBox4_Click(object sender, EventArgs e)

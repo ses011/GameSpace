@@ -60,7 +60,6 @@ namespace PlayerInfo
             this.onlineStatus = onlineStatus;
             this.pfp = pfp;
             this.gameNames = this.SetRandomGames();
-            this.times = this.SetTimes();
             this.friends = this.SetFriends();
         }
 
@@ -80,21 +79,6 @@ namespace PlayerInfo
             return gameNames;
         }
 
-        private SortedList<string, double> SetTimes()
-        {
-            SortedList<string, double> time = new SortedList<string, double>();
-            Random random = new Random();
-            foreach (string game in this.gameNames)
-            {
-                double val = random.NextDouble();
-                if (val > 3 && val < 40)
-                {
-                    time.Add(game, val);
-                }
-            }
-
-            return time;
-        }
 
         private SortedList<string, User> SetFriends()
         {
@@ -170,20 +154,5 @@ namespace PlayerInfo
                 }
             }
         }
-
-        //public static void SetRank()
-        //{
-        //    foreach (EGames game in EGames)
-        //    {
-        //        SortedList<double, User> gameRank = new SortedList<double, User>();
-        //        foreach (string name in Players.userList.Keys)
-        //        {
-        //            if (userList[name].times.Contains(game))
-        //            {
-        //                gameRank.Add(name.rank[game], Players.userList[name]);
-        //            }
-        //        }
-        //    }
-        //}
     }
 }

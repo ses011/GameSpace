@@ -27,6 +27,7 @@ namespace GameChat
             this.counterStrikeButton.Click += new EventHandler(CounterStrikeButton__Click);
             this.robloxButton.Click += new EventHandler(RobloxButton__Click);
             this.vrChatButton.Click += new EventHandler(VrChatButton__Click);
+            this.meetupButton.Click += new EventHandler(MeetupButton__Click);
         }
 
         private void VrChatButton__Click(object sender, EventArgs e)
@@ -60,9 +61,17 @@ namespace GameChat
             chatForm.ShowDialog();
         }
 
-        private void pictureBox4_Click(object sender, EventArgs e)
+        private void MeetupButton__Click(Object sender, EventArgs e)
         {
 
+        }
+        private void pictureBox4_Click(object sender, EventArgs e)
+        {
+            List<User> users = new List<User>();
+            users.Add(Players.userList["anonygoose"]);
+            users.Add(Players.userList["gooobr"]);
+            users.Add(Players.userList[".grbe"]);
+            Meetup meetup = new Meetup("Valorant Watchparty", "Come and hang out with other Valorant players and watch the esports team play Rutgers!", "MAGIC Spell Studios (MSS)-2150", "12/22 5:00 PM", users);
         }
     }
 }

@@ -1,4 +1,5 @@
 ﻿using PlayerInfo;
+using Profile_Display;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -151,24 +152,12 @@ namespace Matchups
 
         }
 
-        private void toolStripLabel3_Click(object sender, EventArgs e)
+        // Picture Box Click Event
+        private void pictureBox1_Click(object sender, EventArgs e)
         {
-
-        }
-
-        private void MatchupForm_Load(object sender, EventArgs e)
-        {
-
-        }
-
-        private void compatLabel_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void nameLabel_Click(object sender, EventArgs e)
-        {
-
+            // open user profile of given picture
+            Form dispProf = new DisplayProfile(Players.userList[names[currentUser]]);
+            dispProf.ShowDialog();
         }
     }
 }

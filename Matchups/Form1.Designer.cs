@@ -61,7 +61,6 @@
             this.nameLabel.Size = new System.Drawing.Size(53, 28);
             this.nameLabel.TabIndex = 0;
             this.nameLabel.Text = "test";
-            this.nameLabel.Click += new System.EventHandler(this.nameLabel_Click);
             // 
             // groupBox1
             // 
@@ -85,7 +84,6 @@
             this.compatLabel.Size = new System.Drawing.Size(35, 14);
             this.compatLabel.TabIndex = 2;
             this.compatLabel.Text = "label2";
-            this.compatLabel.Click += new System.EventHandler(this.compatLabel_Click);
             // 
             // groupBox2
             // 
@@ -148,6 +146,7 @@
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
             this.pictureBox1.TabIndex = 0;
             this.pictureBox1.TabStop = false;
+            this.pictureBox1.Click += new System.EventHandler(this.pictureBox1_Click);
             // 
             // nextButton
             // 
@@ -243,7 +242,6 @@
             this.toolStripLabel3.Name = "toolStripLabel3";
             this.toolStripLabel3.Size = new System.Drawing.Size(105, 26);
             this.toolStripLabel3.Text = "Leaderboards";
-            this.toolStripLabel3.Click += new System.EventHandler(this.toolStripLabel3_Click);
             // 
             // MatchupForm
             // 
@@ -257,7 +255,6 @@
             this.Controls.Add(this.groupBox1);
             this.Name = "MatchupForm";
             this.Text = "MatchupForm";
-            this.Load += new System.EventHandler(this.MatchupForm_Load);
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
             this.groupBox2.ResumeLayout(false);

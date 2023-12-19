@@ -53,7 +53,7 @@ namespace GameChat
        
         private void SendButton__Click(object sender, EventArgs e)
         {
-            string message = "ses101: " + textBox.Text;
+            string message = "ses101: " + textBox.Text + "\n";
             this.messageRichTextBox.Text += message;
             this.textBox.Text = "";
             /*using (StreamWriter outputFile = new StreamWriter(filename))

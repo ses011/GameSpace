@@ -60,7 +60,6 @@ namespace PlayerInfo
             this.onlineStatus = onlineStatus;
             this.pfp = pfp;
             this.gameNames = this.SetRandomGames();
-            this.times = this.SetTimes();
             this.friends = this.SetFriends();
         }
 

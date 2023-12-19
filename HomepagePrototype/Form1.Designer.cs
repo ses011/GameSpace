@@ -33,7 +33,7 @@
             this.matchButton = new System.Windows.Forms.Button();
             this.flowLayoutPanel1 = new System.Windows.Forms.FlowLayoutPanel();
             this.ListUsers = new System.Windows.Forms.ListView();
-            this.toolStripButton1 = new System.Windows.Forms.ToolStripButton();
+            this.logo = new System.Windows.Forms.ToolStripButton();
             this.usernameLabel = new System.Windows.Forms.ToolStripLabel();
             this.matchLabel = new System.Windows.Forms.ToolStripLabel();
             this.leaderboardLabel = new System.Windows.Forms.ToolStripLabel();
@@ -78,6 +78,7 @@
             // 
             // ListUsers
             // 
+            this.ListUsers.Activation = System.Windows.Forms.ItemActivation.OneClick;
             this.ListUsers.BackColor = System.Drawing.SystemColors.AppWorkspace;
             this.ListUsers.Font = new System.Drawing.Font("Yu Gothic UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.ListUsers.HideSelection = false;
@@ -88,14 +89,14 @@
             this.ListUsers.UseCompatibleStateImageBehavior = false;
             this.ListUsers.View = System.Windows.Forms.View.List;
             // 
-            // toolStripButton1
+            // logo
             // 
-            this.toolStripButton1.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
-            this.toolStripButton1.Image = ((System.Drawing.Image)(resources.GetObject("toolStripButton1.Image")));
-            this.toolStripButton1.ImageTransparentColor = System.Drawing.Color.Magenta;
-            this.toolStripButton1.Name = "toolStripButton1";
-            this.toolStripButton1.Size = new System.Drawing.Size(34, 32);
-            this.toolStripButton1.Text = "toolStripButton1";
+            this.logo.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
+            this.logo.Image = ((System.Drawing.Image)(resources.GetObject("logo.Image")));
+            this.logo.ImageTransparentColor = System.Drawing.Color.Magenta;
+            this.logo.Name = "logo";
+            this.logo.Size = new System.Drawing.Size(34, 32);
+            this.logo.Text = "toolStripButton1";
             // 
             // usernameLabel
             // 
@@ -147,7 +148,7 @@
             this.toolStrip1.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.toolStrip1.ImageScalingSize = new System.Drawing.Size(24, 24);
             this.toolStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.toolStripButton1,
+            this.logo,
             this.usernameLabel,
             this.matchLabel,
             this.leaderboardLabel,
@@ -184,7 +185,7 @@
         private System.Windows.Forms.Button matchButton;
         private System.Windows.Forms.FlowLayoutPanel flowLayoutPanel1;
         private System.Windows.Forms.ListView ListUsers;
-        private System.Windows.Forms.ToolStripButton toolStripButton1;
+        private System.Windows.Forms.ToolStripButton logo;
         private System.Windows.Forms.ToolStripLabel usernameLabel;
         private System.Windows.Forms.ToolStripLabel matchLabel;
         private System.Windows.Forms.ToolStripLabel leaderboardLabel;

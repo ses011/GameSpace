@@ -12,6 +12,7 @@ using PlayerInfo;
 using Profile_Display;
 using Matchups;
 using Leaderboard;
+using GameChat;
 using static System.Windows.Forms.VisualStyles.VisualStyleElement;
 
 namespace HomepagePrototype
@@ -34,7 +35,8 @@ namespace HomepagePrototype
 
             this.matchButton.Click += new EventHandler(MatchButton__Click);
             this.matchLabel.Click += new EventHandler(MatchButton__Click);
-            this.LeaderboardLabel.Click += new EventHandler(LeaderboardLabel__Click);
+            this.leaderboardLabel.Click += new EventHandler(LeaderboardLabel__Click);
+            this.chatsLabel.Click += new EventHandler(ChatsLabel_Click);
 
             this.usernameLabel.Click += new EventHandler(UsernameLabel__Click);
         }
@@ -59,6 +61,12 @@ namespace HomepagePrototype
         public void LeaderboardLabel__Click(Object sender, EventArgs e)
         {
             
+        }
+
+        public void ChatsLabel_Click(Object sender, EventArgs e)
+        {
+            GameChatForm chats = new GameChatForm();
+            chats.ShowDialog();
         }
 
         public void ListUsers__Click(object sender, EventArgs e)

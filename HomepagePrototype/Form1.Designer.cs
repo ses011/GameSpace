@@ -34,11 +34,12 @@
             this.toolStripButton2 = new System.Windows.Forms.ToolStripButton();
             this.usernameLabel = new System.Windows.Forms.ToolStripLabel();
             this.matchLabel = new System.Windows.Forms.ToolStripLabel();
-            this.LeaderboardLabel = new System.Windows.Forms.ToolStripLabel();
+            this.leaderboardLabel = new System.Windows.Forms.ToolStripLabel();
             this.label1 = new System.Windows.Forms.Label();
             this.matchButton = new System.Windows.Forms.Button();
             this.flowLayoutPanel1 = new System.Windows.Forms.FlowLayoutPanel();
             this.ListUsers = new System.Windows.Forms.ListView();
+            this.chatsLabel = new System.Windows.Forms.ToolStripLabel();
             this.toolStrip1.SuspendLayout();
             this.flowLayoutPanel1.SuspendLayout();
             this.SuspendLayout();
@@ -53,11 +54,12 @@
             this.toolStripButton2,
             this.usernameLabel,
             this.matchLabel,
-            this.LeaderboardLabel});
+            this.leaderboardLabel,
+            this.chatsLabel});
             this.toolStrip1.Location = new System.Drawing.Point(0, 0);
             this.toolStrip1.Name = "toolStrip1";
             this.toolStrip1.Padding = new System.Windows.Forms.Padding(0, 0, 3, 0);
-            this.toolStrip1.Size = new System.Drawing.Size(913, 37);
+            this.toolStrip1.Size = new System.Drawing.Size(913, 38);
             this.toolStrip1.TabIndex = 0;
             this.toolStrip1.Text = "toolStrip1";
             // 
@@ -67,7 +69,7 @@
             this.toolStripButton1.Image = ((System.Drawing.Image)(resources.GetObject("toolStripButton1.Image")));
             this.toolStripButton1.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.toolStripButton1.Name = "toolStripButton1";
-            this.toolStripButton1.Size = new System.Drawing.Size(34, 32);
+            this.toolStripButton1.Size = new System.Drawing.Size(34, 33);
             this.toolStripButton1.Text = "toolStripButton1";
             // 
             // toolStripButton2
@@ -78,7 +80,7 @@
             this.toolStripButton2.Image = ((System.Drawing.Image)(resources.GetObject("toolStripButton2.Image")));
             this.toolStripButton2.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.toolStripButton2.Name = "toolStripButton2";
-            this.toolStripButton2.Size = new System.Drawing.Size(34, 32);
+            this.toolStripButton2.Size = new System.Drawing.Size(34, 33);
             this.toolStripButton2.Text = "toolStripButton2";
             // 
             // usernameLabel
@@ -89,7 +91,7 @@
             this.usernameLabel.LinkBehavior = System.Windows.Forms.LinkBehavior.HoverUnderline;
             this.usernameLabel.LinkColor = System.Drawing.Color.Black;
             this.usernameLabel.Name = "usernameLabel";
-            this.usernameLabel.Size = new System.Drawing.Size(86, 32);
+            this.usernameLabel.Size = new System.Drawing.Size(86, 33);
             this.usernameLabel.Text = "ses011";
             // 
             // matchLabel
@@ -100,19 +102,19 @@
             this.matchLabel.LinkColor = System.Drawing.Color.Black;
             this.matchLabel.Margin = new System.Windows.Forms.Padding(80, 2, 0, 3);
             this.matchLabel.Name = "matchLabel";
-            this.matchLabel.Size = new System.Drawing.Size(88, 32);
+            this.matchLabel.Size = new System.Drawing.Size(88, 33);
             this.matchLabel.Text = "Match!";
             // 
-            // LeaderboardLabel
+            // leaderboardLabel
             // 
-            this.LeaderboardLabel.Font = new System.Drawing.Font("Yu Gothic UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.LeaderboardLabel.IsLink = true;
-            this.LeaderboardLabel.LinkBehavior = System.Windows.Forms.LinkBehavior.HoverUnderline;
-            this.LeaderboardLabel.LinkColor = System.Drawing.Color.Black;
-            this.LeaderboardLabel.Margin = new System.Windows.Forms.Padding(65, 2, 0, 3);
-            this.LeaderboardLabel.Name = "LeaderboardLabel";
-            this.LeaderboardLabel.Size = new System.Drawing.Size(157, 32);
-            this.LeaderboardLabel.Text = "Leaderboards";
+            this.leaderboardLabel.Font = new System.Drawing.Font("Yu Gothic UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.leaderboardLabel.IsLink = true;
+            this.leaderboardLabel.LinkBehavior = System.Windows.Forms.LinkBehavior.HoverUnderline;
+            this.leaderboardLabel.LinkColor = System.Drawing.Color.Black;
+            this.leaderboardLabel.Margin = new System.Windows.Forms.Padding(65, 2, 0, 3);
+            this.leaderboardLabel.Name = "leaderboardLabel";
+            this.leaderboardLabel.Size = new System.Drawing.Size(157, 33);
+            this.leaderboardLabel.Text = "Leaderboards";
             // 
             // label1
             // 
@@ -159,6 +161,14 @@
             this.ListUsers.UseCompatibleStateImageBehavior = false;
             this.ListUsers.View = System.Windows.Forms.View.List;
             // 
+            // chatsLabel
+            // 
+            this.chatsLabel.AccessibleRole = System.Windows.Forms.AccessibleRole.WhiteSpace;
+            this.chatsLabel.Margin = new System.Windows.Forms.Padding(65, 2, 0, 3);
+            this.chatsLabel.Name = "chatsLabel";
+            this.chatsLabel.Size = new System.Drawing.Size(73, 33);
+            this.chatsLabel.Text = "Chats";
+            // 
             // Homepage
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
@@ -183,7 +193,7 @@
 
         private System.Windows.Forms.ToolStrip toolStrip1;
         private System.Windows.Forms.ToolStripButton toolStripButton1;
-        private System.Windows.Forms.ToolStripLabel LeaderboardLabel;
+        private System.Windows.Forms.ToolStripLabel leaderboardLabel;
         private System.Windows.Forms.ToolStripButton toolStripButton2;
         private System.Windows.Forms.ToolStripLabel usernameLabel;
         private System.Windows.Forms.Label label1;
@@ -191,6 +201,7 @@
         private System.Windows.Forms.FlowLayoutPanel flowLayoutPanel1;
         private System.Windows.Forms.ToolStripLabel matchLabel;
         private System.Windows.Forms.ListView ListUsers;
+        private System.Windows.Forms.ToolStripLabel chatsLabel;
     }
 }
 

@@ -187,7 +187,7 @@
             this.Controls.Add(this.leaderboard);
             this.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.Name = "Board";
-            this.Text = "Form1";
+            this.Text = "Leaderboards";
             this.gameGroupBox.ResumeLayout(false);
             this.gameGroupBox.PerformLayout();
             this.ResumeLayout(false);

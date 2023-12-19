@@ -9,6 +9,8 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using PlayerInfo;
 
+// Author - Autumn
+
 namespace Leaderboard
 {
     public partial class Board : Form

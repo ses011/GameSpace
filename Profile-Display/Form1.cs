@@ -59,7 +59,6 @@ namespace Profile_Display
         // Restrictions: None
         private void DmButton__Click(object sender, EventArgs e)
         {
-            //this.Enabled = false;
             ChatForm chat = new ChatForm(formUser);
             chat.ShowDialog();
         }

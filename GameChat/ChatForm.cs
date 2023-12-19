@@ -40,7 +40,6 @@ namespace GameChat
 
 
             this.sendButton.Click += new EventHandler(SendButton__Click);
-            this.backButton.Click += new EventHandler(BackButtonUser__Click);
         }
 
         public ChatForm(string game)
@@ -49,24 +48,14 @@ namespace GameChat
             this.userLabel.Text = game;
 
             this.sendButton.Click += new EventHandler(SendButton__Click);
-            this.backButton.Click += new EventHandler(BackButtonGame__Click);
         }
 
-        private void BackButtonGame__Click(object sender, EventArgs e)
-        {
-            this.Enabled = false;
-            new GameChatForm();
-        }
-        private void BackButtonUser__Click(object sender, EventArgs e)
-        {
-            this.Enabled = false;
-            //new DisplayProfile(recipient);
-        }
+       
         private void SendButton__Click(object sender, EventArgs e)
         {
-            string message = ": " + textBox.Text;
-            messageRichTextBox.Text += message;
-
+            string message = "ses101: " + textBox.Text;
+            this.messageRichTextBox.Text += message;
+            this.textBox.Text = "";
             /*using (StreamWriter outputFile = new StreamWriter(filename))
             {
                 outputFile.WriteLine(message.ToString());

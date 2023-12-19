@@ -17,3 +17,5 @@ C:\Users\mjrei\SchoolStuff\201\gameSpace\GameSpace\GameChat\bin\Debug\PlayerInfo
 C:\Users\mjrei\SchoolStuff\201\gameSpace\GameSpace\GameChat\obj\Debug\GameChat.csproj.CopyComplete
 C:\Users\mjrei\SchoolStuff\201\gameSpace\GameSpace\GameChat\bin\Debug\Profile-Display.pdb
 C:\Users\mjrei\SchoolStuff\201\gameSpace\GameSpace\GameChat\bin\Debug\Profile-Display.exe.config
+C:\Users\mjrei\SchoolStuff\201\gameSpace\GameSpace\GameChat\bin\Debug\Leaderboard.dll
+C:\Users\mjrei\SchoolStuff\201\gameSpace\GameSpace\GameChat\obj\Debug\GameChat.Meetup.resources

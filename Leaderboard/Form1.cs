@@ -9,6 +9,8 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using PlayerInfo;
 
+// Author - Autumn
+
 namespace Leaderboard
 {
     public partial class Board : Form
@@ -151,5 +153,9 @@ namespace Leaderboard
             this.label1.Text = "Leaderboard for VRChat";
         }
 
+        private void label1_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

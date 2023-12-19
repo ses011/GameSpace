@@ -33,6 +33,10 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="GameChat, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\GameChat\bin\Debug\GameChat.dll</HintPath>
+    </Reference>
     <Reference Include="Leaderboard">
       <HintPath>..\Leaderboard\bin\Debug\Leaderboard.dll</HintPath>
     </Reference>

@@ -55,12 +55,13 @@
             // nameLabel
             // 
             this.nameLabel.AutoSize = true;
-            this.nameLabel.Font = new System.Drawing.Font("Arial", 13.25F);
-            this.nameLabel.Location = new System.Drawing.Point(76, 42);
+            this.nameLabel.Font = new System.Drawing.Font("Arial", 18.25F);
+            this.nameLabel.Location = new System.Drawing.Point(37, 37);
             this.nameLabel.Name = "nameLabel";
-            this.nameLabel.Size = new System.Drawing.Size(39, 21);
+            this.nameLabel.Size = new System.Drawing.Size(53, 28);
             this.nameLabel.TabIndex = 0;
             this.nameLabel.Text = "test";
+            this.nameLabel.Click += new System.EventHandler(this.nameLabel_Click);
             // 
             // groupBox1
             // 
@@ -79,11 +80,12 @@
             // 
             this.compatLabel.AutoSize = true;
             this.compatLabel.Font = new System.Drawing.Font("Arial", 8.25F);
-            this.compatLabel.Location = new System.Drawing.Point(77, 65);
+            this.compatLabel.Location = new System.Drawing.Point(39, 65);
             this.compatLabel.Name = "compatLabel";
             this.compatLabel.Size = new System.Drawing.Size(35, 14);
             this.compatLabel.TabIndex = 2;
             this.compatLabel.Text = "label2";
+            this.compatLabel.Click += new System.EventHandler(this.compatLabel_Click);
             // 
             // groupBox2
             // 
@@ -104,9 +106,8 @@
             this.game3.Font = new System.Drawing.Font("Arial", 8.25F);
             this.game3.Location = new System.Drawing.Point(7, 77);
             this.game3.Name = "game3";
-            this.game3.Size = new System.Drawing.Size(70, 14);
+            this.game3.Size = new System.Drawing.Size(0, 14);
             this.game3.TabIndex = 6;
-            this.game3.Text = "Likes to play:";
             // 
             // game2
             // 
@@ -115,9 +116,8 @@
             this.game2.Font = new System.Drawing.Font("Arial", 8.25F);
             this.game2.Location = new System.Drawing.Point(7, 62);
             this.game2.Name = "game2";
-            this.game2.Size = new System.Drawing.Size(70, 14);
+            this.game2.Size = new System.Drawing.Size(0, 14);
             this.game2.TabIndex = 5;
-            this.game2.Text = "Likes to play:";
             // 
             // game1
             // 
@@ -126,9 +126,8 @@
             this.game1.Font = new System.Drawing.Font("Arial", 8.25F);
             this.game1.Location = new System.Drawing.Point(7, 46);
             this.game1.Name = "game1";
-            this.game1.Size = new System.Drawing.Size(70, 14);
+            this.game1.Size = new System.Drawing.Size(0, 14);
             this.game1.TabIndex = 4;
-            this.game1.Text = "Likes to play:";
             // 
             // label3
             // 
@@ -143,7 +142,7 @@
             // 
             // pictureBox1
             // 
-            this.pictureBox1.Location = new System.Drawing.Point(80, 105);
+            this.pictureBox1.Location = new System.Drawing.Point(42, 105);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(178, 178);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;

@@ -13,8 +13,13 @@ using Profile_Display;
 using Matchups;
 using Leaderboard;
 using GameChat;
-using static System.Windows.Forms.VisualStyles.VisualStyleElement;
+//using ListView = System.Windows.Forms.VisualStyles.VisualStyleElement;
 
+/*
+ * Author: Sarah Schneider
+ * 
+ * Homepage setup and event handlers
+ */
 namespace HomepagePrototype
 {
     public partial class Homepage : Form
@@ -23,6 +28,7 @@ namespace HomepagePrototype
         {
             InitializeComponent();
 
+            // Populate listview with all the users
             foreach (User user in Players.userList.Values)
             {
                 if (!user.username.Equals("ses011"))
@@ -31,7 +37,7 @@ namespace HomepagePrototype
                 }
             }
 
-            this.ListUsers.SelectedIndexChanged += new EventHandler(ListUsers__SelectedIndexChanged);
+            this.ListUsers.ItemActivate += new EventHandler(ListUsers__ItemActivate);
 
             this.matchButton.Click += new EventHandler(MatchButton__Click);
             this.matchLabel.Click += new EventHandler(MatchButton__Click);
@@ -41,12 +47,14 @@ namespace HomepagePrototype
             this.usernameLabel.Click += new EventHandler(UsernameLabel__Click);
         }
 
+        // Open match page
         public void MatchButton__Click(object sender, EventArgs e)
         {
             MatchupForm match = new MatchupForm();
             match.ShowDialog();
         }
 
+        // Open own profile
         public void UsernameLabel__Click(object sender, EventArgs e)
         {
             string val = "ses011";
@@ -70,15 +78,17 @@ namespace HomepagePrototype
             chats.ShowDialog();
         }
 
-        public void ListUsers__SelectedIndexChanged(object sender, EventArgs e)
+        private void ListUsers__ItemActivate(object sender, EventArgs e)
         {
-            string user = (ListUsers.SelectedItems).ToString();
-            if (Players.userList.ContainsKey(user))
+            ListView lv = (ListView)sender;
+
+            string username = lv.SelectedItems[0].Text;
+
+            if (username != null && Players.userList.ContainsKey(username))
             {
-                DisplayProfile profile = new DisplayProfile(Players.userList[user]);
+                DisplayProfile profile = new DisplayProfile(Players.userList[username]);
                 profile.ShowDialog();
             }
-            
         }
     }
 }

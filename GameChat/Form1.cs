@@ -27,42 +27,51 @@ namespace GameChat
             this.counterStrikeButton.Click += new EventHandler(CounterStrikeButton__Click);
             this.robloxButton.Click += new EventHandler(RobloxButton__Click);
             this.vrChatButton.Click += new EventHandler(VrChatButton__Click);
+            this.meetupButton.Click += new EventHandler(MeetupButton__Click);
         }
 
         private void VrChatButton__Click(object sender, EventArgs e)
         {
-            this.Enabled = false;
-            new ChatForm("VR Chat");
+            ChatForm chatForm = new ChatForm("VR Chat");
+            chatForm.ShowDialog();
         }
         private void RobloxButton__Click(object sender, EventArgs e)
         {
-            this.Enabled = false;
-            new ChatForm("Roblox");
+            ChatForm chatForm = new ChatForm("Roblox");
+            chatForm.ShowDialog();
         }
         private void CounterStrikeButton__Click(object sender, EventArgs e)
         {
-            this.Enabled = false;
-            new ChatForm("Counter Strike 2");
+            ChatForm chatForm = new ChatForm("Counter Strike 2");
+            chatForm.ShowDialog();
         }
         private void ValorantButton__Click(object sender, EventArgs e)
         {
-            this.Enabled = false;
-            new ChatForm("Valorant");
+            ChatForm chatForm = new ChatForm("Valorant");
+            chatForm.ShowDialog();
         }
         private void RainbowSixSeigeButton__Click(object sender, EventArgs e)
         {
-            this.Enabled = false;
-            new ChatForm("Rainbow Six Seige");
+            ChatForm chatForm = new ChatForm("Rainbow Six Seige");
+            chatForm.ShowDialog();
         }
         private void SonsOfTheForestButton__Click(object sender, EventArgs e)
         {
-            this.Enabled = false;
-            new ChatForm("Sons of the Forest");
+            ChatForm chatForm = new ChatForm("Sons of the Forest");
+            chatForm.ShowDialog();
         }
 
-        private void pictureBox4_Click(object sender, EventArgs e)
+        private void MeetupButton__Click(Object sender, EventArgs e)
         {
 
+        }
+        private void pictureBox4_Click(object sender, EventArgs e)
+        {
+            List<User> users = new List<User>();
+            users.Add(Players.userList["anonygoose"]);
+            users.Add(Players.userList["gooobr"]);
+            users.Add(Players.userList[".grbe"]);
+            Meetup meetup = new Meetup("Valorant Watchparty", "Come and hang out with other Valorant players and watch the esports team play Rutgers!", "MAGIC Spell Studios (MSS)-2150", "12/22 5:00 PM", users);
         }
     }
 }

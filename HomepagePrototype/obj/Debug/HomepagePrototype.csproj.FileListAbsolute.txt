@@ -90,7 +90,6 @@ D:\Users\B3PIS\Downloads\final proj 201\GameSpace\HomepagePrototype\obj\Debug\Ho
 C:\Users\sarah\source\repos\GameSpace\HomepagePrototype\bin\Debug\Leaderboard.dll
 C:\Users\sarah\source\repos\GameSpace\HomepagePrototype\bin\Debug\Leaderboard.pdb
 C:\Users\sarah\source\repos\GameSpace\HomepagePrototype\bin\Debug\Leaderboard.dll.config
-C:\Users\sarah\source\repos\GameSpace\HomepagePrototype\bin\Debug\Leaderboard.exe.config
 C:\201\finalProj\GameSpace\HomepagePrototype\bin\Debug\HomepagePrototype.exe.config
 C:\201\finalProj\GameSpace\HomepagePrototype\bin\Debug\HomepagePrototype.exe
 C:\201\finalProj\GameSpace\HomepagePrototype\bin\Debug\HomepagePrototype.pdb
@@ -127,3 +126,9 @@ C:\Users\kasha\Source\Repos\GameSpace\HomepagePrototype\bin\Debug\Leaderboard.ex
 C:\Users\kasha\Source\Repos\GameSpace\HomepagePrototype\bin\Debug\Matchups.pdb
 C:\Users\kasha\Source\Repos\GameSpace\HomepagePrototype\bin\Debug\Matchups.dll.config
 C:\Users\kasha\Source\Repos\GameSpace\HomepagePrototype\obj\Debug\HomepagePrototype.Homepage.resources
+D:\Users\B3PIS\Downloads\final proj 201\GameSpace\HomepagePrototype\bin\Debug\Leaderboard.dll
+D:\Users\B3PIS\Downloads\final proj 201\GameSpace\HomepagePrototype\bin\Debug\Leaderboard.pdb
+D:\Users\B3PIS\Downloads\final proj 201\GameSpace\HomepagePrototype\bin\Debug\Leaderboard.dll.config
+C:\Users\mjrei\SchoolStuff\201\gameSpace\GameSpace\HomepagePrototype\bin\Debug\Leaderboard.dll
+C:\Users\mjrei\SchoolStuff\201\gameSpace\GameSpace\HomepagePrototype\bin\Debug\Leaderboard.pdb
+C:\Users\mjrei\SchoolStuff\201\gameSpace\GameSpace\HomepagePrototype\bin\Debug\Leaderboard.dll.config

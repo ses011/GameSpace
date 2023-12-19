@@ -19,10 +19,10 @@ C:\Users\sarah\source\repos\GameSpace\Leaderboard\bin\Debug\PlayerInfo.dll
 C:\Users\sarah\source\repos\GameSpace\Leaderboard\bin\Debug\PlayerInfo.pdb
 C:\Users\sarah\source\repos\GameSpace\Leaderboard\bin\Debug\PlayerInfo.dll.config
 C:\Users\sarah\source\repos\GameSpace\Leaderboard\obj\Debug\Leaderboard.csproj.AssemblyReference.cache
-C:\Users\sarah\source\repos\GameSpace\Leaderboard\obj\Debug\Leaderboard.Form1.resources
 C:\Users\sarah\source\repos\GameSpace\Leaderboard\obj\Debug\Leaderboard.Properties.Resources.resources
 C:\Users\sarah\source\repos\GameSpace\Leaderboard\obj\Debug\Leaderboard.csproj.GenerateResource.cache
 C:\Users\sarah\source\repos\GameSpace\Leaderboard\obj\Debug\Leaderboard.csproj.CoreCompileInputs.cache
 C:\Users\sarah\source\repos\GameSpace\Leaderboard\obj\Debug\Leaderboard.csproj.CopyComplete
 C:\Users\sarah\source\repos\GameSpace\Leaderboard\obj\Debug\Leaderboard.dll
 C:\Users\sarah\source\repos\GameSpace\Leaderboard\obj\Debug\Leaderboard.pdb
+C:\Users\sarah\source\repos\GameSpace\Leaderboard\obj\Debug\Leaderboard.Board.resources

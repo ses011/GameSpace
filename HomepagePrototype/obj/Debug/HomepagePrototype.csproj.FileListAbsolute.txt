@@ -130,3 +130,6 @@ C:\Users\kasha\Source\Repos\GameSpace\HomepagePrototype\obj\Debug\HomepageProtot
 D:\Users\B3PIS\Downloads\final proj 201\GameSpace\HomepagePrototype\bin\Debug\Leaderboard.dll
 D:\Users\B3PIS\Downloads\final proj 201\GameSpace\HomepagePrototype\bin\Debug\Leaderboard.pdb
 D:\Users\B3PIS\Downloads\final proj 201\GameSpace\HomepagePrototype\bin\Debug\Leaderboard.dll.config
+C:\Users\mjrei\SchoolStuff\201\gameSpace\GameSpace\HomepagePrototype\bin\Debug\Leaderboard.dll
+C:\Users\mjrei\SchoolStuff\201\gameSpace\GameSpace\HomepagePrototype\bin\Debug\Leaderboard.pdb
+C:\Users\mjrei\SchoolStuff\201\gameSpace\GameSpace\HomepagePrototype\bin\Debug\Leaderboard.dll.config

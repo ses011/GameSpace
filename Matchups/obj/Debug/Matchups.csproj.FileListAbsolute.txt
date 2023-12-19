@@ -46,3 +46,9 @@ D:\Users\B3PIS\Downloads\final proj 201\GameSpace\Matchups\bin\Debug\Profile-Dis
 D:\Users\B3PIS\Downloads\final proj 201\GameSpace\Matchups\bin\Debug\Profile-Display.dll.config
 D:\Users\B3PIS\Downloads\final proj 201\GameSpace\Matchups\bin\Debug\GameChat.pdb
 D:\Users\B3PIS\Downloads\final proj 201\GameSpace\Matchups\bin\Debug\GameChat.dll.config
+D:\Users\B3PIS\Downloads\final proj 201\GameSpace\Matchups\bin\Debug\HomepagePrototype.exe
+D:\Users\B3PIS\Downloads\final proj 201\GameSpace\Matchups\bin\Debug\Leaderboard.dll
+D:\Users\B3PIS\Downloads\final proj 201\GameSpace\Matchups\bin\Debug\HomepagePrototype.pdb
+D:\Users\B3PIS\Downloads\final proj 201\GameSpace\Matchups\bin\Debug\HomepagePrototype.exe.config
+D:\Users\B3PIS\Downloads\final proj 201\GameSpace\Matchups\bin\Debug\Leaderboard.pdb
+D:\Users\B3PIS\Downloads\final proj 201\GameSpace\Matchups\bin\Debug\Leaderboard.dll.config

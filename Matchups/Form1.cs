@@ -1,5 +1,7 @@
 ﻿using PlayerInfo;
 using Profile_Display;
+using Leaderboard;
+using HomepagePrototype;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -120,10 +122,10 @@ namespace Matchups
 
             compatLabel.Text = compatScore.ToString() + "%";
         }
-
+        // go home
         private void homeLabel_Click(object sender, EventArgs e)
         {
-
+            this.Close();
         }
 
         // Next Button Event
@@ -158,6 +160,28 @@ namespace Matchups
             // open user profile of given picture
             Form dispProf = new DisplayProfile(Players.userList[names[currentUser]]);
             dispProf.ShowDialog();
+        }
+
+        // show leaderboard
+        private void toolStripLabel3_Click(object sender, EventArgs e)
+        {
+            Form form = new Board();
+            this.Close();
+            form.Show();
+        }
+
+        // go home 2
+        private void toolStripButton1_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
+
+        // go to my profile
+        private void usernameLabel_Click(object sender, EventArgs e)
+        {
+            Form dispProf = new DisplayProfile(myProfile);
+            this.Close();
+            dispProf.Show();
         }
     }
 }

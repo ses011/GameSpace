@@ -197,6 +197,7 @@
             this.toolStripButton1.Name = "toolStripButton1";
             this.toolStripButton1.Size = new System.Drawing.Size(28, 28);
             this.toolStripButton1.Text = "toolStripButton1";
+            this.toolStripButton1.Click += new System.EventHandler(this.toolStripButton1_Click);
             // 
             // toolStripButton2
             // 
@@ -219,6 +220,7 @@
             this.usernameLabel.Name = "usernameLabel";
             this.usernameLabel.Size = new System.Drawing.Size(59, 28);
             this.usernameLabel.Text = "ses011";
+            this.usernameLabel.Click += new System.EventHandler(this.usernameLabel_Click);
             // 
             // homeLabel
             // 
@@ -242,6 +244,7 @@
             this.toolStripLabel3.Name = "toolStripLabel3";
             this.toolStripLabel3.Size = new System.Drawing.Size(105, 26);
             this.toolStripLabel3.Text = "Leaderboards";
+            this.toolStripLabel3.Click += new System.EventHandler(this.toolStripLabel3_Click);
             // 
             // MatchupForm
             // 

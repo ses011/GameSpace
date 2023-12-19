@@ -78,6 +78,7 @@
             // 
             // ListUsers
             // 
+            this.ListUsers.Activation = System.Windows.Forms.ItemActivation.OneClick;
             this.ListUsers.BackColor = System.Drawing.SystemColors.AppWorkspace;
             this.ListUsers.Font = new System.Drawing.Font("Yu Gothic UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.ListUsers.HideSelection = false;

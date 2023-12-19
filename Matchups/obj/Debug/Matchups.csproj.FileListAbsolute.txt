@@ -40,3 +40,9 @@ C:\201\finalProj\GameSpace\Matchups\obj\Debug\Matchups.csproj.CoreCompileInputs.
 C:\201\finalProj\GameSpace\Matchups\obj\Debug\Matchups.csproj.CopyComplete
 C:\201\finalProj\GameSpace\Matchups\obj\Debug\Matchups.dll
 C:\201\finalProj\GameSpace\Matchups\obj\Debug\Matchups.pdb
+D:\Users\B3PIS\Downloads\final proj 201\GameSpace\Matchups\bin\Debug\Profile-Display.dll
+D:\Users\B3PIS\Downloads\final proj 201\GameSpace\Matchups\bin\Debug\GameChat.dll
+D:\Users\B3PIS\Downloads\final proj 201\GameSpace\Matchups\bin\Debug\Profile-Display.pdb
+D:\Users\B3PIS\Downloads\final proj 201\GameSpace\Matchups\bin\Debug\Profile-Display.dll.config
+D:\Users\B3PIS\Downloads\final proj 201\GameSpace\Matchups\bin\Debug\GameChat.pdb
+D:\Users\B3PIS\Downloads\final proj 201\GameSpace\Matchups\bin\Debug\GameChat.dll.config

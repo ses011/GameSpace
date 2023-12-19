@@ -72,34 +72,47 @@ namespace Matchups
             // go through current user game list
             for (i = 0; i < thisUser.gameNames.Count; i++)
             { 
-
+                // goes through first three games in gameList if they exist
                 switch (i)
                 {
+                    // if game 1 exists
                     case (0):
+                        // set text for game name
                         game1.Text = thisUser.gameNames[0];
+                        // check current user profile and adjust score
                         if (myProfile.gameNames[0] == thisUser.gameNames[0])
                         {
                             compatScore += 40;
                         }
                         break;
+                    // if game 2 exists
                     case (1):
+                        // set text for game name
                         game2.Text = thisUser.gameNames[1];
+                        // check current user profile and adjust score
                         if (myProfile.gameNames[1] == thisUser.gameNames[1])
                         {
                             compatScore += 30;
                         }
                         break;
+                    // if game 3 exists
                     case (2):
+                        // set text for game name
                         game3.Text = thisUser.gameNames[2];
+                        // check current user profile and adjust score
                         if (myProfile.gameNames[2] == thisUser.gameNames[2])
                         {
                             compatScore += 30;
                         }
                         break;
+                        // default case
+                    default:
+                        break;
 
                 }
             }
 
+            // set name label text, picture box, and compatability label
             nameLabel.Text = thisUser.username;
 
             pictureBox1.ImageLocation = thisUser.pfp;
@@ -112,20 +125,26 @@ namespace Matchups
 
         }
 
+        // Next Button Event
         private void nextButton_Click(object sender, EventArgs e)
         {
+            // if current user is within bounds of list
             if(currentUser < names.Count - 1)
             {
+                // adjust current user and update profile
                 currentUser++;
                 UpdateProfile();
             }
 
         }
 
+        // Previous Button Event
         private void previousButton_Click(object sender, EventArgs e)
         {
+            // if current user is within bounds of list
             if (currentUser > 0)
             {
+                // adjust current user and update profile
                 currentUser--;
                 UpdateProfile();
             }

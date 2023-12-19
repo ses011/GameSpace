@@ -167,7 +167,7 @@ namespace Matchups
         {
             Form form = new Board();
             this.Close();
-            form.Show();
+            form.ShowDialog();
         }
 
         // go home 2
@@ -181,7 +181,7 @@ namespace Matchups
         {
             Form dispProf = new DisplayProfile(myProfile);
             this.Close();
-            dispProf.Show();
+            dispProf.ShowDialog();
         }
     }
 }

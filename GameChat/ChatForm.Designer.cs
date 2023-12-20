@@ -49,9 +49,9 @@
             this.sendButton.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
             this.sendButton.Dock = System.Windows.Forms.DockStyle.Bottom;
             this.sendButton.Font = new System.Drawing.Font("Yu Gothic UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.sendButton.Location = new System.Drawing.Point(0, 394);
+            this.sendButton.Location = new System.Drawing.Point(0, 393);
             this.sendButton.Name = "sendButton";
-            this.sendButton.Size = new System.Drawing.Size(372, 23);
+            this.sendButton.Size = new System.Drawing.Size(372, 24);
             this.sendButton.TabIndex = 1;
             this.sendButton.Text = "Send";
             this.sendButton.UseVisualStyleBackColor = false;
@@ -70,7 +70,7 @@
             // 
             this.userLabel.AutoSize = true;
             this.userLabel.Font = new System.Drawing.Font("Yu Gothic UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.userLabel.Location = new System.Drawing.Point(9, 7);
+            this.userLabel.Location = new System.Drawing.Point(4, 7);
             this.userLabel.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.userLabel.Name = "userLabel";
             this.userLabel.Size = new System.Drawing.Size(42, 21);

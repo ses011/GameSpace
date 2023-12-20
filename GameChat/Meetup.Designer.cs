@@ -102,6 +102,8 @@
             // 
             // attendingTextBox
             // 
+            this.attendingTextBox.BackColor = System.Drawing.Color.Navy;
+            this.attendingTextBox.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
             this.attendingTextBox.Location = new System.Drawing.Point(187, 250);
             this.attendingTextBox.Margin = new System.Windows.Forms.Padding(4);
             this.attendingTextBox.Multiline = true;
@@ -109,15 +111,18 @@
             this.attendingTextBox.ReadOnly = true;
             this.attendingTextBox.Size = new System.Drawing.Size(135, 78);
             this.attendingTextBox.TabIndex = 7;
+            this.attendingTextBox.WordWrap = false;
             // 
             // descriptionTextBox
             // 
+            this.descriptionTextBox.BackColor = System.Drawing.Color.Navy;
+            this.descriptionTextBox.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
             this.descriptionTextBox.Location = new System.Drawing.Point(187, 49);
             this.descriptionTextBox.Margin = new System.Windows.Forms.Padding(4);
             this.descriptionTextBox.Multiline = true;
             this.descriptionTextBox.Name = "descriptionTextBox";
             this.descriptionTextBox.ReadOnly = true;
-            this.descriptionTextBox.Size = new System.Drawing.Size(135, 100);
+            this.descriptionTextBox.Size = new System.Drawing.Size(182, 100);
             this.descriptionTextBox.TabIndex = 8;
             // 
             // Meetup

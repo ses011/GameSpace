@@ -52,7 +52,7 @@ namespace GameChat
             this.attendingTextBox.Text = "";
             foreach (string user in attending)
             {
-                this.attendingTextBox.Text += user + "\n";
+                this.attendingTextBox.Text += user + "\r\n";
             }
         }
     }

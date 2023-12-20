@@ -26,7 +26,7 @@ namespace GameChat
 
             foreach (string user in attending)
             {
-                this.attendingTextBox.Text += user + "\n";
+                this.attendingTextBox.Text += user + "\r\n";
             }
             this.interestCheckBox.CheckedChanged += new EventHandler(InterestCheckBox__CheckChanged);
         }

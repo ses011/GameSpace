@@ -102,7 +102,7 @@
             // 
             // attendingTextBox
             // 
-            this.attendingTextBox.BackColor = System.Drawing.Color.Navy;
+            this.attendingTextBox.BackColor = System.Drawing.Color.White;
             this.attendingTextBox.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
             this.attendingTextBox.Location = new System.Drawing.Point(187, 250);
             this.attendingTextBox.Margin = new System.Windows.Forms.Padding(4);
@@ -111,11 +111,10 @@
             this.attendingTextBox.ReadOnly = true;
             this.attendingTextBox.Size = new System.Drawing.Size(135, 78);
             this.attendingTextBox.TabIndex = 7;
-            this.attendingTextBox.WordWrap = false;
             // 
             // descriptionTextBox
             // 
-            this.descriptionTextBox.BackColor = System.Drawing.Color.Navy;
+            this.descriptionTextBox.BackColor = System.Drawing.Color.White;
             this.descriptionTextBox.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
             this.descriptionTextBox.Location = new System.Drawing.Point(187, 49);
             this.descriptionTextBox.Margin = new System.Windows.Forms.Padding(4);
@@ -129,7 +128,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.Color.Navy;
+            this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(541, 421);
             this.Controls.Add(this.descriptionTextBox);
             this.Controls.Add(this.attendingTextBox);

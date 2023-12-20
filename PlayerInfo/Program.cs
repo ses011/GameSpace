@@ -28,7 +28,7 @@ namespace PlayerInfo
 
 
     // Class: User
-    // Author: Kashaf Ahmed and Sarah Schnedier
+    // Authors: Kashaf Ahmed and Sarah Schnedier
     // Purpose: Creates the user object with a username, bio, online status, profile picture, as well as 
     // the lists for the games, times, rank, and friends for the current user. The sorted lists are populated
     // from different methods that Sarah had written. The time and rank are accessed by the game name (key) and everything else
@@ -63,6 +63,7 @@ namespace PlayerInfo
             this.friends = this.SetFriends();
         }
 
+        // Gives a user a list of random games from EGames enum
         private List<string> SetRandomGames()
         {
             Random random = new Random();
@@ -79,7 +80,7 @@ namespace PlayerInfo
             return gameNames;
         }
 
-
+        // Gives a user a random list of friends from the existing users
         private SortedList<string, User> SetFriends()
         {
             Random random = new Random();

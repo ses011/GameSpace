@@ -83,9 +83,12 @@ namespace HomepagePrototype
             ListView lv = (ListView)sender;
 
             string username = lv.SelectedItems[0].Text;
+            Console.WriteLine(username);
+            Console.WriteLine(Players.userList.ContainsKey(username));
 
             if (username != null && Players.userList.ContainsKey(username))
             {
+                
                 DisplayProfile profile = new DisplayProfile(Players.userList[username]);
                 profile.ShowDialog();
             }

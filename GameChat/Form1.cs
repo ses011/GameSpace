@@ -63,10 +63,10 @@ namespace GameChat
 
         private void MeetupButton__Click(Object sender, EventArgs e)
         {
-            List<User> users = new List<User>();
-            users.Add(Players.userList["anonygoose"]);
-            users.Add(Players.userList["gooobr"]);
-            users.Add(Players.userList[".grbe"]);
+            List<string> users = new List<string>();
+            users.Add("anonygoose");
+            users.Add("gooobr");
+            users.Add(".grbe");
             Meetup meetup = new Meetup("Valorant Watchparty", "Come and hang out with other Valorant players and watch the esports team play Rutgers!", "MAGIC Spell Studios (MSS)-2150", "12/22 5:00 PM", users);
         }
         private void pictureBox4_Click(object sender, EventArgs e)

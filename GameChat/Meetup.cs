@@ -13,8 +13,8 @@ namespace GameChat
 {
     public partial class Meetup : Form
     {
-        private List<User> attending;
-        public Meetup(string name, string description, string place, string time, List<User> attending)
+        private List<string> attending;
+        public Meetup(string name, string description, string place, string time, List<string> attending)
         {
             InitializeComponent();
             this.nameLabel.Text = name;
@@ -24,9 +24,9 @@ namespace GameChat
             this.attending = attending;
             
 
-            foreach (User user in attending)
+            foreach (string user in attending)
             {
-                this.attendingTextBox.Text += user.username + "\n";
+                this.attendingTextBox.Text += user + "\n";
             }
             this.interestCheckBox.CheckedChanged += new EventHandler(InterestCheckBox__CheckChanged);
         }
@@ -35,14 +35,14 @@ namespace GameChat
         {
             if (this.interestCheckBox.Checked)
             {
-                attending.Add(Players.userList["ses101"]);
+                attending.Add("ses101");
                 changeAttending();
             }
             else
             {
-                if (attending.Contains(Players.userList["ses101"]))
+                if (attending.Contains("ses101"))
                 {
-                    attending.Remove(Players.userList["ses101"]);
+                    attending.Remove("ses101");
                     changeAttending();
                 }
             }
@@ -50,9 +50,9 @@ namespace GameChat
         private void changeAttending()
         {
             this.attendingTextBox.Text = "";
-            foreach (User user in attending)
+            foreach (string user in attending)
             {
-                this.attendingTextBox.Text += user.username + "\n";
+                this.attendingTextBox.Text += user + "\n";
             }
         }
     }

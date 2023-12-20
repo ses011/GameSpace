@@ -68,6 +68,7 @@ namespace GameChat
             users.Add("gooobr");
             users.Add(".grbe");
             Meetup meetup = new Meetup("Valorant Watchparty", "Come and hang out with other Valorant players and watch the esports team play Rutgers!", "MAGIC Spell Studios (MSS)-2150", "12/22 5:00 PM", users);
+            meetup.ShowDialog();        
         }
         private void pictureBox4_Click(object sender, EventArgs e)
         {

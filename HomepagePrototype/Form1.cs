@@ -13,7 +13,6 @@ using Profile_Display;
 using Matchups;
 using Leaderboard;
 using GameChat;
-//using ListView = System.Windows.Forms.VisualStyles.VisualStyleElement;
 
 /*
  * Author: Sarah Schneider
@@ -66,18 +65,21 @@ namespace HomepagePrototype
             }
         }
 
+        // Open leaderboard page
         public void LeaderboardLabel__Click(Object sender, EventArgs e)
         {
             Board board = new Board();
             board.ShowDialog();
         }
 
+        // Open chats page
         public void ChatsLabel_Click(Object sender, EventArgs e)
         {
             GameChatForm chats = new GameChatForm();
             chats.ShowDialog();
         }
 
+        // Open other users' profiles
         private void ListUsers__ItemActivate(object sender, EventArgs e)
         {
             ListView lv = (ListView)sender;
